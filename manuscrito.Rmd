@@ -8,8 +8,8 @@ output:
     template: svm-latex-ms.tex
     number_sections: true
 title: | 
-        | Patrones de Asociación y Diversidad Descritos por la Familia **Fabaceae Mimosoideae** en Clima Subtropical de la Placa Tectónica del Caribe.
-        | Subtítulo
+        | Patrones de Asociación y Diversidad Descritos por la Familia Fabaceae Mimosoideae en  una Isla Subtropical de la Cuenca del Mar Caribe.
+        | *Patterns of Association and Diversity Described by the Family Fabaceae Mimosoideae on a Subtropical Island in the Caribbean Sea Basin*.
         | Subtítulo
 author:
 - name: Tali tali tali
