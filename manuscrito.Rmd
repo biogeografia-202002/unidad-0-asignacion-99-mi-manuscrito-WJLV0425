@@ -8,7 +8,7 @@ output:
     template: svm-latex-ms.tex
     number_sections: true
 title: | 
-        | Mis hormigas
+        | Patrones de Asociación y Diversidad Descritos por la Familia **Fabaceae Mimosoideae** en Clima Subtropical de la Placa Tectónica del Caribe.
         | Subtítulo
         | Subtítulo
 author:
