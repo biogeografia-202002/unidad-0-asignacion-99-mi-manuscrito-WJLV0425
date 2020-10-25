@@ -12,8 +12,8 @@ title: |
         | *Patterns of Association and Diversity Described by the Family Fabaceae Mimosoideae on a Subtropical Island in the Caribbean Sea Basin*.
         | Subtítulo
 author:
-- name: Tali tali tali
-  affiliation: Estudiante, Universidad Autónoma de Santo Domingo (UASD)
+- name: Welifer Junior Lebron Vicente
+  affiliation: Estudiante de Ciencias Geográficas, Universidad Autónoma de Santo Domingo (UASD)
 abstract: "Mi resumen"
 keywords: "palabra clave 1, palabra clave 2"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
