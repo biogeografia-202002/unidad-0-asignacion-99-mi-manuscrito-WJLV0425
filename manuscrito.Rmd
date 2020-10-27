@@ -8,12 +8,12 @@ output:
     template: svm-latex-ms.tex
     number_sections: true
 title: | 
-        | Patrones de Asociación y Diversidad Descritos por la Familia Fabaceae Mimosoideae en  una Isla Subtropical de la Cuenca del Mar Caribe.
-        | *Patterns of Association and Diversity Described by the Family Fabaceae Mimosoideae on a Subtropical Island in the Caribbean Sea Basin*.
-        | Subtítulo
+        | Patrones de Asociación y Diversidad Descritos por la Familia Fabaceae Mimosoideae en  una Isla Subtropical, Cuenca del Mar Caribe.
+        | *Patterns of Association and Diversity Described by the Family Fabaceae Mimosoideae on a Subtropical Island, Caribbean Sea Basin*.
+        | 
 author:
-- name: Welifer Junior Lebron Vicente
-  affiliation: Estudiante de Ciencias Geográficas, Universidad Autónoma de Santo Domingo (UASD)
+- name: "Welifer Junior Lebron Vicente"
+  affiliation: "Estudiante de Ciencias Geográficas, Universidad Autónoma de Santo Domingo (UASD)"
 abstract: "Mi resumen"
 keywords: "palabra clave 1, palabra clave 2"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -32,7 +32,9 @@ header-includes:
 
 # Introducción
 
-\ldots
+El análisis de biodiversidad forestal viabiliza la obtención de información del comportamiento de las especies en su hábitat, los efectos de cambios geoestacionarios, y las probables consecuencias de actividades antrópicas en el ciclo vital de los bosques. La función de los bosques tropicales puede ser productiva (madera, fibra, leña, productos no maderables); ambientales (regulación del clima, reserva de biodiversidad, conservación de suelos y agua, etc.); y social (subsitencia de poblamientos humanos locales y su cultura) [cita1, TF Book].
+
+La isla Barro Colorado, de coordenadas [9º 9' 0'' N, 79º 51' 0'' W], es una plataforma basáltica miocénica sobre la que descansa un bosque tropical primario compuesto por 305 especies arboreas.   [cita2,C. article].\ldots.
 
 # Metodología
 
