@@ -32,13 +32,13 @@ header-includes:
 
 # Introducción
 
-El análisis de biodiversidad forestal viabiliza la obtención de información del comportamiento de las especies en su hábitat, los efectos de cambios geoestacionarios, y las probables consecuencias de actividades antrópicas en el ciclo vital de los bosques. La función de los bosques tropicales puede ser productiva (madera, fibra, leña, productos no maderables); ambientales (regulación del clima, reserva de biodiversidad, conservación de suelos y agua, etc.); y social (subsitencia de poblamientos humanos locales y su cultura) [cita1, TF Book].
+El análisis de biodiversidad forestal viabiliza la obtención de información sobre el comportamiento de las especies en su hábitat, los efectos de cambios geoestacionarios, y las probables consecuencias de actividades antrópicas en el ciclo vital de los bosques. La función de los bosques tropicales puede ser productiva (madera, fibra, leña, productos no maderables); ambientales (regulación del clima, reserva de biodiversidad, conservación de suelos y agua, etc.); y social (subsitencia de poblamientos humanos locales y su cultura) [cita1, TF Book].
 
-La isla Barro Colorado, de coordenadas [9º 9' 0'' N, 79º 51' 0'' W], es una plataforma basáltica miocénica sobre la que descansa un bosque tropical primario compuesto por 305 especies arboreas.   [cita2,C. article].\ldots.
+La isla Barro Colorado, de coordenadas [9º 9' 0'' N, 79º 51' 0'' W], es una plataforma basáltica miocénica sobre la que descansa un bosque tropical primario compuesto por 305 especies arboreas  [cita2,C. article]. En el período 1981-2015 fue el emplazamiento de ocho censos forestales realizados por el Smithsonian Tropical Research Institute. La subfamilia *Fabaceae Mimosoideae*, representa el 5.9% de las especies registradas en una parcela de 50 hectareas delimitada en 1980 [Cita3,WebP]. L\ldots.
 
 # Metodología
 
-\ldots
+Se seleccionó la subfamilia *Fabaceae Mimosoideae* dentro del total de 59 familias censadas por el Smithsonian Tropical Research Institute en una parcela de 50 hectareas en la isla Barro Colorado. \ldots
 
 # Resultados
 
