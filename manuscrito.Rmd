@@ -30,13 +30,20 @@ header-includes:
   \newcommand{\elandscape}{\end{landscape}}
 ---
 
+```{r, include=FALSE}
+source("Cacatuo.R", local = knitr::knit_global())
+```
+
 # Introducción
 
-El análisis de biodiversidad forestal viabiliza la obtención de información sobre el comportamiento de las especies en su hábitat, los efectos de cambios geoestacionarios, y las probables consecuencias de actividades antrópicas en el ciclo vital de los bosques. La función de los bosques tropicales puede ser productiva (madera, fibra, leña, productos no maderables); ambientales (regulación del clima, reserva de biodiversidad, conservación de suelos y agua, etc.); y social (subsitencia de poblamientos humanos locales y su cultura) [cita1, TF Book].
+El análisis de biodiversidad forestal viabiliza la obtención de información sobre el comportamiento de las especies en su hábitat, los efectos de cambios geoestacionarios, y las probables consecuencias de actividades antrópicas en el ciclo vital de los bosques. La función de los bosques tropicales puede ser productiva (madera, fibra, leña, productos no maderables); ambientales (regulación del clima, reserva de biodiversidad, conservación de suelos y agua, etc.); y social (subsitencia de poblamientos humanos locales y su cultura) [@montagnini2005tropical].
 
 La isla Barro Colorado, de coordenadas [9º 9' 0'' N, 79º 51' 0'' W], es una plataforma basáltica miocénica sobre la que descansa un bosque tropical primario compuesto por 305 especies arboreas  [cita2,C. article]. En el período 1981-2015 fue el emplazamiento de ocho censos forestales realizados por el Smithsonian Tropical Research Institute, donde la subfamilia *Fabaceae Mimosoideae* representa el 5.9% de las especies registradas en la parcela de 50 hectareas delimitada en 1980 [Cita3,WebP]. 
 
-La familia *Mimosoideae* fue incorporada a las *Caesalpinoideae* dentro del clado mimosoide, esta subfamilia de las fabaceas es sumamente variable; compuesta principalmente por árboles y arbustos de flores asimétricas cigomorfas. El clado filogenético mimosoide es propio de climas tropicales y subtropicales, sus flores son simétricas con petalos valvados y sus especimenes tienen un gran número de estambres prominentes.    \ldots.
+
+![Área del censo forestal, Barro Colorado Island (1981-2015).](mapa_cuadros.png){width=50%}
+
+La familia *Mimosoideae* fue incorporada a las *Caesalpinoideae* dentro del clado mimosoide, esta subfamilia de las fabaceas es sumamente variable; compuesta principalmente por árboles y arbustos de flores asimétricas cigomorfas. El clado filogenético mimosoide es propio de climas tropicales y subtropicales, sus flores son simétricas con petalos valvados y sus especimenes tienen un gran número de estambres prominentes. [Cita #4]    \ldots.
 
 # Metodología
 
@@ -44,7 +51,16 @@ Se seleccionó la subfamilia *Fabaceae Mimosoideae* dentro del total de 59 famil
 
 # Resultados
 
-\ldots
+(ver tabla \ref{tab:abun_sp} y figura \ref{fig:abun_sp_q})
+
+```{r, echo=FALSE}
+knitr::kable(abun_sp,
+             caption = "\\label{tab:abun_sp}Abundancia por especie de la familia *Fabaceae-Mimosoideae*.")
+```
+
+```{r, echo=FALSE, fig.cap="\\label{fig:abun_sp_q}Abundancia por especie por quadrat"}
+abun_sp_q
+```
 
 # Discusión
 
