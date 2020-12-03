@@ -79,7 +79,7 @@ mapa_cuadros <- mapView(
   leaflet::setView(
     lng = -79.85136,
     lat = 9.15097,
-    zoom = 15)
+    zoom = 16)
 mapa_cuadros
 mapa_cuadros %>% mapshot(file = 'mapa_cuadros.png') #Genera archivo
 
