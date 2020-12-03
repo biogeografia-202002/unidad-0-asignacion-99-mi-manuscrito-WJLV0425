@@ -141,17 +141,17 @@ mapa_cuadros_abun_mi_familia %>% mapshot(file = 'mapa_cuadros_abun_mi_familia.pn
 #' ### Mapa de cuadros, simbología por riqueza de mi familia
 mapa_cuadros_riq_mi_familia <- mapView(
   bci_env_grid %>% mutate(riq = specnumber(mc_fbc_m)),
-  layer.name = 'riqueza',
+  layer.name = 'Riqueza',
   alpha.regions = 0.6,
   map.types = 'OpenTopoMap',
-  legend = T, zoom = 14,
+  legend = T, zoom = 10,
   col.regions = rojo,
   zcol = 'riq') %>%
   addStaticLabels(label = specnumber(mc_fbc_m)) %>%
   leaflet::setView(
     lng = -79.85136,
     lat = 9.15097,
-    zoom = 15)
+    zoom = 16.5)
 mapa_cuadros_riq_mi_familia
 mapa_cuadros_riq_mi_familia %>% mapshot(file = 'mapa_cuadros_riq_mi_familia.png')
 

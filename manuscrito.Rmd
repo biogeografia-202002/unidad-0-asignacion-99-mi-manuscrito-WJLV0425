@@ -45,9 +45,14 @@ El registro forestal en la isla Barro colorado forma parte de una serie de parce
 
 ![Área del censo forestal, Barro Colorado Island (1981-2015).](mapa_cuadros.png){width=50%}
 
-Las fabaceas se encuentran ampliamente distribuidas por la practica totalidad de climas terrestres, concentrando su diversidad en la franja tropical y subtropical. Están presentes en zonas árticas, litoral costero, ambientes alpinos, bosque lluvioso, bosque estacional, sabanas, bosque seco, desiertos áridos, pantanos y manglares. Possen caracteristicas especializadas que las hacen vitales para el equilibrio ecológico y para la supervivencia del ser humano. El 88% de las especies de esta familia pueden formar nódulos con bacterías fijadoras de nitrógeno (rhizobia) para fijar el N2 en la atomosfera mediante una asociación simbiótica, fisiología rica en proteínas,etc. Asimismo, sus semillas son empleadas para tratar celulas cancerigenas, sus compotenentes químicos las hacen esenciales para diversos tipos de inndustrias, y el grano de las leguminosas representa por si solo el 33% del nitrogeno necesario en la dieta de los seres humanos [@saikia2020tropical].    
+Las fabaceas se encuentran ampliamente distribuidas por la practica totalidad de climas terrestres, concentrando su diversidad en la franja tropical y subtropical. Están presentes en zonas árticas, litoral costero, ambientes alpinos, bosque lluvioso, bosque estacional, sabanas, bosque seco, desiertos áridos, pantanos y manglares. Poseen caracteristicas especializadas que las hacen vitales para el equilibrio ecológico y para la supervivencia del ser humano. El 88% de las especies de esta familia pueden formar nódulos con bacterías fijadoras de nitrógeno (rhizobia) para fijar el N2 en la atomosfera mediante una asociación simbiótica, fisiología rica en proteínas,etc. Asimismo, sus semillas son empleadas para tratar celulas cancerigenas, sus compotenentes químicos las hacen esenciales para diversos tipos de industrias, y el grano de las leguminosas representa por si solo el 33% del nitrogeno necesario en la dieta de los seres humanos [@saikia2020tropical].    
 
-La familia *Mimosoideae* fue incorporada a las *Caesalpinoideae* dentro del clado mimosoide, esta subfamilia de las fabaceas es sumamente variable; compuesta principalmente por árboles y arbustos de flores asimétricas cigomorfas. El clado filogenético mimosoide es propio de climas tropicales y subtropicales, sus flores son simétricas con petalos valvados y sus especimenes tienen un gran número de estambres prominentes [@hasanuzzaman2020plant].
+La familia *Mimosoideae* dentro del clado mimosoide es una subfamilia sumamente variable; compuesta principalmente por árboles y arbustos de flores asimétricas cigomorfas. El clado filogenético mimosoide es propio de climas tropicales y subtropicales, sus flores son simétricas con petalos valvados y sus especimenes tienen un gran número de estambres prominentes [@hasanuzzaman2020plant]. En BCI se encuentran 18 de estas especies. 
+
+```{r, echo=FALSE}
+knitr::kable(abun_sp,
+             caption = "\\label{tab:abun_sp}Abundancia por especie de la familia *Fabaceae-Mimosoideae*.")
+```
 
 Atendiendo a la flexibilidad en la distribución de las fabaceas, su importancia económica, y social; se busca entender qué factores ambientales intervienen en la proliferación, agupamiento o decaimiento de sus poblaciones en bosques tropicales que comparten características con los hallados en República Dominicana, en esta ocasión tomando la data cincuentenaria recolectada y provista por The Center for Tropical Forest Science en BCI.
 
@@ -57,9 +62,13 @@ Atendiendo a la flexibilidad en la distribución de las fabaceas, su importancia
 
 # Metodología
 
-Una vez obtenida la data censal de Barro Colorado, se seleccionó la subfamilia *Fabaceae Mimosoideae* dentro del total de 59 familias registradas.  \ldots
+Una vez obtenida la data censal de Barro Colorado, se seleccionó la subfamilia *Fabaceae Mimosoideae* dentro del total de 59 familias registradas. 
 
---Mapa de las ubicaciones
+![Riqueza de especies acorde a su ubicación por cuadrante).](mapa_cuadros_riq_mi_familia.png){width=50%}
+
+\ldots
+
+
 
 # Resultados
 
