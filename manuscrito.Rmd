@@ -57,20 +57,25 @@ knitr::kable(abun_sp,
 Atendiendo a la flexibilidad en la distribución de las fabaceas, su importancia económica, y social; se busca entender qué factores ambientales intervienen en la proliferación, agupamiento o decaimiento de sus poblaciones en bosques tropicales que comparten características con los hallados en República Dominicana, en esta ocasión tomando la data cincuentenaria recolectada y provista por The Center for Tropical Forest Science en BCI.
 
 
+\ldots
 
-\ldots.
 
 # Metodología
 
-Una vez obtenida la data censal de Barro Colorado, se seleccionó la subfamilia *Fabaceae Mimosoideae* dentro del total de 59 familias registradas. 
+Una vez obtenida la data censal de Barro Colorado, se crearon mapas de distribución, agrupamiento, asociación y riqueza. Estos mapas de carcterización de la parcela se emplearon en comparaciones con variables presentes en el relieve, clima y edafología del lugar.  Se seleccionó la subfamilia *Fabaceae Mimosoideae* dentro del total de 59 familias registradas.
+
+Los mapas fueron procsados mediante técnicas de ecología numérica analizadas en R.
+
+
+Fueron realizados análisis a todas 
 
 ![Riqueza de especies acorde a su ubicación por cuadrante).](mapa_cuadros_riq_mi_familia.png){width=50%}
 
 \ldots
 
-
-
 # Resultados
+
+
 
 (ver tabla \ref{tab:abun_sp} y figura \ref{fig:abun_sp_q})
 
