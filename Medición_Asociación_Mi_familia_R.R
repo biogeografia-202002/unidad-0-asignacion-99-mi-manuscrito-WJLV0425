@@ -64,3 +64,56 @@ png(
 )
 coldiss(mi_fam_t_jac, diag = T)
 dev.off()
+
+#Modo R para datos cuantitativos, NO de abundancia de especies (variables ambientales)
+
+env_num <- bci_env_grid %>%
+  dplyr::select_if(is.numeric) %>%
+  dplyr::select(-id, -matches('^U.*')) %>% 
+  st_drop_geometry %>% 
+  mutate(
+    riqueza_mifam = specnumber(mc_fbc_m),
+    abundancia_mifam = rowSums(mc_fbc_m)) %>% 
+  rename_all(gsub, pattern = '_pct$', replacement = '') %>% 
+  rename_all(gsub, pattern = '_| ', replacement = '\n')
+env_num %>% tibble
+
+
+p_cor_suelo_ar <- env_num %>%
+  dplyr::select(matches('^[A-T,Z]|abundancia|riqueza|^pH$', ignore.case = F)) %>%
+  ezCorM(r_size_lims = c(4,8), label_size = 3, method = 'pearson')
+
+p_cor_suelo_ar
+
+
+p_cor_suelo_ar_spearman <- env_num %>%
+  dplyr::select(matches('^[A-T,Z]|abundancia|riqueza|^pH$', ignore.case = F)) %>%
+  ezCorM(r_size_lims = c(4,8), label_size = 3, method = 'spearman')
+p_cor_suelo_ar_spearman
+
+png(
+  filename = 'matriz_correlacion_suelo_abun_riq_spearman.png',
+  width = 1920, height = 1080, res = 125
+)
+p_cor_suelo_ar_spearman
+dev.off()
+
+#PNG
+
+p_cor_geomorf_ar <- env_num %>%
+  dplyr::select(-matches('^[A-T,Z]|pH', ignore.case = F)) %>%
+  ezCorM(r_size_lims = c(4,8), label_size = 3, method = 'pearson')
+p_cor_geomorf_ar
+
+p_cor_geomorf_ar_spearman <- env_num %>%
+  dplyr::select(-matches('^[A-T,Z]|pH', ignore.case = F)) %>%
+  ezCorM(r_size_lims = c(4,8), label_size = 3, method = 'spearman')
+p_cor_geomorf_ar_spearman
+
+png(
+  filename = 'matriz_correlacion_geomorf_abun_riq_spearman.png',
+  width = 1920, height = 1080, res = 110
+)
+p_cor_geomorf_ar_spearman
+dev.off()
+
