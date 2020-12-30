@@ -144,7 +144,7 @@ env_mix_d %>% as.dist %>% tidy
 env_mix_d %>% coldiss(diag = T)
 
 png(
-  filename = 'matriz_proximidad_variables_suelo.png',
+  filename = 'matriz_proximidad_variables_mixtas.png',
   width = 2400, height = 1200, pointsize = 32
 )
 coldiss(mi_fam_jac, diag = T)
