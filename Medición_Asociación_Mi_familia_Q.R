@@ -103,7 +103,7 @@ png(
   filename = 'matriz_distancia_Sorensen.png',
   width = 2400, height = 1200, pointsize = 32
 )
-coldiss(mi_fam_jac, diag = T)
+coldiss(mi_fam_sor, diag = T)
 dev.off()
 
 ## Modo Q para datos cuantitativos, NO de abundancia de especies (variables ambientales).
@@ -126,7 +126,7 @@ png(
   filename = 'matriz_proximidad_variables_suelo.png',
   width = 2400, height = 1200, pointsize = 32
 )
-coldiss(mi_fam_jac, diag = T)
+coldiss(env_suelo_punt_z_d, diag = T)
 dev.off()
 
 ## Modo Q para datos cualitativos y cuantitativos (mixtos), NO de abundancia de especies (variables ambientales).
@@ -147,5 +147,5 @@ png(
   filename = 'matriz_proximidad_variables_mixtas.png',
   width = 2400, height = 1200, pointsize = 32
 )
-coldiss(mi_fam_jac, diag = T)
+env_mix_d %>% coldiss(diag = T)
 dev.off()

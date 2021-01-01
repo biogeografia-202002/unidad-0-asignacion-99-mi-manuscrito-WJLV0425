@@ -85,6 +85,13 @@ p_cor_suelo_ar <- env_num %>%
 
 p_cor_suelo_ar
 
+png(
+  filename = 'matriz_correlacion_suelo_abun_riq_pearson.png',
+  width = 1920, height = 1080, res = 125
+)
+p_cor_suelo_ar
+dev.off()
+
 
 p_cor_suelo_ar_spearman <- env_num %>%
   dplyr::select(matches('^[A-T,Z]|abundancia|riqueza|^pH$', ignore.case = F)) %>%
@@ -104,6 +111,13 @@ p_cor_geomorf_ar <- env_num %>%
   dplyr::select(-matches('^[A-T,Z]|pH', ignore.case = F)) %>%
   ezCorM(r_size_lims = c(4,8), label_size = 3, method = 'pearson')
 p_cor_geomorf_ar
+
+png(
+  filename = 'matriz_correlacion_geomorf_abun_riq_pearson.png',
+  width = 1920, height = 1080, res = 110
+)
+p_cor_geomorf_ar
+dev.off()
 
 p_cor_geomorf_ar_spearman <- env_num %>%
   dplyr::select(-matches('^[A-T,Z]|pH', ignore.case = F)) %>%
