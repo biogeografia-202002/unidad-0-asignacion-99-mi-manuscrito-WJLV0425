@@ -421,3 +421,6 @@ habitat_riqueza_abundancia %>%
   facet_wrap( ~ variable, scal = 'free_y')
 
 # En resumen, usa `tidyverse` para sacar el máximo provecho de tus datos. El paquete `dplyr` te ayuda a manipular eficientemente; `tidyr` te servirá para reordenar los datos, ya sea para obtener resúmenes estadísticos eficientemente, como para generar gráficos de resumen; `ggplot2` te ayudará con la parte gráfica, que es siempre importante en tu manuscrito.
+
+
+          
