@@ -57,7 +57,11 @@ Atendiendo a la flexibilidad en la distribución de las fabaceas, su importancia
 
 # Metodología
 
-Una vez obtenida la data censal de Barro Colorado, se crearon mapas de distribución, agrupamiento, asociación y riqueza. Estos mapas de carcterización de la parcela se emplearon en comparaciones con variables presentes en el relieve, clima y edafología del lugar.  Se seleccionó la subfamilia *Fabaceae Mimosoideae* dentro del total de 59 familias registradas.
+Una vez obtenida la data censal de Barro Colorado, se empleó el software de código abierto R para realizar análisis estadísticos, gráficos, matrices, y mapas. 
+
+Utilizando los paquetes *vegan*, *tydiverse*, y *sf* se extrajo la familia *Fabaceae Mimosoideae* de la data censal, se obtuvieron las estadísticas, gráficos lineales y diagramas de cajas. A través de *mapview*  se crearon, proyectaron y almacenaron los mapas. *RColorBrewer*
+
+Estos mapas de carcterización de la parcela se emplearon en comparaciones con variables presentes en el relieve, clima y edafología del lugar.  Se seleccionó la subfamilia *Fabaceae Mimosoideae* dentro del total de 59 familias registradas.
 
 Los mapas fueron procsados mediante técnicas de ecología numérica analizadas en R.
 
