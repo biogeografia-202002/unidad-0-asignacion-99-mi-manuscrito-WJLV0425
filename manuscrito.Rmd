@@ -63,15 +63,15 @@ La ecología numérica es el campo de estudio que brinda las técnicas, índices
 
 Una vez obtenida la data censal de Barro Colorado, se empleó el software de código abierto R para realizar análisis estadísticos, gráficos, matrices, y mapas. 
 
-Utilizando los paquetes *vegan*, *tydiverse*, y *sf* se extrajo la familia *Fabaceae Mimosoideae* de la data censal, se obtuvieron las estadísticas, gráficos lineales y diagramas de cajas. A través de *mapview*  se crearon, proyectaron y almacenaron los mapas. *RColorBrewer* se empleó para obtener una gama de colores más amplia en los gráficos y mapas [@software].
+Utilizando los paquetes *vegan*, *tydiverse*, y *sf* se extrajo la familia *Fabaceae Mimosoideae* de la data censal, se obtuvieron las estadísticas, gráficos lineales y diagramas de cajas. A través de *mapview*  se crearon, proyectaron y almacenaron los mapas. *RColorBrewer* se empleó para obtener una gama de colores más amplia en los gráficos y mapas [@jose_ramon_martinez_batlle_2020_4402362].
 
-La caracterización geomorfológica se elaboró a partir del algoritmo r.geomorphons por [@software] siguiendo el modelo de [@article]. (Ver tabla)
+La caracterización geomorfológica se elaboró a partir del algoritmo r.geomorphons por @jose_ramon_martinez_batlle_2020_4402362 siguiendo el modelo de @jasiewicz2013geomorphons. (Ver tabla)
 
 Crear tabla.
 
 Mapas de ubicación, abundancia de individuos, riqueza de especies, agrupamiento de parcelas, pH, nitrógeno y otras variables presentes en el relieve, clima, y edafología del lugar se emplearon para determinar patrones asociativos entre las especies de fabáceas.   
 
-Se determinó la asociación interespecífica y de sitios muestrales mediante los métodos R y Q respectivamente. En el modo Q se obtuvo mediante la métrica de distancia euclidea o similaridad de Jaccard, verificando la paradoja de orlóci (1978); transformación de cuerdas (*chord*); *ji*-cuadrado; y *Hellinger*. Mientras que en el modo R se calculó el índice de correlación de Pearson aplicando la transformación de *chi* para corregir alteraciones producidas por outliers en los datos; la matriz de comunidad transpuesta convertida a binaria (presencia/ausencia) para calcular distancia entre especies con la similaridad de Jaccard; el índice *rho* de Sperman y *tau* de Kendall [@software]. 
+Se determinó la asociación interespecífica y de sitios muestrales mediante los métodos R y Q respectivamente. En el modo Q se obtuvo mediante la métrica de distancia euclidea o similaridad de Jaccard, verificando la paradoja de orlóci (1978); transformación de cuerdas (*chord*); *ji*-cuadrado; y *Hellinger*. Mientras que en el modo R se calculó el índice de correlación de Pearson aplicando la transformación de *chi* para corregir alteraciones producidas por outliers en los datos; la matriz de comunidad transpuesta convertida a binaria (presencia/ausencia) para calcular distancia entre especies con la similaridad de Jaccard; el índice *rho* de Sperman y *tau* de Kendall [@jose_ramon_martinez_batlle_2020_4402362]. 
 
 
 
