@@ -8,14 +8,14 @@ output:
     template: svm-latex-ms.tex
     number_sections: true
 title: | 
-        | Patrones de Asociación y Diversidad Descritos por la Familia Fabaceae Mimosoideae en  una Isla Subtropical, Cuenca del Mar Caribe.
-        | *Patterns of Association and Diversity Described by the Family Fabaceae Mimosoideae on a Subtropical Island, Caribbean Sea Basin*.
+        | Patrones de Ecología Numérica Descritos por la Familia de Plantas Fabaceae Mimosoideae en  una Isla Subtropical, Cuenca del Mar Caribe.
+        | *Patterns of Numerical Ecology Described by Plants Family Fabaceae Mimosoideae on a Subtropical Island, Caribbean Sea Basin*.
         | 
 author:
 - name: "Welifer Junior Lebron Vicente"
   affiliation: "Estudiante de Ciencias Geográficas, Universidad Autónoma de Santo Domingo (UASD)"
 abstract: "Mi resumen"
-keywords: "palabra clave 1, palabra clave 2"
+keywords: "Ecología Numérica, BCI, Análisis Forestal, Lenguaje R"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 geometry: margin=1in
 fontfamily: mathpazo
@@ -36,22 +36,28 @@ source("Cacatuo.R", local = knitr::knit_global())
 
 # Introducción
 
-El análisis de biodiversidad forestal viabiliza la obtención de información sobre el comportamiento de las especies en su hábitat, los efectos de cambios geoestacionarios, y las probables consecuencias de actividades antrópicas en el ciclo vital de los bosques. La función de los bosques tropicales puede ser productiva (madera, fibra, leña, productos no maderables); ambientales (regulación del clima, reserva de biodiversidad, conservación de suelos y agua, etc.); y social (subsistencia de poblamientos humanos locales y su cultura) [@montagnini2005tropical].
+El análisis de biodiversidad forestal viabiliza la obtención de información sobre el comportamiento de las especies en su hábitat, los efectos de cambios geoestacionarios, y las probables consecuencias de actividades antrópicas en el ciclo vital de los bosques; cuya función en el caso de los tropicales puede ser productiva (madera, fibra, leña, productos no maderables); ambientales (regulación del clima, reserva de biodiversidad, conservación de suelos y agua, etc.); y social (subsistencia de poblamientos humanos locales y su cultura) [@montagnini2005tropical].
 
-La isla Barro Colorado, de coordenadas [9º 9' 0'' N, 79º 51' 0'' W], es una plataforma basáltica miocénica sobre la que descansa un bosque tropical primario compuesto por 305 especies arbóreas  [@condit1999dynamics]. En el período 1981-2015 fue el emplazamiento de ocho censos forestales realizados por el Smithsonian Tropical Research Institute, donde la subfamilia *Fabaceae Mimosoideae* representa el 5.9% de las especies registradas en la parcela de 50 hectáreas delimitada en 1980 [Cita3,WebP]. 
+La isla Barro Colorado (BCI), de coordenadas [9º 9' 0'' N, 79º 51' 0'' W], es una plataforma basáltica miocénica sobre la que descansa un bosque tropical primario compuesto por 305 especies arbóreas  [@condit1999dynamics]. Esta fue el emplazamiento de ocho censos forestales realizados por el Smithsonian Tropical Research Institute entre 1981 y 2015, donde la subfamilia *Fabaceae Mimosoideae* representó el 5.9% de las especies registradas en la parcela de 50 hectáreas delimitada en 1980 [Cita3,WebP]. 
 
-El registro forestal en la isla Barro colorado forma parte de una serie de parcelas  delimitadas en distintas latitudes y longitudes, pero dentro de la zona tropical. Las parcelas poseen diferencias climáticas específicas con el objetivo de contabilizar, supervisar y medir variables demográficas que viabilicen realizar comparaciones atendiendo a cuestionamientos científicos, registro detallado del comportamiento en ecología vegetal o problemáticas resultantes de la intervención humana en el equilibrio natural [@condit1998tropical]. 
+![Isla Barro Colorado, Panamá [@inproceedings].](Map-of-Barro-Colorado-Island-BCI-Panama.png){width=50%}
+
+El registro forestal de BCI forma parte de una serie de parcelas  delimitadas en distintas latitudes y longitudes, pero dentro de la zona tropical. Estas parcelas poseen diferencias climáticas específicas con el objetivo de contabilizar, supervisar y medir variables demográficas que viabilicen realizar comparaciones atendiendo a cuestionamientos científicos, registro detallado del comportamiento en ecología vegetal o problemáticas resultantes de la intervención humana en el equilibrio natural [@condit1998tropical]. 
 
 
 ![Área del censo forestal, Barro Colorado Island (1981-2015).](mapa_cuadros.png){width=50%}
 
-Las fabaceas se encuentran ampliamente distribuidas por la práctica totalidad de climas terrestres, concentrando su diversidad en la franja tropical y subtropical. Están presentes en zonas árticas, litoral costero, ambientes alpinos, bosque lluvioso, bosque estacional, sabanas, bosque seco, desiertos áridos, pantanos y manglares. Poseen características especializadas que las hacen vitales para el equilibrio ecológico y para la supervivencia del ser humano. El 88% de las especies de esta familia pueden formar nódulos con bacterias fijadoras de nitrógeno (rhizobia) para fijar el N2 en la atmósfera mediante una asociación simbiótica, fisiología rica en proteínas, etc. Asimismo, sus semillas son empleadas para tratar células cancerígenas, sus componentes químicos las hacen esenciales para diversos tipos de industrias, y el grano de las leguminosas representa por sí solo el 33% del nitrógeno necesario en la dieta de los seres humanos [@saikia2020tropical].    
+Las fabaceas concentran su diversidad en la franja tropical y subtropical, aunque se encuentran ampliamente distribuidas por la práctica totalidad de climas terrestres. Están presentes en zonas árticas, litoral costero, ambientes alpinos, bosque lluvioso, bosque estacional, sabanas, bosque seco, desiertos áridos, pantanos y manglares. Poseen características especializadas que las hacen vitales para el equilibrio ecológico y para la supervivencia del ser humano. El 88% de las especies de esta familia pueden formar nódulos con bacterias fijadoras de nitrógeno (rhizobia) para fijar el N2 en la atmósfera mediante asociación simbiótica, fisiología rica en proteínas, etc. Asimismo, sus semillas son empleadas para tratar células cancerígenas, sus componentes químicos las hacen esenciales para diversos tipos de industrias, y el grano de las leguminosas representa el 33% del nitrógeno necesario en la dieta de los seres humanos [@saikia2020tropical].    
 
-La familia *Mimosoideae* dentro del clado mimosoide es una subfamilia sumamente variable; compuesta principalmente por árboles y arbustos de flores asimétricas cigomorfas. El clado filogenético mimosoide es propio de climas tropicales y subtropicales, sus flores son simétricas con pétalos valvados y sus especímenes tienen un gran número de estambres prominentes [@hasanuzzaman2020plant]. En BCI se encuentran 18 de estas especies. 
+La subfamilia *Mimosoideae* dentro del clado mimosoide es sumamente variable, estando compuesta principalmente por árboles y arbustos de flores asimétricas cigomorfas. 
+
+![Grabado de fabaceas (Universiad de Toronto).](Grabado-Mimosoideae.png){width=50%}
+
+El clado filogenético mimosoide es propio de climas tropicales y subtropicales, sus flores son simétricas con pétalos valvados y sus especímenes tienen un gran número de estambres prominentes [@hasanuzzaman2020plant]. En BCI se encuentran 18 de estas especies. 
 
 Atendiendo a la flexibilidad en la distribución de las fabáceas, su importancia económica, y social; se busca entender qué factores ambientales intervienen en la proliferación, agrupamiento o decaimiento de sus poblaciones en bosques tropicales que comparten características con los hallados en República Dominicana, en esta ocasión tomando la data cincuentenaria recolectada y provista por The Center for Tropical Forest Science en BCI.
 
-La ecología numérica es el campo de estudio que brinda las técnicas, índices, y herramientas necesarias para obtener conclusiones a partir de data forestal, animal, y biotopo. En ese sentido, R es un software de código abierto y ambiente de programación que brinda una amplia variedad de facilidades para el manejo, creación, y visualización gráfica de ciencia de datos [@misc].
+La ecología numérica es el campo de estudio que brinda las técnicas, índices, y herramientas necesarias para obtener conclusiones a partir de data forestal, animal, y biotopo. En ese sentido, R es un software de código abierto y ambiente de programación que brinda una amplia variedad de facilidades para el manejo, creación, y visualización gráfica de ciencia de datos [@venables2009introduction].
 
 
 
@@ -65,9 +71,12 @@ Una vez obtenida la data censal de Barro Colorado, se empleó el software de có
 
 Utilizando los paquetes *vegan*, *tydiverse*, y *sf* se extrajo la familia *Fabaceae Mimosoideae* de la data censal, se obtuvieron las estadísticas, gráficos lineales y diagramas de cajas. A través de *mapview*  se crearon, proyectaron y almacenaron los mapas. *RColorBrewer* se empleó para obtener una gama de colores más amplia en los gráficos y mapas [@jose_ramon_martinez_batlle_2020_4402362].
 
-La caracterización geomorfológica se elaboró a partir del algoritmo r.geomorphons por @jose_ramon_martinez_batlle_2020_4402362 siguiendo el modelo de @jasiewicz2013geomorphons. (Ver tabla)
+La caracterización geomorfológica se elaboró a partir del algoritmo r.geomorphons por @jose_ramon_martinez_batlle_2020_4402362 siguiendo el modelo de @jasiewicz2013geomorphons. (Ver figuras \ref{Geomorf3} y \ref{Geomorf2}) 
 
-Crear tabla.
+![Modelo desarrollado por @jasiewicz2013geomorphons para la caracterización del relieve.\label{Geomorf3}](Geomorf3.png){width=100%}
+
+![Ejemplos de las variantes de relive más comunes obtenidas a través del algoritmo (ibidem).\label{Geomorf2}](Geomor2.png){width=100%}
+
 
 Mapas de ubicación, abundancia de individuos, riqueza de especies, agrupamiento de parcelas, pH, nitrógeno y otras variables presentes en el relieve, clima, y edafología del lugar se emplearon para determinar patrones asociativos entre las especies de fabáceas.   
 
