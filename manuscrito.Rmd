@@ -67,7 +67,9 @@ La ecología numérica es el campo de estudio que brinda las técnicas, índices
 
 Una vez obtenida la data censal de Barro Colorado, se empleó el software de código abierto R para realizar análisis estadísticos, gráficos, matrices, y mapas. 
 
-Utilizando los paquetes *vegan*, *tydiverse*, y *sf* se extrajo la familia *Fabaceae Mimosoideae* de la data censal, se obtuvieron las estadísticas, gráficos lineales y diagramas de cajas. A través de *mapview*  se crearon, proyectaron y almacenaron los mapas. *RColorBrewer* se empleó para obtener una gama de colores más amplia en los gráficos y mapas [@jose_ramon_martinez_batlle_2020_4402362].
+Utilizando los paquetes *vegan*, *tydiverse*, y *sf* se extrajo la familia *Fabaceae Mimosoideae* de la data censal, se obtuvieron las estadísticas, gráficos lineales y diagramas de cajas. A través de *mapview* se crearon, proyectaron y almacenaron los mapas. *RColorBrewer* se empleó para obtener una gama de colores más amplia en los gráficos y mapas; *broom* para ver matrices de distancia. Otros paquetes empleados *magrittr*,  [@jose_ramon_martinez_batlle_2020_4402362].
+
+***Podría crear una tabla para explicar brevemente el uso dado a cada paquete***
 
 La caracterización geomorfológica se elaboró a partir del algoritmo r.geomorphons por @jose_ramon_martinez_batlle_2020_4402362 siguiendo el modelo de @jasiewicz2013geomorphons. (Ver figuras \ref{Geomorf3} y \ref{Geomorf2}) 
 
@@ -78,7 +80,7 @@ La caracterización geomorfológica se elaboró a partir del algoritmo r.geomorp
 
 
 
-Diversos estudios fueron tomados en cuenta para la clasificación de hábitats, se empleó la categorización realizada por @harms2001habitat partiendo del resumen y análisis de la data compilada en 16,6 años. (Ver tabla \ref{tab:hábitat})
+Diversos estudios fueron tomados en cuenta para la clasificación de hábitats, se empleó la categorización realizada por @harms2001habitat partiendo del resumen y análisis de la data compilada en 16,6 años, donde fueron tomados en cuenta árboles de 1 cm de diámetro a la altura del pecho. (Ver tabla \ref{tab:hábitat})
 
 
 Table: Clasificación de hábitats, parcela permanente BCI [@harms2001habitat].\label{tab:hábitat}
@@ -127,7 +129,7 @@ Insertar Gráfs_Regresión_Lineal_aed_2.
 *Sería interesante dedicar un acápite para la descripción de la composición mineral del suelo, hacer un ançalisis de las variables de elementos tomando en cuenta 5 C con más y 5 C con menos presencia. 
 
 
-Las fabáceas
+Las fabáceas 
  
 
 
