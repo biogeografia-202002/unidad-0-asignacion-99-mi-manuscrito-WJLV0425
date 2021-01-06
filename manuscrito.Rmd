@@ -42,7 +42,7 @@ La isla Barro Colorado (BCI), de coordenadas [9º 9' 0'' N, 79º 51' 0'' W], es 
 
 ![Isla Barro Colorado, Panamá [@inproceedings].](Map-of-Barro-Colorado-Island-BCI-Panama.png){width=50%}
 
-El registro forestal de BCI forma parte de una serie de parcelas  delimitadas en distintas latitudes y longitudes, pero dentro de la zona tropical. Estas parcelas poseen diferencias climáticas específicas con el objetivo de contabilizar, supervisar y medir variables demográficas que viabilicen realizar comparaciones atendiendo a cuestionamientos científicos, registro detallado del comportamiento en ecología vegetal o problemáticas resultantes de la intervención humana en el equilibrio natural [@condit1998tropical]. 
+El registro forestal de BCI forma parte de una serie de parcelas permanentes delimitadas en distintas latitudes y longitudes, pero dentro de la zona tropical. Estas parcelas poseen diferencias climáticas específicas con el objetivo de contabilizar, supervisar y medir variables demográficas que viabilicen realizar comparaciones atendiendo a cuestionamientos científicos, registro detallado del comportamiento en ecología vegetal o problemáticas resultantes de la intervención humana en el equilibrio natural [@condit1998tropical]. 
 
 
 ![Área del censo forestal, Barro Colorado Island (1981-2015).](mapa_cuadros.png){width=50%}
@@ -51,7 +51,9 @@ Las fabaceas concentran su diversidad en la franja tropical y subtropical, aunqu
 
 La subfamilia *Mimosoideae* dentro del clado mimosoide es sumamente variable, estando compuesta principalmente por árboles y arbustos de flores asimétricas cigomorfas. 
 
+
 ![Grabado de fabaceas (Universiad de Toronto).](Grabado-Mimosoideae.png){width=50%}
+
 
 El clado filogenético mimosoide es propio de climas tropicales y subtropicales, sus flores son simétricas con pétalos valvados y sus especímenes tienen un gran número de estambres prominentes [@hasanuzzaman2020plant]. En BCI se encuentran 18 de estas especies. 
 
@@ -59,11 +61,7 @@ Atendiendo a la flexibilidad en la distribución de las fabáceas, su importanci
 
 La ecología numérica es el campo de estudio que brinda las técnicas, índices, y herramientas necesarias para obtener conclusiones a partir de data forestal, animal, y biotopo. En ese sentido, R es un software de código abierto y ambiente de programación que brinda una amplia variedad de facilidades para el manejo, creación, y visualización gráfica de ciencia de datos [@venables2009introduction].
 
-
-
-
 \ldots
-
 
 # Metodología
 
@@ -78,13 +76,29 @@ La caracterización geomorfológica se elaboró a partir del algoritmo r.geomorp
 ![Ejemplos de las variantes de relive más comunes obtenidas a través del algoritmo (ibidem).\label{Geomorf2}](Geomor2.png){width=100%}
 
 
+
+
+Diversos estudios fueron tomados en cuenta para la clasificación de hábitats, se empleó la categorización realizada por @harms2001habitat partiendo del resumen y análisis de la data compilada en 16,6 años. (Ver tabla \ref{tab:hábitat})
+
+
+Table: Clasificación de hábitats, parcela permanente BCI [@harms2001habitat].\label{tab:hábitat}
+
+| Hábitat                        | Pendiente (grados) | Elevación (metros) |
+|--------------------------------|:------------------:|:------------------:|
+| Bosque adulto - Meseta baja    |         <7         |        <152        |
+| Bosque adulto - Meseta alta    |         <7         |      = o >152      |
+| Bosque adulto - Pendiente      |       = o >7       |        Todas       |
+| Bosque adulto - Área pantanosa |        Todas       |        Todas       |
+| Bosque adulto - Ribera fluvial |        Todas       |        Todas       |
+| Bosque joven                   |        Todas       |        Todas       |
+| Hábitats mixtos                |        Todas       |        Todas       |
+
+
 Mapas de ubicación, abundancia de individuos, riqueza de especies, agrupamiento de parcelas, pH, nitrógeno y otras variables presentes en el relieve, clima, y edafología del lugar se emplearon para determinar patrones asociativos entre las especies de fabáceas.   
 
 Se determinó la asociación interespecífica y de sitios muestrales mediante los métodos R y Q respectivamente. En el modo Q se obtuvo mediante la métrica de distancia euclidea o similaridad de Jaccard, verificando la paradoja de orlóci (1978); transformación de cuerdas (*chord*); *ji*-cuadrado; y *Hellinger*. Mientras que en el modo R se calculó el índice de correlación de Pearson aplicando la transformación de *chi* para corregir alteraciones producidas por outliers en los datos; la matriz de comunidad transpuesta convertida a binaria (presencia/ausencia) para calcular distancia entre especies con la similaridad de Jaccard; el índice *rho* de Sperman y *tau* de Kendall [@jose_ramon_martinez_batlle_2020_4402362]. 
 
 
-
-![Riqueza de especies acorde a su ubicación por cuadrante).](mapa_cuadros_riq_mi_familia.png){width=50%}
 
 \ldots
 
@@ -96,6 +110,7 @@ La parcela de 50ha en BCI posee 3847 individuos de la familia *Fabaceae Mimosoid
 
 ```{r, echo=FALSE}
 knitr::kable(abun_sp,
+             longtable = FALSE,
              caption = "\\label{tab:abun_sp}Abundancia por especie de la familia *Fabaceae-Mimosoideae*.")
 ```
 
@@ -126,6 +141,7 @@ Las fabáceas
 \ldots
 
 # *Script* reproducible
+
 
 \ldots
 
