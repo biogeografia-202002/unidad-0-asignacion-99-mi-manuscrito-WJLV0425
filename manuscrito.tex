@@ -309,10 +309,11 @@ través del algoritmo (ibidem).\label{Geomorf2}}
 \end{figure}
 
 Diversos estudios fueron tomados en cuenta para la clasificación de
-hábitats, se empleó la categorización realizada por Harms, Condit,
+hábitats, se emplearon 5 de las categorías definidas por Harms, Condit,
 Hubbell, \& Foster (2001) partiendo del resumen y análisis de la data
-compilada en 16,6 años, donde fueron tomados en cuenta árboles de 1 cm
-de diámetro a la altura del pecho. (Ver tabla \ref{tab:hábitat})
+compilada en 16,6 años, donde fueron tomados en cuenta árboles iguales o
+mayores de 1 cm de diámetro a la altura del pecho. (Ver tabla
+\ref{tab:hábitat})
 
 \begin{longtable}[]{@{}lcc@{}}
 \caption{Clasificación de hábitats, parcela permanente BCI (Harms et
@@ -331,9 +332,7 @@ Bosque adulto - Meseta alta & \textless{}7 & = o
 \textgreater{}152\tabularnewline
 Bosque adulto - Pendiente & = o \textgreater{}7 & Todas\tabularnewline
 Bosque adulto - Área pantanosa & Todas & Todas\tabularnewline
-Bosque adulto - Ribera fluvial & Todas & Todas\tabularnewline
 Bosque joven & Todas & Todas\tabularnewline
-Hábitats mixtos & Todas & Todas\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -351,8 +350,58 @@ el modo R se calculó el índice de correlación de Pearson aplicando la
 transformación de \emph{chi} para corregir alteraciones producidas por
 outliers en los datos; la matriz de comunidad transpuesta convertida a
 binaria (presencia/ausencia) para calcular distancia entre especies con
-la similaridad de Jaccard; el índice \emph{rho} de Sperman y \emph{tau}
-de Kendall (Batlle, 2020).
+la similaridad de Jaccard; y el índice \emph{rho} de Sperman (Batlle,
+2020).
+
+El agrupamiento jerarquico fue realizado mediante tres técnicas o
+criterios de enlace:
+
+\begin{longtable}[]{@{}lcc@{}}
+\toprule
+\begin{minipage}[b]{0.06\columnwidth}\raggedright\strut
+Técnica o criterio de enlace\strut
+\end{minipage} & \begin{minipage}[b]{0.58\columnwidth}\centering\strut
+Descripción\strut
+\end{minipage} & \begin{minipage}[b]{0.27\columnwidth}\centering\strut
+Método de ejecución\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+Enlace simple\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\centering\strut
+Usa la mayor similaridad como métrica para agrupar pares de objetos en
+forma aglomerativa sucesiva, siendo el criterio calcular el vecino más
+próximo.\strut
+\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\centering\strut
+Se transforma la matriz en ``normalizada'', entonces se calcula la
+distancia euclídea. Por último se aplica el método ``simple'' a través
+de la función \emph{hclust}.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+Enlace completo\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\centering\strut
+Se fundamenta en el calculo de la distancia más lejana entre los pares
+de objetos.\strut
+\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\centering\strut
+Se aplica el método ``complete'' de la función \emph{hclust} a una
+matriz normalizada y con similaridad de Jaccard.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
+Enlace medio\strut
+\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\centering\strut
+Pondera la media entre las distancias mínimas y máximas, el resultado
+depende del tipo de ``promedio'' que se calcule:\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+UPGMA ``Unweighted Pair Group Method with Arithmetic mean''. WPGMA
+``Weighted Pair Group Method with Arithmetic mean''. UPGMC ``Unweighted
+Pair Group Method using Centroids''.\\
+WPGMC ``Weighted Pair Group Method using Centroids''. \textbar{} Mismo
+procedimiento, pero se sustituye el método por ``average'' o
+``ward.D2''. \textbar{}
 
 \ldots
 
@@ -443,8 +492,8 @@ El grado de asociación según la similaridad de Jaccard acorde a la
 abundancia de especies por cuadro con matriz transformada
 \emph{Hellinger} expone la existencia de clústers super semejantes
 limitados por los sitios C28-C33; C33-C40; C24-C2; C8-C10. Estos sitios
-comparten un 75\% o más de las especies deacuero con la matriz ordenada
-en función de la relación de proximidad. (Ver mapa de calor 1).
+comparten un 75\% o más de las especies de acuerdo con la matriz
+ordenada en función de la relación de proximidad. (Ver mapa de calor 1).
 
 \textbf{\emph{Insertar mapa de calor 1. aa\_2\_Modo\_Q}} El color rosado
 intenso representa ``mucha similaridad o distancia corta'', mientras que
@@ -469,10 +518,21 @@ macroclúster comprendido entre \emph{Inga pezizifera} e \emph{Inga
 spectabilis}. Es descrito un patrón similar por las especies en la
 matriz binaria (presencia/ausencia), donde se forma un clúster entre
 \emph{Inga cocleensis} e \emph{Inga laurina} que describe bastante
-cercanía entre las especies, y un macroclúster entre \emph{Inga
-pezizifera} e \emph{Inga spectabilis} con cercanía considerable.
+coexistencia entre las especies {[}75\%-100\%{]}, y un macroclúster
+entre \emph{Inga pezizifera} e \emph{Inga spectabilis} con cercanía
+considerable.
 
 \textbf{\emph{Insertar mapa de calor 1 y 2 . aa\_3\_modo\_R}}
+
+En ese sentido, la matriz de correlación entre las variables
+``abundancia, riqueza, y composición del suelo'' ,realizada mediante el
+índice \emph{rho} de sperman, corrobora lo observado en los mapas de
+calor anteriores acerca del escaso grado de asosiación entre dichas
+variables. Tampoco se observa relación entre las dos primeras y las
+variables relativas a la geomorfología del lugar.
+
+\textbf{\emph{Insertar matriz correlación Sperman 1 y 2 .
+aa\_3\_modo\_R}}
 
 \section{Discusión}\label{discusiuxf3n}
 

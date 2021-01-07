@@ -80,7 +80,7 @@ La caracterización geomorfológica se elaboró a partir del algoritmo r.geomorp
 
 
 
-Diversos estudios fueron tomados en cuenta para la clasificación de hábitats, se empleó la categorización realizada por @harms2001habitat partiendo del resumen y análisis de la data compilada en 16,6 años, donde fueron tomados en cuenta árboles de 1 cm de diámetro a la altura del pecho. (Ver tabla \ref{tab:hábitat})
+Diversos estudios fueron tomados en cuenta para la clasificación de hábitats, se emplearon 5 de las categorías definidas por @harms2001habitat partiendo del resumen y análisis de la data compilada en 16,6 años, donde fueron tomados en cuenta árboles iguales o mayores de 1 cm de diámetro a la altura del pecho. (Ver tabla \ref{tab:hábitat})
 
 
 Table: Clasificación de hábitats, parcela permanente BCI [@harms2001habitat].\label{tab:hábitat}
@@ -91,14 +91,24 @@ Table: Clasificación de hábitats, parcela permanente BCI [@harms2001habitat].\
 | Bosque adulto - Meseta alta    |         <7         |      = o >152      |
 | Bosque adulto - Pendiente      |       = o >7       |        Todas       |
 | Bosque adulto - Área pantanosa |        Todas       |        Todas       |
-| Bosque adulto - Ribera fluvial |        Todas       |        Todas       |
 | Bosque joven                   |        Todas       |        Todas       |
-| Hábitats mixtos                |        Todas       |        Todas       |
 
 
 Mapas de ubicación, abundancia de individuos, riqueza de especies, agrupamiento de parcelas, pH, nitrógeno y otras variables presentes en el relieve, clima, y edafología del lugar se emplearon para determinar patrones asociativos entre las especies de fabáceas.   
 
 Se determinó la asociación interespecífica y de sitios muestrales mediante los métodos R y Q respectivamente. En el modo Q se obtuvo mediante la métrica de distancia euclidea o similaridad de Jaccard, verificando la paradoja de orlóci (1978); transformación de cuerdas (*chord*); *ji*-cuadrado; y *Hellinger*. Mientras que en el modo R se calculó el índice de correlación de Pearson aplicando la transformación de *chi* para corregir alteraciones producidas por outliers en los datos; la matriz de comunidad transpuesta convertida a binaria (presencia/ausencia) para calcular distancia entre especies con la similaridad de Jaccard; y el índice *rho* de Sperman [@jose_ramon_martinez_batlle_2020_4402362]. 
+
+El agrupamiento jerarquico fue realizado mediante tres técnicas o criterios de enlace:
+
+| Técnica o criterio  de enlace  |                                                                                                                                                                       Descripción                                                                                                                                                                      |                                                        Método de ejecución                                                                      |
+|--------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Enlace simple                  | Usa la mayor similaridad como métrica para agrupar pares de objetos en forma  aglomerativa sucesiva, siendo el criterio calcular el vecino más próximo.                                                                                                                                                                                                | Se transforma la matriz en "normalizada", entonces se calcula la distancia euclídea. Por último se aplica el método "simple" a  través de la función *hclust*. |
+| Enlace completo                | Se fundamenta en el calculo de la distancia más lejana entre los pares de objetos.                                                                                                                                                                                                                                                                     | Se aplica el método "complete" de la función  *hclust* a una matriz normalizada y con  similaridad de Jaccard.                                                 |
+| Enlace medio                   | Pondera la media entre las distancias mínimas y máximas,  el resultado depende del tipo de "promedio" que se calcule:
+UPGMA "Unweighted Pair Group Method with Arithmetic mean". 
+WPGMA "Weighted Pair Group Method with Arithmetic mean". 
+UPGMC "Unweighted Pair Group Method using Centroids".  
+WPGMC "Weighted Pair Group Method using Centroids".  | Mismo procedimiento, pero se sustituye el método  por "average" o "ward.D2".                                                                                   |
 
 
 
