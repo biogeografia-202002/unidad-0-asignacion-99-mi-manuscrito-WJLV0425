@@ -98,17 +98,13 @@ Mapas de ubicación, abundancia de individuos, riqueza de especies, agrupamiento
 
 Se determinó la asociación interespecífica y de sitios muestrales mediante los métodos R y Q respectivamente. En el modo Q se obtuvo mediante la métrica de distancia euclidea o similaridad de Jaccard, verificando la paradoja de orlóci (1978); transformación de cuerdas (*chord*); *ji*-cuadrado; y *Hellinger*. Mientras que en el modo R se calculó el índice de correlación de Pearson aplicando la transformación de *chi* para corregir alteraciones producidas por outliers en los datos; la matriz de comunidad transpuesta convertida a binaria (presencia/ausencia) para calcular distancia entre especies con la similaridad de Jaccard; y el índice *rho* de Sperman [@jose_ramon_martinez_batlle_2020_4402362]. 
 
-El agrupamiento jerarquico fue realizado mediante tres técnicas o criterios de enlace:
+El agrupamiento jerarquico fue analizado mediante tres técnicas o criterios de enlace, donde fueron seleccionados los criterios enlace simple y enlace promedrio de varianza mínima romando en cuenta métodos de regresión lineal [WARD].
 
-| Técnica o criterio  de enlace  |                                                                                                                                                                       Descripción                                                                                                                                                                      |                                                        Método de ejecución                                                                      |
+| Técnica o criterio  de enlace  |                                                                                                                                                                       Descripción                                                                                                                                                                      |                                                                       Método de ejecución                                                                      |
 |--------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | Enlace simple                  | Usa la mayor similaridad como métrica para agrupar pares de objetos en forma  aglomerativa sucesiva, siendo el criterio calcular el vecino más próximo.                                                                                                                                                                                                | Se transforma la matriz en "normalizada", entonces se calcula la distancia euclídea. Por último se aplica el método "simple" a  través de la función *hclust*. |
 | Enlace completo                | Se fundamenta en el calculo de la distancia más lejana entre los pares de objetos.                                                                                                                                                                                                                                                                     | Se aplica el método "complete" de la función  *hclust* a una matriz normalizada y con  similaridad de Jaccard.                                                 |
-| Enlace medio                   | Pondera la media entre las distancias mínimas y máximas,  el resultado depende del tipo de "promedio" que se calcule:
-UPGMA "Unweighted Pair Group Method with Arithmetic mean". 
-WPGMA "Weighted Pair Group Method with Arithmetic mean". 
-UPGMC "Unweighted Pair Group Method using Centroids".  
-WPGMC "Weighted Pair Group Method using Centroids".  | Mismo procedimiento, pero se sustituye el método  por "average" o "ward.D2".                                                                                   |
+| Enlace medio                   | Pondera la media entre las distancias mínimas y máximas,  el resultado depende del tipo de "promedio" que se calcule:  UPGMA "Unweighted Pair Group Method with Arithmetic mean". WPGMA "Weighted Pair Group Method with Arithmetic mean". UPGMC "Unweighted Pair Group Method using Centroids".  WPGMC "Weighted Pair Group Method using Centroids".  | Mismo procedimiento, pero se sustituye el método  por "average" o "ward.D2".                                                                                   |
 
 
 
@@ -155,6 +151,12 @@ La asociación interespecífica en función de la abundancia, como se observa en
 En ese sentido, la matriz de correlación entre las variables "abundancia, riqueza, y composición del suelo" ,realizada mediante el índice *rho* de sperman, corrobora lo observado en los mapas de calor anteriores acerca del escaso grado de asosiación entre dichas variables. Tampoco se observa relación entre las dos primeras y las variables relativas a la geomorfología del lugar.
 
 ***Insertar matriz correlación Sperman 1 y 2 . aa_3_modo_R***
+
+Acorde al ordenamiento por enlace simple, los cuadros 32, 50 y 43 se separan bastante de los demás, lo cual se corresponde con la abundancia y riqueza de especies en estos sitios comparada con los demás, siendo en C32 116 [tercera más alta] y 8 [tercil más pobre] respectivamente, por ejemplo. También se observan dos grupos definidos formados entre los sitios C22-C37 y C28-C7.
+
+***Insertar ordenamiento por enlace simple***
+
+En el dendrograma de WARD se observa la presencia de de tres grupos definidos entre los sitios C3-C7, C46-C34 y C27-C23. También pueden definirse cinco grupos menores más próximos entre sí: C3-C7 [sitios con abundacia y riqueza promedio], C46-C22, C27-C48, C50-C23 [citios con las mayores abundancias y riquezas, o al menos una de estas en forma de outlier].
 
 
 
