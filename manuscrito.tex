@@ -284,7 +284,11 @@ extrajo la familia \emph{Fabaceae Mimosoideae} de la data censal, se
 obtuvieron las estadísticas, gráficos lineales y diagramas de cajas. A
 través de \emph{mapview} se crearon, proyectaron y almacenaron los
 mapas. \emph{RColorBrewer} se empleó para obtener una gama de colores
-más amplia en los gráficos y mapas (Batlle, 2020).
+más amplia en los gráficos y mapas; \emph{broom} para ver matrices de
+distancia. Otros paquetes empleados \emph{magrittr}, (Batlle, 2020).
+
+\textbf{\emph{Podría crear una tabla para explicar brevemente el uso
+dado a cada paquete}}
 
 La caracterización geomorfológica se elaboró a partir del algoritmo
 r.geomorphons por Batlle (2020) siguiendo el modelo de Jasiewicz \&
@@ -307,7 +311,8 @@ través del algoritmo (ibidem).\label{Geomorf2}}
 Diversos estudios fueron tomados en cuenta para la clasificación de
 hábitats, se empleó la categorización realizada por Harms, Condit,
 Hubbell, \& Foster (2001) partiendo del resumen y análisis de la data
-compilada en 16,6 años. (Ver tabla \ref{tab:hábitat})
+compilada en 16,6 años, donde fueron tomados en cuenta árboles de 1 cm
+de diámetro a la altura del pecho. (Ver tabla \ref{tab:hábitat})
 
 \begin{longtable}[]{@{}lcc@{}}
 \caption{Clasificación de hábitats, parcela permanente BCI (Harms et
@@ -434,7 +439,40 @@ un acápite para la descripción de la composición mineral del suelo,
 hacer un ançalisis de las variables de elementos tomando en cuenta 5 C
 con más y 5 C con menos presencia.
 
-Las fabáceas
+El grado de asociación según la similaridad de Jaccard acorde a la
+abundancia de especies por cuadro con matriz transformada
+\emph{Hellinger} expone la existencia de clústers super semejantes
+limitados por los sitios C28-C33; C33-C40; C24-C2; C8-C10. Estos sitios
+comparten un 75\% o más de las especies deacuero con la matriz ordenada
+en función de la relación de proximidad. (Ver mapa de calor 1).
+
+\textbf{\emph{Insertar mapa de calor 1. aa\_2\_Modo\_Q}} El color rosado
+intenso representa ``mucha similaridad o distancia corta'', mientras que
+el color azul intenso significa que los sitios están ``muy alejados''.
+
+La presencia de variables edáficas como minerales y otros elementos está
+asociada a la abundancia de especies en el clúster formado por los
+sitios C1-C9 de la matriz ordenada en función del id de lugar, pero
+además de esta relación no hay indicios de una dependencia entre estas
+variables que evidencie asociación alguna. Por otro lado, no existe una
+relación de asociación entre las variables mixtas ``hábitat, quebrada,
+heterogeneidad ambiental'' y la distribución de especies por cuadros.
+(Ver mapas de calor 1 y 2).
+
+\textbf{\emph{Insertar mapa de calor 3 y 4 . aa\_2\_modo\_Q}}
+
+La asociación interespecífica en función de la abundancia, como se
+observa en el mapa de calor número 5, evidencia un grado de asociación
+muy amplio {[}75\%-100\%{]} en el clúster delimitado por \emph{Inga
+lauriana} e \emph{Inga margitana}, así como uno considerable en el
+macroclúster comprendido entre \emph{Inga pezizifera} e \emph{Inga
+spectabilis}. Es descrito un patrón similar por las especies en la
+matriz binaria (presencia/ausencia), donde se forma un clúster entre
+\emph{Inga cocleensis} e \emph{Inga laurina} que describe bastante
+cercanía entre las especies, y un macroclúster entre \emph{Inga
+pezizifera} e \emph{Inga spectabilis} con cercanía considerable.
+
+\textbf{\emph{Insertar mapa de calor 1 y 2 . aa\_3\_modo\_R}}
 
 \section{Discusión}\label{discusiuxf3n}
 

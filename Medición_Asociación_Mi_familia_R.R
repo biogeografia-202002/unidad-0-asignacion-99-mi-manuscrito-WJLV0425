@@ -87,7 +87,7 @@ p_cor_suelo_ar
 
 png(
   filename = 'matriz_correlacion_suelo_abun_riq_pearson.png',
-  width = 1920, height = 1080, res = 125
+  width = 1920, height = 1080, res = 150
 )
 p_cor_suelo_ar
 dev.off()
@@ -100,7 +100,7 @@ p_cor_suelo_ar_spearman
 
 png(
   filename = 'matriz_correlacion_suelo_abun_riq_spearman.png',
-  width = 1920, height = 1080, res = 125
+  width = 1920, height = 1080, res = 150
 )
 p_cor_suelo_ar_spearman
 dev.off()
@@ -114,7 +114,7 @@ p_cor_geomorf_ar
 
 png(
   filename = 'matriz_correlacion_geomorf_abun_riq_pearson.png',
-  width = 1920, height = 1080, res = 110
+  width = 1920, height = 1080, res = 150
 )
 p_cor_geomorf_ar
 dev.off()
@@ -126,7 +126,7 @@ p_cor_geomorf_ar_spearman
 
 png(
   filename = 'matriz_correlacion_geomorf_abun_riq_spearman.png',
-  width = 1920, height = 1080, res = 110
+  width = 1920, height = 1080, res = 150
 )
 p_cor_geomorf_ar_spearman
 dev.off()

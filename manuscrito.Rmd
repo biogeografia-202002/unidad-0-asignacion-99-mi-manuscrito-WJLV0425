@@ -98,7 +98,7 @@ Table: Clasificación de hábitats, parcela permanente BCI [@harms2001habitat].\
 
 Mapas de ubicación, abundancia de individuos, riqueza de especies, agrupamiento de parcelas, pH, nitrógeno y otras variables presentes en el relieve, clima, y edafología del lugar se emplearon para determinar patrones asociativos entre las especies de fabáceas.   
 
-Se determinó la asociación interespecífica y de sitios muestrales mediante los métodos R y Q respectivamente. En el modo Q se obtuvo mediante la métrica de distancia euclidea o similaridad de Jaccard, verificando la paradoja de orlóci (1978); transformación de cuerdas (*chord*); *ji*-cuadrado; y *Hellinger*. Mientras que en el modo R se calculó el índice de correlación de Pearson aplicando la transformación de *chi* para corregir alteraciones producidas por outliers en los datos; la matriz de comunidad transpuesta convertida a binaria (presencia/ausencia) para calcular distancia entre especies con la similaridad de Jaccard; el índice *rho* de Sperman y *tau* de Kendall [@jose_ramon_martinez_batlle_2020_4402362]. 
+Se determinó la asociación interespecífica y de sitios muestrales mediante los métodos R y Q respectivamente. En el modo Q se obtuvo mediante la métrica de distancia euclidea o similaridad de Jaccard, verificando la paradoja de orlóci (1978); transformación de cuerdas (*chord*); *ji*-cuadrado; y *Hellinger*. Mientras que en el modo R se calculó el índice de correlación de Pearson aplicando la transformación de *chi* para corregir alteraciones producidas por outliers en los datos; la matriz de comunidad transpuesta convertida a binaria (presencia/ausencia) para calcular distancia entre especies con la similaridad de Jaccard; y el índice *rho* de Sperman [@jose_ramon_martinez_batlle_2020_4402362]. 
 
 
 
@@ -129,7 +129,25 @@ Insertar Gráfs_Regresión_Lineal_aed_2.
 *Sería interesante dedicar un acápite para la descripción de la composición mineral del suelo, hacer un ançalisis de las variables de elementos tomando en cuenta 5 C con más y 5 C con menos presencia. 
 
 
-Las fabáceas 
+El grado de asociación según la similaridad de Jaccard acorde a la abundancia de especies por cuadro con matriz transformada *Hellinger* expone la existencia de clústers super semejantes limitados por los sitios C28-C33; C33-C40; C24-C2; C8-C10. Estos sitios comparten un 75% o más de las especies de acuerdo con la matriz ordenada en función de la relación de proximidad. (Ver mapa de calor 1).
+
+***Insertar mapa de calor 1. aa_2_Modo_Q***
+El color rosado intenso representa "mucha similaridad o distancia corta", mientras que el color azul intenso significa que los sitios están "muy alejados". 
+
+La presencia de variables edáficas como minerales y otros elementos está asociada a la abundancia de especies en el clúster formado por los sitios C1-C9 de la matriz ordenada en función del id de lugar, pero además de esta relación no hay indicios de una dependencia entre estas variables que evidencie asociación alguna. Por otro lado, no existe una relación de asociación entre las variables mixtas "hábitat, quebrada, heterogeneidad ambiental" y la distribución de especies por cuadros. (Ver mapas de calor 1 y 2).
+
+***Insertar mapa de calor 3 y 4 . aa_2_modo_Q***
+
+La asociación interespecífica en función de la abundancia, como se observa en el mapa de calor número 5, evidencia un grado de asociación muy amplio [75%-100%] en el clúster delimitado por *Inga lauriana* e *Inga margitana*, así como uno considerable en el macroclúster comprendido entre *Inga pezizifera* e *Inga spectabilis*. Es descrito un patrón similar por las especies en la matriz binaria (presencia/ausencia), donde se forma un clúster entre *Inga cocleensis* e *Inga laurina* que describe bastante coexistencia entre las especies [75%-100%], y un macroclúster entre *Inga pezizifera* e *Inga spectabilis* con cercanía considerable.
+
+***Insertar mapa de calor 1 y 2 . aa_3_modo_R***
+
+En ese sentido, la matriz de correlación entre las variables "abundancia, riqueza, y composición del suelo" ,realizada mediante el índice *rho* de sperman, corrobora lo observado en los mapas de calor anteriores acerca del escaso grado de asosiación entre dichas variables. Tampoco se observa relación entre las dos primeras y las variables relativas a la geomorfología del lugar.
+
+***Insertar matriz correlación Sperman 1 y 2 . aa_3_modo_R***
+
+
+
  
 
 
