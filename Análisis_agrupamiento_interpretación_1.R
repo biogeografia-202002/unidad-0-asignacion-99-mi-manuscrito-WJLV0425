@@ -32,10 +32,22 @@ mi_fam_norm_d %>% tidy
 #Interpretación visual de dendrogramas
 
 lista_cl <- list(
-  cl_single = hclust(mi_fam_norm_d, method = 'single'),
+  Dendrograma_Enlace_Simple = hclust(mi_fam_norm_d, method = 'single'),
   cl_complete = hclust(mi_fam_norm_d, method = 'complete'),
   cl_upgma = hclust(mi_fam_norm_d, method = 'average'),
-  cl_ward = hclust(mi_fam_norm_d, method = 'ward.D2')
+  Dendrograma_Enlace_Promedio_WARD = hclust(mi_fam_norm_d, method = 'ward.D2')
+)
+
+par(mfrow = c(2,2))
+invisible(map(names(lista_cl), function(x) plot(lista_cl[[x]], main = x, hang = -1)))
+
+par(mfrow = c(1,1))
+
+#Solo WARD y SImple
+
+lista_cl <- list(
+  Dendrograma_Enlace_Simple = hclust(mi_fam_norm_d, method = 'single'),
+  Dendrograma_Enlace_Promedio_WARD = hclust(mi_fam_norm_d, method = 'ward.D2')
 )
 
 par(mfrow = c(2,2))
