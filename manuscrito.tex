@@ -167,7 +167,7 @@ Domingo (UASD)}
 
     \vskip 8.5pt % \small 
 
-\noindent Las fabaceas son plantas de amplia distribución terrestre, sus
+\noindent Las fabáceas son plantas de amplia distribución terrestre, sus
 características y propiedades las hacen importantes en diversos campos
 de la ciencia médica, la industria alimenticia y textil. Los métodos de
 análisis biogeográficos permiten cuantificar el estado de esta familia,
@@ -231,14 +231,14 @@ en el equilibrio natural (Condit, 1998).
 \caption{Área del censo forestal, Barro Colorado Island (1981-2015).}
 \end{figure}
 
-Las fabaceas concentran su diversidad en la franja tropical y
+Las fabáceas concentran su diversidad en la franja tropical y
 subtropical, aunque se encuentran ampliamente distribuidas por la
 práctica totalidad de climas terrestres. Están presentes en zonas
 árticas, litoral costero, ambientes alpinos, bosque lluvioso, bosque
 estacional, sabanas, bosque seco, desiertos áridos, pantanos y
 manglares. Poseen características especializadas que las hacen vitales
 para el equilibrio ecológico y para la supervivencia del ser humano.
-Asimismo, el 88\% de las especies de fabaceas pueden formar nódulos con
+Asimismo, el 88\% de las especies de fabáceas pueden formar nódulos con
 bacterias (rhizobia) para fijar el N2 en la atmósfera mediante
 asociación simbiótica, fisiología rica en proteínas, etc.; mientras que
 sus semillas son empleadas para tratar células cancerígenas, sus
@@ -273,10 +273,10 @@ una amplia variedad de facilidades para el manejo, creación, y
 visualización gráfica de ciencia de datos, resultando ideal para este
 campo de estudio (Venables, Smith, Team, \& others, 2009).
 
-Los métodos de análisis en ecología númerica han incrementado
-exponencialmente a partir de la década 1950, desarrollandose índices,
+Los métodos de análisis en ecología numérica han incrementado
+exponencialmente a partir de la década 1950, desarrollándose índices,
 estimadores y algoritmos que permiten realizar transformaciones
-cualitativas y cuantitativas para inferir y obtener presición con
+cualitativas y cuantitativas para inferir y obtener precisión con
 menores probabilidades de sesgo o en ausencia del mismo. La obtención de
 información relativa al grado de asociación, ordenamiento, diversidad,
 agrupamiento, entre otros; es debida a estas técnicas. (ver tabla
@@ -284,7 +284,12 @@ agrupamiento, entre otros; es debida a estas técnicas. (ver tabla
 
 Table 1: Métodos de análisis en ecología numérica empleados (Moreno,
 2001).\label{tab:met}
-\includegraphics[width=1.00000\textwidth]{Análisis/Diversidad/Tabla_Métodos_Análisis.png}
+
+\begin{figure}
+\centering
+\includegraphics[width=1.00000\textwidth]{Analisis/Diversidad/Tabla_Metodos_Analisis.png}
+\caption{}
+\end{figure}
 
 \ldots
 
@@ -302,7 +307,7 @@ censal, obtener las estadísticas, gráficos lineales y diagramas de
 cajas. A la vez que, mediante \emph{mapview} se crearon, proyectaron y
 almacenaron los mapas; con \emph{RColorBrewer} se para obtuvo una gama
 de colores más amplia en los gráficos y mapas; y con \emph{broom} se
-visuaizaron las matrices de distancia. Otros paquetes empleados fueron
+visualizaron las matrices de distancia. Otros paquetes empleados fueron
 \emph{magrittr}, \emph{plyr}, \emph{vegetarian}.
 
 \textbf{\emph{Podría crear una tabla para explicar brevemente el uso
@@ -356,19 +361,19 @@ agrupamiento de parcelas, pH, nitrógeno y otras variables presentes en
 el relieve, clima, y edafología del lugar se emplearon para determinar
 patrones asociativos entre las especies.
 
-La determinación de la asociación interespecífica y de sitios muestrales
-fue ralizada mediante los métodos R y Q respectivamente. El modo Q se
-obtuvo con la métrica de distancia euclidea o similaridad de Jaccard,
+La determinación de la asociación interespecífica y de sitios muéstrales
+fue realizada mediante los métodos R y Q respectivamente. El modo Q se
+obtuvo con la métrica de distancia euclídea o similaridad de Jaccard,
 verificando la paradoja de orlóci (1978); transformando la matriz en una
 de cuerdas (\emph{chord}); \emph{ji}-cuadrado; y \emph{Hellinger}. A lu
 vez, el modo R se calculó con el índice de correlación de Pearson
 aplicando la transformación de \emph{chi} para corregir alteraciones
 producidas por outliers en los datos, convirtiendo a binaria
-(presencia/sencia) la matriz de comunidad transpuesta para calcular
+(presencia/ausencia) la matriz de comunidad transpuesta para calcular
 distancias entre especies con la similaridad de Jaccard y el índice
 \emph{rho} de Sperman. Por otro parte, el agrupamiento jerárquico fue
 analizado mediante tres técnicas o criterios de enlace, donde fueron
-seleccionados los criterios enlace simple y enlace promedrio de varianza
+seleccionados los criterios enlace simple y enlace promedio de varianza
 mínima tomando en cuenta métodos de regresión lineal {[}WARD{]}, siendo
 la muestra dividida en tres grupos en este último. (Ver tabla
 \ref{tab:enlace})
@@ -376,23 +381,23 @@ la muestra dividida en tres grupos en este último. (Ver tabla
 Table 3: Clasificación de los criterios de enlace (Harms et al.,
 2001).\label{tab:enlace}
 
-\includegraphics[width=1.00000\textwidth]{Análisis/Diversidad/Tabla_Criterios_Enlace.png}
+\includegraphics[width=1.00000\textwidth]{Analisis/Diversidad/Tabla_Criterios_Enlace.png}
 \textbar{}
 
 Se realizó una correlación entre los tres grupos determinados para WARD
 y las variables ambientales para definir posibles asociaciones entre
-estos o la exitencia de un grupo que se decante por al menos una
-varibale en específico, fueron empleadas las pruebas ANOVA para evaluar
+estos o la existencia de un grupo que se decante por al menos una
+variable en específico, fueron empleadas las pruebas ANOVA para evaluar
 homogeneidad de medias y Kruskal-Wallis para evaluar homogeneidad de
 medianas. De igual forma, fue generada la diversidad alpha aplicando la
-función \emph{alpha\_div} a la matriz de comunidad, transformandola en
+función \emph{alpha\_div} a la matriz de comunidad, transformándola en
 una matriz de índices, entropías, equidades y ratios. En específico se
 crearon columnas con los índices N0 (Renyi), entropía H (diversidad de
 Shannon), Hb2 (entropía de Shannon en base =2), los números de
 diversidad de Hill (N1, Nb2, N2), J (equidad de Pielou), y las dos
 ratios de Hill (E10 y E20).
 
-Para obtner la estimación de riqueza de acuerdo a la diversidad de
+Para obtener la estimación de riqueza de acuerdo a la diversidad de
 especies en la parcela se emplearon los estimadores no paramétricos o de
 ``distribución libre'', entre estos están Chao1, Bootstrap, y los
 Jackknife1 de primer y segundo orden.
@@ -415,7 +420,7 @@ equivalente a un 5.82\% {[}224{]} y la mitad más presente el 94.18\%
 distribución también desproporcional, el C26 presenta la riqueza más
 débil {[}5{]} y el C30 la más fuerte {[}13{]}. No obstante, aunque no
 existe relación directa entre la riqueza y la abundancia por cuadrante,
-en C26 coíncide y en algunos otros cuadros puede existir cierta
+en C26 coincide y en algunos otros cuadros puede existir cierta
 aproximación.
 
 (ver tabla \ref{tab:abun_sp} y figura \ref{fig:abun_sp_q})
@@ -466,26 +471,26 @@ adulto en meseta baja distribuido ampliamente, un 24\% por bosque adulto
 en pendiente con presencia marcada en las parcelas {[}C41-C45{]}, un
 16\% por bosque adulto en meseta alta concentrado en las parcelas
 {[}C32-C34; C37-C40{]}, mientras que el 8\% restante es hábitat
-pantanoso y bosque jovén en forma equitativa. No parece existir una
+pantanoso y bosque joven en forma equitativa. No parece existir una
 relación directa entre la morfología del espacio y un determinado
-hábitat, exeptuando el bosque joven que se encuentra tanto en llanura
+hábitat, exceptuando el bosque joven que se encuentra tanto en llanura
 como en vertiente de forma considerable. En general, se percibe un leve
 aumento de la riqueza específica a medida que aumenta la abundancia de
 individuos; destacando la abundante riqueza de especies en el hábitat
 pantanoso, su pobreza en el bosque adulto en zona alta, la abundancia
-marcada el bosque adulto en zona baja y su riqueza equilibrada . (Ver
+marcada el bosque adulto en zona baja y su riqueza equilibrada. (Ver
 figura \ref{fig:leal}).
 
 \begin{figure}
 \centering
-\includegraphics[width=1.00000\textwidth]{Análisis/Diversidad/Graf_regre_lineal_aed_2.png}
+\includegraphics[width=1.00000\textwidth]{Analisis/Diversidad/Graf_regre_lineal_aed_2.png}
 \caption{Distribución de sitios en función de su riqueza, abundancia, y
 hábitat dominante.\label{fig:leal}}
 \end{figure}
 
 El grado de asociación según la similaridad de Jaccard acorde a la
 abundancia de especies por cuadro con matriz transformada
-\emph{Hellinger} expone la existencia de clústers super semejantes
+\emph{Hellinger} expone la existencia de clústers sumamente semejantes
 limitados por los sitios C28-C33; C33-C40; C24-C2; C8-C10. Estos sitios
 comparten un 75\% o más de las especies de acuerdo con la matriz
 ordenada en función de la relación de proximidad (ver mapa de calor
@@ -501,7 +506,7 @@ especies por cuadros. (Ver figura \textbackslash{}ref\{fig:heat).
 
 \begin{figure}
 \centering
-\includegraphics[width=0.50000\textwidth]{Análisis/Imágenes manuscrito/Heat_maps_Q.png}
+\includegraphics[width=1.00000\textwidth]{Analisis/Imagenes manuscrito/Heat_maps_Q.png}
 \caption{Mapas asociación de especies por abundancia en los sitios de
 muestreo (superior) y por asociación de variables ambientales y
 abundancia (inferior). El color azul fuerte representa ``lejanía'' y el
@@ -519,7 +524,7 @@ matriz binaria (presencia/ausencia), donde se forma un clúster entre
 coexistencia entre las especies {[}75\%-100\%{]}, y un macroclúster
 entre \emph{Inga pezizifera} e \emph{Inga spectabilis} con cercanía
 considerable. En ese sentido, la matriz de correlación entre las
-variables ``abundancia, riqueza, y composición del suelo'' ,realizada
+variables ``abundancia, riqueza, y composición del suelo'' , realizada
 mediante el índice \emph{rho} de sperman, corrobora lo observado en los
 mapas de calor anteriores acerca del escaso grado de asosiación entre
 dichas variables. Tampoco se observa relación entre las dos primeras y
@@ -528,15 +533,15 @@ las variables relativas a la geomorfología del lugar. (Ver figura
 
 \begin{figure}
 \centering
-\includegraphics[width=1.00000\textwidth]{Análisis/Imágenes manuscrito/Heat_Map_R.png}
+\includegraphics[width=1.00000\textwidth]{Analisis/Imagenes manuscrito/Heat_Map_R.png}
 \caption{Mapas de calor, asociación entre especies en función de su
-abundancia (superior)y en función de su abundancia con matríz binaria
+abundancia (superior)y en función de su abundancia con matriz binaria
 ``presencia/ausencia'' (inferior).\label{fig:heat1}}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=1.00000\textwidth]{Análisis/Imágenes manuscrito/Seperman_R.png}
+\includegraphics[width=1.00000\textwidth]{Analisis/Imagenes manuscrito/Seperman_R.png}
 \caption{Matrices de Sperman, asociación de especies en función de las
 variables edáficas (superior) y asociación de especies en función de las
 variables geomorfológicas (inferior) .\label{fig:sper}}
@@ -556,40 +561,40 @@ formados entre los sitios C22-C37 y C28-C7. (Ver \label{fig:denS})
 simple.\label{fig:denS}}
 \end{figure}
 
-En el dendrograma de WARD se observa la presencia de de tres grupos
+En el dendrograma de WARD se observa la presencia de tres grupos
 definidos entre los sitios C3-C7, C46-C34 y C27-C23; formados por 11, 18
 y 21 sitios respectivamente. También pueden definirse cinco subgrupos
-menores más próximos entre sí: C3-C7 {[}sitios con abundacia y riqueza
+menores más próximos entre sí: C3-C7 {[}sitios con abundancia y riqueza
 promedio{]}, C46-C22, C27-C48, C50-C23 {[}citios con las mayores
 abundancias y riquezas, o al menos una de estas en forma de outlier{]}
 (ver figura\ref{fig:denW}).Continuando con los tres primeros grupos WARD
 mencionados, en los diagramas de cajas para las variables ambientales se
-observa distancia que se acrecenta según se cambia de grupo, en orden
+observa distancia que se acrecienta según se cambia de grupo, en orden
 ascendente, en las medianas respecto a las variables Boro, Hierro,
-Geomorfología en llanura, Potasio, Nitrógeno Minimo, pH y zinc.Esta
+Geomorfología en llanura, Potasio, Nitrógeno Mínimo, pH y zinc. Esta
 tendencia es también descrita en menor medida por las variables Calcio,
-Cobre, Heterogeneidad ambiental y Magnesio. En constrate, este patrón se
+Cobre, Heterogeneidad ambiental y Magnesio. En contraste, este patrón se
 invierte en las variables Aluminio y Geomorfología en vaguada. Por otra
-parte, el segúndo grupo se decanta por la variable Fósforo, presentando
+parte, el segundo grupo se decanta por la variable Fósforo, presentando
 números inferiores en Abundancia y Riqueza de especies, mientras que el
 primer y tercer grupo son bastante homogéneos en ese sentido.
 
 \begin{figure}
 \centering
-\includegraphics[width=1.00000\textwidth]{Inter_Ward_5Clústers_Dendrogram.png}
+\includegraphics[width=1.00000\textwidth]{Inter_Ward_5Clusters_Dendrogram.png}
 \caption{Dendrograma a partir del criterio enlace promedio
 (WARD).\label{fig:denW}}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=1.00000\textwidth]{WARD_Plots_Variables_Ambientales_Clústers.png}
+\includegraphics[width=1.00000\textwidth]{WARD_Plots_Variables_Ambientales_Clusters.png}
 \caption{Diagramas de cajas en función de las variables ambientales para
 los grupos WARD.\label{fig:boxW}}
 \end{figure}
 
 En la matriz de correlación para determinar equidad se observan niveles
-de correlación bastante bajos para todas la variables ambientales,
+de correlación bastante bajos para todas las variables ambientales,
 siendo las variables Boro, Fósforo, Nitrógeno y pH las que presentan
 niveles significativos respecto a los números de Hill y los índices de
 Shannon. Por otra parte, la variable ``Riqueza global'' presenta niveles
@@ -598,24 +603,22 @@ correlación colectivamente.
 
 \begin{figure}
 \centering
-\includegraphics[width=1.00000\textwidth]{Análisis/Diversidad/Índices_Env_Diversidad_Alpha_2.png}
-\caption{Matriz de diversidad alpha: correlación entre indices,
+\includegraphics[width=1.00000\textwidth]{Analisis/Diversidad/Indices_Env_Diversidad_Alpha_2.png}
+\caption{Matriz de diversidad alpha: correlación entre índices,
 entropías, equidades, y ratios con las variables
 ambientales.\label{fig:divA}}
 \end{figure}
-
-\textbf{\emph{Insertar matriz 2, análisis diversidad alpha}}
 
 La riqueza de especies respecto a la diversidad de estas en la parcela
 se determinó en porcentajes aproximados a la riqueza real. Por otro
 lado, la diversidad beta describe una curva ascendente según aumenta el
 número de ordenamiento en Hill, llegando a superar el N0. Presentando un
 grado de dominancia mayor y una dependencia de la abundancia en la
-diversidad beta. Las especiees que más contribuen a la diversidad son
+diversidad beta. Las especies que más contribuyen a la diversidad son
 \emph{Inga acumiata}, \emph{Inga marginata}, \emph{Inga Pezizifera} e
 \emph{Inga thibaudiana}; donde las dos primeras son de las especies más
 abundantes y por si solas representan el 35.7\% de los individuos en la
-comunidad de las fabaceas. Por otra parte, los sitios que más
+comunidad de las fabáceas. Por otra parte, los sitios que más
 contribuyen a la diversidad beta son C32 y C50. (Ver tabla
 \ref{tab:est})
 
@@ -639,37 +642,37 @@ asociación (coexistencia) sobre el 75\% entre las especies \emph{Inga
 laurina}, \emph{Inga margitana}, \emph{Inga thitaudiana}, \emph{Inga
 sapindoides}, \emph{Inga umbellifera}, \emph{Inga goldimanii} e
 \emph{Inga nobilis}. Estas especies son las más abundantes de esta
-familia e BCI, exceptuando por \emph{Inga laurina} que tomando en cuenta
-sus apenas 57 individuos se encuentra ampliamente distribuida. Ninguna
-variable ambiental resultó determinante en la existencia de especies en
-los cuadros, aunque existen relaciones significativas entre las
-variables edáficas Al {[}grupo 1{]}, K {[}grupo 2{]}, pH y Zn {[}grupo
-3{]}.
+familia en BCI, exceptuando por \emph{Inga laurina} que tomando en
+cuenta sus apenas 57 individuos se encuentra ampliamente distribuida.
+Ninguna variable ambiental resultó determinante en la existencia de
+especies en los cuadros, aunque existen relaciones significativas entre
+las variables edáficas Al {[}grupo 1{]}, K {[}grupo 2{]}, pH y Zn
+{[}grupo 3{]}.
 
-La composición de las fabaceas es bastante uniforme tomando en cuenta
+La composición de las fabáceas es bastante uniforme tomando en cuenta
 que a través del criterio de enlace promedio UPGMA no se pudo dividir
 las muestras de forma efectiva en dos grupos {[}resultando en 49 y 1{]}.
 Sin embargo, mediante el método promedio de la varianza mínima se pudo
 separar efectivamente la muestra en tres grupos de cuadros, los cuales
-presentaron medianas bastante aproximadas entre si para la mayoría de
+presentaron medianas bastante aproximadas entre sí para la mayoría de
 variables ambientales.
 
-La diversidad de las especies no esta afectada de forma significativa
-por alguna variable, siendo la equidad poco signifcativa para todas las
-variables ambientales, exceptuando por la abundancia globadl que es la
+La diversidad de las especies no está afectada de forma significativa
+por alguna variable, siendo la equidad poco significativa para todas las
+variables ambientales, exceptuando por la abundancia global que es la
 determinante de la diversidad en la muestra. En ese sentido, la riqueza
-las fabaceas respecto a la diversida es bastante alta, teniendo
+las fabáceas respecto a la diversidad es bastante alta, teniendo
 porcentajes mayores al 98\% en todos los índices calculados. Cuatro
 especies contribuyen significativamente a la dversidad: \emph{Inga
 marginata}, \emph{Inga acumiata}, \emph{Inga thibaudiana} e \emph{Inga
-Pezizifera}, todas ellas pertenecientes a la mitad mas abundante de las
+Pezizifera}, todas ellas pertenecientes a la mitad más abundante de las
 especies.
 
 \section{Agradecimientos}\label{agradecimientos}
 
 Este trabajo fue posible gracias al Ph.D José Ramón Martinez Battle,
 quien supervisó todo el proceso, brindó la asesoría y fuentes
-bibliográficas de partida. Sin él este trabajo nose habría realizado.
+bibliográficas que sirvieron de base para la elaboración del estudio.
 
 \section{Información de soporte}\label{informaciuxf3n-de-soporte}
 
@@ -724,7 +727,7 @@ Montagnini, F., Jordan, C. F., \& others. (2005). \emph{Tropical forest
 ecology: The basis for conservation and management}. Springer Science \&
 Business Media.
 
-\hypertarget{ref-Moreno2001}{}
+\hypertarget{ref-book}{}
 Moreno, C. (2001). \emph{Métodos para medir la biodiversidad} (Vol. 1).
 
 \hypertarget{ref-saikia2020tropical}{}
