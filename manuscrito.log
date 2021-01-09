@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  9 JAN 2021 11:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  9 JAN 2021 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -597,11 +597,7 @@ Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-) (./manuscrito.aux
-
-LaTeX Warning: Label `tab:h\IeC {\'a}bitat' multiply defined.
-
-)
+) (./manuscrito.aux)
 \openout1 = `manuscrito.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 134.
@@ -712,118 +708,75 @@ File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <11> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 150.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 185.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 197.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 193.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 205.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 197
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 205
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 197
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 205
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 197
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 205
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 197
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 205
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-<Map-of-Barro-Colorado-Island-BCI-Panama.png, id=16, 204.765pt x 145.9854pt>
+<Map-of-Barro-Colorado-Island-BCI-Panama.png, id=8, 204.765pt x 145.9854pt>
 File: Map-of-Barro-Colorado-Island-BCI-Panama.png Graphic file (type png)
 <use Map-of-Barro-Colorado-Island-BCI-Panama.png>
 Package pdftex.def Info: Map-of-Barro-Colorado-Island-BCI-Panama.png  used on i
-nput line 207.
+nput line 215.
 (pdftex.def)             Requested size: 204.76448pt x 145.98503pt.
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Map-of-Barro-Colorado-Is
-land-BCI-Panama.png>]
-<mapa_cuadros.png, id=29, 995.72pt x 762.85pt>
+<mapa_cuadros.png, id=10, 995.72pt x 762.85pt>
 File: mapa_cuadros.png Graphic file (type png)
 <use mapa_cuadros.png>
-Package pdftex.def Info: mapa_cuadros.png  used on input line 222.
+Package pdftex.def Info: mapa_cuadros.png  used on input line 230.
 (pdftex.def)             Requested size: 234.87544pt x 179.9449pt.
-<Grabado-Mimosoideae.png, id=30, 888.31876pt x 767.86874pt>
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./Map-of-Barro-Colorad
+o-Island-BCI-Panama.png> <./mapa_cuadros.png>]
+<Grabado-Mimosoideae.png, id=28, 888.31876pt x 767.86874pt>
 File: Grabado-Mimosoideae.png Graphic file (type png)
 <use Grabado-Mimosoideae.png>
-Package pdftex.def Info: Grabado-Mimosoideae.png  used on input line 250.
+Package pdftex.def Info: Grabado-Mimosoideae.png  used on input line 258.
 (pdftex.def)             Requested size: 234.87471pt x 203.0273pt.
-[2 <./mapa_cuadros.png>]
-<Tablas-1 (2).png, id=38, 1117.17375pt x 603.75563pt>
-File: Tablas-1 (2).png Graphic file (type png)
-<use Tablas-1 (2).png>
-Package pdftex.def Info: Tablas-1 (2).png  used on input line 279.
-(pdftex.def)             Requested size: 469.75528pt x 253.87044pt.
 
-Overfull \hbox (389.29655pt too wide) in paragraph at lines 277--280
-[]\T1/ppl/m/n/10.95 Table 1: Méto-dos de análi-sis en ecología numérica em-plea
--dos (Moreno, 2001).[] [] 
- []
-
-[3 <./Grabado-Mimosoideae.png> <./Tablas-1 (2).png>]
-LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 301.
-<Geomorf3.png, id=46, 892.83563pt x 197.23688pt>
-File: Geomorf3.png Graphic file (type png)
-<use Geomorf3.png>
-Package pdftex.def Info: Geomorf3.png  used on input line 309.
-(pdftex.def)             Requested size: 352.3188pt x 77.83095pt.
-<Geomor2.png, id=47, 834.11626pt x 264.99pt>
-File: Geomor2.png Graphic file (type png)
-<use Geomor2.png>
-Package pdftex.def Info: Geomor2.png  used on input line 316.
-(pdftex.def)             Requested size: 352.32468pt x 111.92986pt.
-[4 <./Geomorf3.png> <./Geomor2.png>]
-<Tablas-0 (2).png, id=59, 1132.23pt x 379.4175pt>
-File: Tablas-0 (2).png Graphic file (type png)
-<use Tablas-0 (2).png>
-Package pdftex.def Info: Tablas-0 (2).png  used on input line 370.
-(pdftex.def)             Requested size: 469.74576pt x 157.4148pt.
-
-Overfull \hbox (16.99074pt too wide) in paragraph at lines 370--371
-[][]
- []
-
-[5 <./Tablas-0 (2).png>]
-<manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf, id=66, 857.2025pt x 294.0
-9875pt>
-File: manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pd
-f)
-<use manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>
-Package pdftex.def Info: manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf  u
-sed on input line 447.
-(pdftex.def)             Requested size: 469.74937pt x 161.16693pt.
-[6 <./manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>]
-
-LaTeX Warning: File `Análisis/Imágenes manuscrito/Graf_regre_lineal_aed2 (2).pn
-g' not found on input line 470.
+LaTeX Warning: Reference `tab:met' on page 3 undefined on input line 283.
 
 
-! Package pdftex.def Error: File `Análisis/Imágenes manuscrito/Graf_regre_linea
-l_aed2 (2).png' not found: using draft setting.
+LaTeX Warning: File `Análisis/Diversidad/Tabla_Métodos_Análisis.png' not found 
+on input line 287.
+
+
+! Package pdftex.def Error: File `Análisis/Diversidad/Tabla_Métodos_Análisis.pn
+g' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.470 ...anuscrito/Graf_regre_lineal_aed2 (2).png}
+l.287 .../Diversidad/Tabla_MÃ©todos_AnÃ¡lisis.png}
                                                    
 Here is how much of TeX's memory you used:
- 10254 strings out of 492982
- 143815 string characters out of 6134896
- 219093 words of memory out of 5000000
- 13675 multiletter control sequences out of 15000+600000
- 27368 words of font info for 51 fonts, out of 8000000 for 9000
+ 10205 strings out of 492982
+ 142957 string characters out of 6134896
+ 219455 words of memory out of 5000000
+ 13640 multiletter control sequences out of 15000+600000
+ 25772 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,6n,31p,274b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
 

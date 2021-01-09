@@ -167,7 +167,15 @@ Domingo (UASD)}
 
     \vskip 8.5pt % \small 
 
-\noindent Mi resumen
+\noindent Las fabaceas son plantas de amplia distribución terrestre, sus
+características y propiedades las hacen importantes en diversos campos
+de la ciencia médica, la industria alimenticia y textil. Los métodos de
+análisis biogeográficos permiten cuantificar el estado de esta familia,
+brindando información valiosa para comprender las formas de asociación,
+agrupamiento, proliferación y decaimiento de acuerdo a variables
+ambientales. En la isla Barro Colorado el clado filogenético mimosoide
+presente no exhibe comportamientos que favorezcan variables edáficas y
+geomorfológicas específicas de manera marcada.
 
 
 \vskip 8.5pt \noindent \emph{Keywords}: Ecología Numérica, BCI, Análisis Forestal, Lenguaje R \par
@@ -276,7 +284,7 @@ agrupamiento, entre otros; es debida a estas técnicas. (ver tabla
 
 Table 1: Métodos de análisis en ecología numérica empleados (Moreno,
 2001).\label{tab:met}
-\includegraphics[width=1.00000\textwidth]{Tablas-1 (2).png}
+\includegraphics[width=1.00000\textwidth]{Análisis/Diversidad/Tabla_Métodos_Análisis.png}
 
 \ldots
 
@@ -362,12 +370,14 @@ distancias entre especies con la similaridad de Jaccard y el índice
 analizado mediante tres técnicas o criterios de enlace, donde fueron
 seleccionados los criterios enlace simple y enlace promedrio de varianza
 mínima tomando en cuenta métodos de regresión lineal {[}WARD{]}, siendo
-la muestra dividida en tres grupos en este último.
+la muestra dividida en tres grupos en este último. (Ver tabla
+\ref{tab:enlace})
 
-Table 3: Clasificación de hábitats, parcela permanente BCI (Harms et
-al., 2001).\label{tab:hábitat}
+Table 3: Clasificación de los criterios de enlace (Harms et al.,
+2001).\label{tab:enlace}
 
-\includegraphics[width=1.00000\textwidth]{Tablas-0 (2).png} \textbar{}
+\includegraphics[width=1.00000\textwidth]{Análisis/Diversidad/Tabla_Criterios_Enlace.png}
+\textbar{}
 
 Se realizó una correlación entre los tres grupos determinados para WARD
 y las variables ambientales para definir posibles asociaciones entre
@@ -455,22 +465,22 @@ relieve llano. La parcela madre está compuesta en un 52\% por bosque
 adulto en meseta baja distribuido ampliamente, un 24\% por bosque adulto
 en pendiente con presencia marcada en las parcelas {[}C41-C45{]}, un
 16\% por bosque adulto en meseta alta concentrado en las parcelas
-{[}C3-C34; C37-C40{]}, mientras que el 8\% restante hábitat pantanoso y
-bosque jovén en forma equitativa. No parece existir una relación directa
-entre la morfología del espacio y un determinado hábitat, exeptuando el
-bosque joven que se encuentra tanto en llanura como en vertiente de
-forma considerable. En general, se percibe un leve aumento de la riqueza
-específica a medida que aumenta la abundancia de individuos; destacando
-la abundante riqueza de especies en el hábitat pantanoso, su pobreza en
-el bosque adulto en zona alta, la abundancia marcada el bosque adulto en
-zona baja y su riqueza equilibrada . (Ver Gráficos lineales 1 y 2).
+{[}C32-C34; C37-C40{]}, mientras que el 8\% restante es hábitat
+pantanoso y bosque jovén en forma equitativa. No parece existir una
+relación directa entre la morfología del espacio y un determinado
+hábitat, exeptuando el bosque joven que se encuentra tanto en llanura
+como en vertiente de forma considerable. En general, se percibe un leve
+aumento de la riqueza específica a medida que aumenta la abundancia de
+individuos; destacando la abundante riqueza de especies en el hábitat
+pantanoso, su pobreza en el bosque adulto en zona alta, la abundancia
+marcada el bosque adulto en zona baja y su riqueza equilibrada . (Ver
+figura \ref{fig:leal}).
 
 \begin{figure}
 \centering
-\includegraphics[width=1.00000\textwidth]{Análisis/Imágenes manuscrito/Graf_regre_lineal_aed2 (2).png}
-\caption{Mapas asociación de especies por abundancia en los sitios de
-muestreo ``superior y por asociación de variables ambientales y
-abundancia''inferior``.\label{fig:heat}}
+\includegraphics[width=1.00000\textwidth]{Análisis/Diversidad/Graf_regre_lineal_aed_2.png}
+\caption{Distribución de sitios en función de su riqueza, abundancia, y
+hábitat dominante.\label{fig:leal}}
 \end{figure}
 
 El grado de asociación según la similaridad de Jaccard acorde a la
@@ -487,26 +497,22 @@ indicios de una dependencia entre estas variables que evidencie
 asociación alguna (ver mapa de calor inferior \ref{fig:heat}). De igual
 forma, no existe una relación de asociación entre las variables mixtas
 ``hábitat, quebrada, heterogeneidad ambiental'' y la distribución de
-especies por cuadros. (Ver figura 1).
+especies por cuadros. (Ver figura \textbackslash{}ref\{fig:heat).
 
 \begin{figure}
 \centering
 \includegraphics[width=0.50000\textwidth]{Análisis/Imágenes manuscrito/Heat_maps_Q.png}
 \caption{Mapas asociación de especies por abundancia en los sitios de
-muestreo ``superior''" y por asociación de variables ambientales y
-abundancia ``inferior''. El color azul fuerte representa ``lejanía'' y
-el rosado furerte ``proximidad''.\label{fig:heat}}
+muestreo (superior) y por asociación de variables ambientales y
+abundancia (inferior). El color azul fuerte representa ``lejanía'' y el
+rosado fuerte ``proximidad''.\label{fig:heat}}
 \end{figure}
 
-El color rosado intenso representa ``mucha similaridad o distancia
-corta'', mientras que el color azul intenso significa que los sitios
-están ``muy alejados''.
-
 La asociación interespecífica en función de la abundancia, como se
-observa en el mapa de calor número 5, evidencia un grado de asociación
-muy amplio {[}75\%-100\%{]} en el clúster delimitado por \emph{Inga
-lauriana} e \emph{Inga margitana}, así como uno considerable en el
-macroclúster comprendido entre \emph{Inga pezizifera} e \emph{Inga
+observa en el mapa de calor \ref{fig:heat1}, evidencia un grado de
+asociación muy amplio {[}75\%-100\%{]} en el clúster delimitado por
+\emph{Inga lauriana} e \emph{Inga margitana}, así como uno considerable
+en el macroclúster comprendido entre \emph{Inga pezizifera} e \emph{Inga
 spectabilis}. Es descrito un patrón similar por las especies en la
 matriz binaria (presencia/ausencia), donde se forma un clúster entre
 \emph{Inga cocleensis} e \emph{Inga laurina} que describe bastante
@@ -517,50 +523,86 @@ variables ``abundancia, riqueza, y composición del suelo'' ,realizada
 mediante el índice \emph{rho} de sperman, corrobora lo observado en los
 mapas de calor anteriores acerca del escaso grado de asosiación entre
 dichas variables. Tampoco se observa relación entre las dos primeras y
-las variables relativas a la geomorfología del lugar.
+las variables relativas a la geomorfología del lugar. (Ver figura
+\ref{fig:sper})
 
-\textbf{\emph{Insertar mapa de calor 1 y 2 . aa\_3\_modo\_R}}
-\textbf{\emph{Insertar matriz correlación Sperman 1 y 2 .
-aa\_3\_modo\_R}}
+\begin{figure}
+\centering
+\includegraphics[width=1.00000\textwidth]{Análisis/Imágenes manuscrito/Heat_Map_R.png}
+\caption{Mapas de calor, asociación entre especies en función de su
+abundancia (superior)y en función de su abundancia con matríz binaria
+``presencia/ausencia'' (inferior).\label{fig:heat1}}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1.00000\textwidth]{Análisis/Imágenes manuscrito/Seperman_R.png}
+\caption{Matrices de Sperman, asociación de especies en función de las
+variables edáficas (superior) y asociación de especies en función de las
+variables geomorfológicas (inferior) .\label{fig:sper}}
+\end{figure}
 
 Acorde al ordenamiento por enlace simple, los cuadros 32, 50 y 43 se
 separan bastante de los demás, lo cual se corresponde con la abundancia
 y riqueza de especies en estos sitios comparada con los demás, siendo en
 C32 116 {[}tercera más alta{]} y 8 {[}tercil más pobre{]}
 respectivamente, por ejemplo. También se observan dos grupos definidos
-formados entre los sitios C22-C37 y C28-C7.
+formados entre los sitios C22-C37 y C28-C7. (Ver \label{fig:denS})
 
-\textbf{\emph{Insertar ordenamiento por enlace simple}}
+\begin{figure}
+\centering
+\includegraphics[width=1.00000\textwidth]{DenSimple.png}
+\caption{Dendrograma a partir del criterio enlace
+simple.\label{fig:denS}}
+\end{figure}
 
 En el dendrograma de WARD se observa la presencia de de tres grupos
 definidos entre los sitios C3-C7, C46-C34 y C27-C23; formados por 11, 18
 y 21 sitios respectivamente. También pueden definirse cinco subgrupos
 menores más próximos entre sí: C3-C7 {[}sitios con abundacia y riqueza
 promedio{]}, C46-C22, C27-C48, C50-C23 {[}citios con las mayores
-abundancias y riquezas, o al menos una de estas en forma de
-outlier{]}.Por otra parte, en los diagramas de cajas de los tres (3)
-grupos WARD para las variables ambientales se observa distancia que se
-acrecenta según cambia de grupo, en orden ascendente, en las medianas
-respecto a las variables Boro, Hierro, Geomorfología en llanura,
-Potasio, Nitrógeno Minimo, pH y zinc.Esta tendencia es también descrita
-en menor medida por las variables Calcio, Cobre, Heterogeneidad
-ambiental y Magnesio. En constrate, este patrón se invierte en las
-variables Aluminio y Geomorfología en vaguada. Por otra parte, el
-segúndo grupo se decanta por la variable Fósforo, presentando números
-inferiores en Abundancia y Riqueza de especies, mientras que el primer y
-tercer grupo son bastante homogéneos en ese sentido.\\
-\textbf{\emph{Insertar boxplot agrupamiento WARD}}
-\textbf{\emph{Insertar mapas de grupos WARD y relación con variable Al}}
+abundancias y riquezas, o al menos una de estas en forma de outlier{]}
+(ver figura\ref{fig:denW}).Continuando con los tres primeros grupos WARD
+mencionados, en los diagramas de cajas para las variables ambientales se
+observa distancia que se acrecenta según se cambia de grupo, en orden
+ascendente, en las medianas respecto a las variables Boro, Hierro,
+Geomorfología en llanura, Potasio, Nitrógeno Minimo, pH y zinc.Esta
+tendencia es también descrita en menor medida por las variables Calcio,
+Cobre, Heterogeneidad ambiental y Magnesio. En constrate, este patrón se
+invierte en las variables Aluminio y Geomorfología en vaguada. Por otra
+parte, el segúndo grupo se decanta por la variable Fósforo, presentando
+números inferiores en Abundancia y Riqueza de especies, mientras que el
+primer y tercer grupo son bastante homogéneos en ese sentido.
+
+\begin{figure}
+\centering
+\includegraphics[width=1.00000\textwidth]{Inter_Ward_5Clústers_Dendrogram.png}
+\caption{Dendrograma a partir del criterio enlace promedio
+(WARD).\label{fig:denW}}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1.00000\textwidth]{WARD_Plots_Variables_Ambientales_Clústers.png}
+\caption{Diagramas de cajas en función de las variables ambientales para
+los grupos WARD.\label{fig:boxW}}
+\end{figure}
 
 En la matriz de correlación para determinar equidad se observan niveles
 de correlación bastante bajos para todas la variables ambientales,
 siendo las variables Boro, Fósforo, Nitrógeno y pH las que presentan
 niveles significativos respecto a los números de Hill y los índices de
-Shannon, más no tanto como para ser considerados determinantes de la
-diversidad de especies de manera amplia en la muestra. Por otra parte,
-la variable ``Riqueza global'' presenta niveles determinantes para los
-índices anteriores, promediando un 73\% de correlación de manera
-colectiva.
+Shannon. Por otra parte, la variable ``Riqueza global'' presenta niveles
+determinantes para los índices anteriores, promediando un 73\% de
+correlación colectivamente.
+
+\begin{figure}
+\centering
+\includegraphics[width=1.00000\textwidth]{Análisis/Diversidad/Índices_Env_Diversidad_Alpha_2.png}
+\caption{Matriz de diversidad alpha: correlación entre indices,
+entropías, equidades, y ratios con las variables
+ambientales.\label{fig:divA}}
+\end{figure}
 
 \textbf{\emph{Insertar matriz 2, análisis diversidad alpha}}
 
@@ -592,9 +634,42 @@ Real\tabularnewline
 
 \section{Discusión}\label{discusiuxf3n}
 
-La familia \emph{Fabaceae mimosoideae}
+La familia \emph{Fabaceae mimosoideae} en BCI presenta niveles de
+asociación (coexistencia) sobre el 75\% entre las especies \emph{Inga
+laurina}, \emph{Inga margitana}, \emph{Inga thitaudiana}, \emph{Inga
+sapindoides}, \emph{Inga umbellifera}, \emph{Inga goldimanii} e
+\emph{Inga nobilis}. Estas especies son las más abundantes de esta
+familia e BCI, exceptuando por \emph{Inga laurina} que tomando en cuenta
+sus apenas 57 individuos se encuentra ampliamente distribuida. Ninguna
+variable ambiental resultó determinante en la existencia de especies en
+los cuadros, aunque existen relaciones significativas entre las
+variables edáficas Al {[}grupo 1{]}, K {[}grupo 2{]}, pH y Zn {[}grupo
+3{]}.
+
+La composición de las fabaceas es bastante uniforme tomando en cuenta
+que a través del criterio de enlace promedio UPGMA no se pudo dividir
+las muestras de forma efectiva en dos grupos {[}resultando en 49 y 1{]}.
+Sin embargo, mediante el método promedio de la varianza mínima se pudo
+separar efectivamente la muestra en tres grupos de cuadros, los cuales
+presentaron medianas bastante aproximadas entre si para la mayoría de
+variables ambientales.
+
+La diversidad de las especies no esta afectada de forma significativa
+por alguna variable, siendo la equidad poco signifcativa para todas las
+variables ambientales, exceptuando por la abundancia globadl que es la
+determinante de la diversidad en la muestra. En ese sentido, la riqueza
+las fabaceas respecto a la diversida es bastante alta, teniendo
+porcentajes mayores al 98\% en todos los índices calculados. Cuatro
+especies contribuyen significativamente a la dversidad: \emph{Inga
+marginata}, \emph{Inga acumiata}, \emph{Inga thibaudiana} e \emph{Inga
+Pezizifera}, todas ellas pertenecientes a la mitad mas abundante de las
+especies.
 
 \section{Agradecimientos}\label{agradecimientos}
+
+Este trabajo fue posible gracias al Ph.D José Ramón Martinez Battle,
+quien supervisó todo el proceso, brindó la asesoría y fuentes
+bibliográficas de partida. Sin él este trabajo nose habría realizado.
 
 \section{Información de soporte}\label{informaciuxf3n-de-soporte}
 
@@ -604,9 +679,6 @@ La familia \emph{Fabaceae mimosoideae}
 reproducible}{Script reproducible}}\label{script-reproducible}
 
 \ldots
-
-\section*{Referencias}\label{referencias}
-\addcontentsline{toc}{section}{Referencias}
 
 \hypertarget{refs}{}
 \hypertarget{ref-inproceedings}{}
