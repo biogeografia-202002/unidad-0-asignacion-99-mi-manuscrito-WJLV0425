@@ -51,9 +51,9 @@
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 
 \title{Patrones de Ecología Numérica Descritos por la Familia de Plantas
-Fabaceae Mimosoideae en una Isla Subtropical, Cuenca del Mar Caribe.\\
+Fabaceae Mimosoideae en la Isla Barro Colorado, Cuenca del Mar Caribe.\\
 \emph{Patterns of Numerical Ecology Described by Plants Family Fabaceae
-Mimosoideae on a Subtropical Island, Caribbean Sea Basin}.\\  }
+Mimosoideae in Barro Colorado Island, Caribbean Sea Basin}.\\  }
 
 
 
@@ -108,9 +108,9 @@ Domingo (UASD)}  }
 Domingo (UASD))},
              pdfkeywords = {Ecología Numérica, BCI, Análisis Forestal, Lenguaje R},  
             pdftitle={Patrones de Ecología Numérica Descritos por la Familia de Plantas
-Fabaceae Mimosoideae en una Isla Subtropical, Cuenca del Mar Caribe.\\
+Fabaceae Mimosoideae en la Isla Barro Colorado, Cuenca del Mar Caribe.\\
 \emph{Patterns of Numerical Ecology Described by Plants Family Fabaceae
-Mimosoideae on a Subtropical Island, Caribbean Sea Basin}.\\},
+Mimosoideae in Barro Colorado Island, Caribbean Sea Basin}.\\},
             colorlinks=true,
             citecolor=blue,
             urlcolor=blue,
@@ -189,7 +189,7 @@ información sobre el comportamiento de las especies en su hábitat, los
 efectos de cambios geoestacionarios, y las probables consecuencias de
 actividades antrópicas en el ciclo vital de los bosques; cuya función en
 el caso de los tropicales puede ser productiva (madera, fibra, leña,
-productos no maderables); ambientales (regulación del clima, reserva de
+productos no maderables); ambiental (regulación del clima, reserva de
 biodiversidad, conservación de suelos y agua, etc.); y social
 (subsistencia de poblamientos humanos locales y su cultura) (Montagnini,
 Jordan, \& others, 2005).
@@ -197,11 +197,10 @@ Jordan, \& others, 2005).
 La isla Barro Colorado (BCI), de coordenadas {[}9º 9' 0'`N, 79º 51' 0''
 W{]}, es una plataforma basáltica miocénica sobre la que descansa un
 bosque tropical primario compuesto por 305 especies arbóreas (Condit et
-al., 1999). Esta fue el emplazamiento de ocho censos forestales
-realizados por el Smithsonian Tropical Research Institute entre 1981 y
-2015, donde la subfamilia \emph{Fabaceae Mimosoideae} representó el
-5.9\% de las especies registradas en la parcela de 50 hectáreas
-delimitada en 1980 {[}Cita3,WebP{]}.
+al., 1999). Fue el emplazamiento de ocho censos forestales realizados
+por el Smithsonian Tropical Research Institute entre 1981 y 2015, donde
+la subfamilia \emph{Fabaceae Mimosoideae} representó el 5.9\% de las
+especies registradas en la parcela de 50 hectáreas delimitada en 1980.
 
 \begin{figure}
 \centering
@@ -230,31 +229,27 @@ práctica totalidad de climas terrestres. Están presentes en zonas
 árticas, litoral costero, ambientes alpinos, bosque lluvioso, bosque
 estacional, sabanas, bosque seco, desiertos áridos, pantanos y
 manglares. Poseen características especializadas que las hacen vitales
-para el equilibrio ecológico y para la supervivencia del ser humano. El
-88\% de las especies de esta familia pueden formar nódulos con bacterias
-fijadoras de nitrógeno (rhizobia) para fijar el N2 en la atmósfera
-mediante asociación simbiótica, fisiología rica en proteínas, etc.
-Asimismo, sus semillas son empleadas para tratar células cancerígenas,
-sus componentes químicos las hacen esenciales para diversos tipos de
+para el equilibrio ecológico y para la supervivencia del ser humano.
+Asimismo, el 88\% de las especies de fabaceas pueden formar nódulos con
+bacterias (rhizobia) para fijar el N2 en la atmósfera mediante
+asociación simbiótica, fisiología rica en proteínas, etc.; mientras que
+sus semillas son empleadas para tratar células cancerígenas, sus
+componentes químicos las hacen esenciales para diversos tipos de
 industrias, y el grano de las leguminosas representa el 33\% del
-nitrógeno necesario en la dieta de los seres humanos (Saikia, Nag,
-Anurag, Chatterjee, \& Khan, 2020).
-
-La subfamilia \emph{Mimosoideae} dentro del clado mimosoide es sumamente
+nitrógeno necesario en la dieta del ser humano (Saikia, Nag, Anurag,
+Chatterjee, \& Khan, 2020). Especificando, la subfamilia
+\emph{Mimosoideae} dentro del clado filogenético mimosoide es sumamente
 variable, estando compuesta principalmente por árboles y arbustos de
-flores asimétricas cigomorfas.
+flores simétricas cigomorfas con pétalos valvados, a la vez que sus
+especímenes tienen un gran número de estambres prominentes
+(Hasanuzzaman, Araújo, \& Gill, 2020). En BCI se encuentran 18 de estas
+especies.
 
 \begin{figure}
 \centering
 \includegraphics[width=0.50000\textwidth]{Grabado-Mimosoideae.png}
-\caption{Grabado de fabaceas (Universiad de Toronto).}
+\caption{Grabado de fabaceas (Universiad de Toronto). \label{fig:grab}}
 \end{figure}
-
-El clado filogenético mimosoide es propio de climas tropicales y
-subtropicales, sus flores son simétricas con pétalos valvados y sus
-especímenes tienen un gran número de estambres prominentes
-(Hasanuzzaman, Araújo, \& Gill, 2020). En BCI se encuentran 18 de estas
-especies.
 
 Atendiendo a la flexibilidad en la distribución de las fabáceas, su
 importancia económica, y social; se busca entender qué factores
@@ -262,48 +257,63 @@ ambientales intervienen en la proliferación, agrupamiento o decaimiento
 de sus poblaciones en bosques tropicales que comparten características
 con los hallados en República Dominicana, en esta ocasión tomando la
 data cincuentenaria recolectada y provista por The Center for Tropical
-Forest Science en BCI.
+Forest Science en BCI. En ese sentido, la ecología numérica es el campo
+de estudio que brinda las técnicas, índices, y herramientas necesarias
+para obtener conclusiones a partir de data forestal, animal, y biotopo.
+R es un software de código abierto y ambiente de programación que brinda
+una amplia variedad de facilidades para el manejo, creación, y
+visualización gráfica de ciencia de datos, resultando ideal para este
+campo de estudio (Venables, Smith, Team, \& others, 2009).
 
-La ecología numérica es el campo de estudio que brinda las técnicas,
-índices, y herramientas necesarias para obtener conclusiones a partir de
-data forestal, animal, y biotopo. En ese sentido, R es un software de
-código abierto y ambiente de programación que brinda una amplia variedad
-de facilidades para el manejo, creación, y visualización gráfica de
-ciencia de datos (Venables, Smith, Team, \& others, 2009).
+Los métodos de análisis en ecología númerica han incrementado
+exponencialmente a partir de la década 1950, desarrollandose índices,
+estimadores y algoritmos que permiten realizar transformaciones
+cualitativas y cuantitativas para inferir y obtener presición con
+menores probabilidades de sesgo o en ausencia del mismo. La obtención de
+información relativa al grado de asociación, ordenamiento, diversidad,
+agrupamiento, entre otros; es debida a estas técnicas. (ver tabla
+\ref {tab:met})
+
+Table 1: Métodos de análisis en ecología numérica empleados (Moreno,
+2001).\label{tab:met}
+\includegraphics[width=1.00000\textwidth]{Tablas-1 (2).png}
 
 \ldots
 
 \section{Metodología}\label{metodologuxeda}
 
-Una vez obtenida la data censal de Barro Colorado, se empleó el software
-de código abierto R para realizar análisis estadísticos, gráficos,
-matrices, y mapas.
+Obtenida la data censal de Barro Colorado, se empleó R para realizar
+análisis estadísticos, gráficos, matrices, y mapas a la matriz de la
+familia \emph{Fabaceae mimosoideae} partiendo del repositorio
+\textbf{Scripts de análisis BCI} (Batlle, 2020).
 
-Utilizando los paquetes \emph{vegan}, \emph{tydiverse}, y \emph{sf} se
-extrajo la familia \emph{Fabaceae Mimosoideae} de la data censal, se
-obtuvieron las estadísticas, gráficos lineales y diagramas de cajas. A
-través de \emph{mapview} se crearon, proyectaron y almacenaron los
-mapas. \emph{RColorBrewer} se empleó para obtener una gama de colores
-más amplia en los gráficos y mapas; \emph{broom} para ver matrices de
-distancia. Otros paquetes empleados \emph{magrittr}, (Batlle, 2020).
+La creación de los utiles necesarios para los análisis fue posible
+mediante el empleo de los paquetes \emph{vegan}, \emph{tydiverse}, y
+\emph{sf} para extraer la familia \emph{Fabaceae Mimosoideae} de la data
+censal, obtener las estadísticas, gráficos lineales y diagramas de
+cajas. A la vez que, mediante \emph{mapview} se crearon, proyectaron y
+almacenaron los mapas; con \emph{RColorBrewer} se para obtuvo una gama
+de colores más amplia en los gráficos y mapas; y con \emph{broom} se
+visuaizaron las matrices de distancia. Otros paquetes empleados fueron
+\emph{magrittr}, \emph{plyr}, \emph{vegetarian}.
 
 \textbf{\emph{Podría crear una tabla para explicar brevemente el uso
 dado a cada paquete}}
 
 La caracterización geomorfológica se elaboró a partir del algoritmo
-r.geomorphons por Batlle (2020) siguiendo el modelo de Jasiewicz \&
-Stepinski (2013). (Ver figuras \ref{Geomorf3} y \ref{Geomorf2})
+r.geomorphons siguiendo el modelo de Jasiewicz \& Stepinski (2013). (Ver
+figuras \ref{Geomorf3} y \ref{Geomorf2})
 
 \begin{figure}
 \centering
-\includegraphics[width=1.00000\textwidth]{Geomorf3.png}
+\includegraphics[width=0.75000\textwidth]{Geomorf3.png}
 \caption{Modelo desarrollado por Jasiewicz \& Stepinski (2013) para la
 caracterización del relieve.\label{Geomorf3}}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=1.00000\textwidth]{Geomor2.png}
+\includegraphics[width=0.75000\textwidth]{Geomor2.png}
 \caption{Ejemplos de las variantes de relive más comunes obtenidas a
 través del algoritmo (ibidem).\label{Geomorf2}}
 \end{figure}
@@ -311,17 +321,14 @@ través del algoritmo (ibidem).\label{Geomorf2}}
 Diversos estudios fueron tomados en cuenta para la clasificación de
 hábitats, se emplearon 5 de las categorías definidas por Harms, Condit,
 Hubbell, \& Foster (2001) partiendo del resumen y análisis de la data
-compilada en 16,6 años, donde fueron tomados en cuenta árboles iguales o
+compilada en 16 años, donde fueron tomados en cuenta árboles iguales o
 mayores de 1 cm de diámetro a la altura del pecho. (Ver tabla
 \ref{tab:hábitat})
 
+Table 2: Clasificación de hábitats, parcela permanente BCI (Harms et
+al., 2001).\label{tab:hábitat}
+
 \begin{longtable}[]{@{}lcc@{}}
-\caption{Clasificación de hábitats, parcela permanente BCI (Harms et
-al., 2001).\label{tab:hábitat}}\tabularnewline
-\toprule
-Hábitat & Pendiente (grados) & Elevación (metros)\tabularnewline
-\midrule
-\endfirsthead
 \toprule
 Hábitat & Pendiente (grados) & Elevación (metros)\tabularnewline
 \midrule
@@ -339,83 +346,60 @@ Bosque joven & Todas & Todas\tabularnewline
 Mapas de ubicación, abundancia de individuos, riqueza de especies,
 agrupamiento de parcelas, pH, nitrógeno y otras variables presentes en
 el relieve, clima, y edafología del lugar se emplearon para determinar
-patrones asociativos entre las especies de fabáceas.
+patrones asociativos entre las especies.
 
-Se determinó la asociación interespecífica y de sitios muestrales
-mediante los métodos R y Q respectivamente. En el modo Q se obtuvo
-mediante la métrica de distancia euclidea o similaridad de Jaccard,
-verificando la paradoja de orlóci (1978); transformación de cuerdas
-(\emph{chord}); \emph{ji}-cuadrado; y \emph{Hellinger}. Mientras que en
-el modo R se calculó el índice de correlación de Pearson aplicando la
-transformación de \emph{chi} para corregir alteraciones producidas por
-outliers en los datos; la matriz de comunidad transpuesta convertida a
-binaria (presencia/ausencia) para calcular distancia entre especies con
-la similaridad de Jaccard; y el índice \emph{rho} de Sperman (Batlle,
-2020).
+La determinación de la asociación interespecífica y de sitios muestrales
+fue ralizada mediante los métodos R y Q respectivamente. El modo Q se
+obtuvo con la métrica de distancia euclidea o similaridad de Jaccard,
+verificando la paradoja de orlóci (1978); transformando la matriz en una
+de cuerdas (\emph{chord}); \emph{ji}-cuadrado; y \emph{Hellinger}. A lu
+vez, el modo R se calculó con el índice de correlación de Pearson
+aplicando la transformación de \emph{chi} para corregir alteraciones
+producidas por outliers en los datos, convirtiendo a binaria
+(presencia/sencia) la matriz de comunidad transpuesta para calcular
+distancias entre especies con la similaridad de Jaccard y el índice
+\emph{rho} de Sperman. Por otro parte, el agrupamiento jerárquico fue
+analizado mediante tres técnicas o criterios de enlace, donde fueron
+seleccionados los criterios enlace simple y enlace promedrio de varianza
+mínima tomando en cuenta métodos de regresión lineal {[}WARD{]}, siendo
+la muestra dividida en tres grupos en este último.
 
-El agrupamiento jerarquico fue realizado mediante tres técnicas o
-criterios de enlace:
+Table 3: Clasificación de hábitats, parcela permanente BCI (Harms et
+al., 2001).\label{tab:hábitat}
 
-\begin{longtable}[]{@{}lcc@{}}
-\toprule
-\begin{minipage}[b]{0.06\columnwidth}\raggedright\strut
-Técnica o criterio de enlace\strut
-\end{minipage} & \begin{minipage}[b]{0.58\columnwidth}\centering\strut
-Descripción\strut
-\end{minipage} & \begin{minipage}[b]{0.27\columnwidth}\centering\strut
-Método de ejecución\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
-Enlace simple\strut
-\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\centering\strut
-Usa la mayor similaridad como métrica para agrupar pares de objetos en
-forma aglomerativa sucesiva, siendo el criterio calcular el vecino más
-próximo.\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\centering\strut
-Se transforma la matriz en ``normalizada'', entonces se calcula la
-distancia euclídea. Por último se aplica el método ``simple'' a través
-de la función \emph{hclust}.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
-Enlace completo\strut
-\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\centering\strut
-Se fundamenta en el calculo de la distancia más lejana entre los pares
-de objetos.\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\centering\strut
-Se aplica el método ``complete'' de la función \emph{hclust} a una
-matriz normalizada y con similaridad de Jaccard.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
-Enlace medio\strut
-\end{minipage} & \begin{minipage}[t]{0.58\columnwidth}\centering\strut
-Pondera la media entre las distancias mínimas y máximas, el resultado
-depende del tipo de ``promedio'' que se calcule:\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
+\includegraphics[width=1.00000\textwidth]{Tablas-0 (2).png} \textbar{}
 
-UPGMA ``Unweighted Pair Group Method with Arithmetic mean''. WPGMA
-``Weighted Pair Group Method with Arithmetic mean''. UPGMC ``Unweighted
-Pair Group Method using Centroids''.\\
-WPGMC ``Weighted Pair Group Method using Centroids''. \textbar{} Mismo
-procedimiento, pero se sustituye el método por ``average'' o
-``ward.D2''. \textbar{}
+Se realizó una correlación entre los tres grupos determinados para WARD
+y las variables ambientales para definir posibles asociaciones entre
+estos o la exitencia de un grupo que se decante por al menos una
+varibale en específico, fueron empleadas las pruebas ANOVA para evaluar
+homogeneidad de medias y Kruskal-Wallis para evaluar homogeneidad de
+medianas. De igual forma, fue generada la diversidad alpha aplicando la
+función \emph{alpha\_div} a la matriz de comunidad, transformandola en
+una matriz de índices, entropías, equidades y ratios. En específico se
+crearon columnas con los índices N0 (Renyi), entropía H (diversidad de
+Shannon), Hb2 (entropía de Shannon en base =2), los números de
+diversidad de Hill (N1, Nb2, N2), J (equidad de Pielou), y las dos
+ratios de Hill (E10 y E20).
+
+Para obtner la estimación de riqueza de acuerdo a la diversidad de
+especies en la parcela se emplearon los estimadores no paramétricos o de
+``distribución libre'', entre estos están Chao1, Bootstrap, y los
+Jackknife1 de primer y segundo orden.
 
 \ldots
 
 \section{Resultados}\label{resultados}
 
-La parcela de 50ha en BCI posee 3847 individuos de la familia
-\emph{Fabaceae Mimosoideae} agrupados en 18 especies distribuidas de
+La parcela madre en BCI posee 3847 individuos de la familia
+\emph{Fabaceae mimosoideae} agrupados en 18 especies distribuidas de
 forma aleatoria en 50 sitios de 1ha cada uno. La especie más abundante
-es \emph{Inga Marginata} {[}767{]}, seguida de cerca por \emph{Inga
-Umbellifera} {[}765{]}; mientras que la más escasa es \emph{Cojoba
-Rufescens} {[}2{]}, seguida de \emph{Inga Oerstediana} {[}4{]}. La
+es \emph{Inga marginata} {[}767{]}, seguida de cerca por \emph{Inga
+umbellifera} {[}765{]}; mientras que la más escasa es \emph{Cojoba
+rufescens} {[}2{]}, seguida de \emph{Inga oerstediana} {[}4{]}. La
 abundancia especifica acorde a una organización ascendente por número de
-individuos presenta una mediana de 57 individuos {[}\emph{Inga Punctata}
-e \emph{Inga Laurina}{]}, siendo la mitad más pobre de especies el
+individuos presenta una mediana de 57 individuos {[}\emph{Inga punctata}
+e \emph{Inga laurina}{]}, siendo la mitad más pobre de especies el
 equivalente a un 5.82\% {[}224{]} y la mitad más presente el 94.18\%
 {[}3623{]}. La riqueza de especies por cuadrante evidencia una
 distribución también desproporcional, el C26 presenta la riqueza más
@@ -481,34 +465,37 @@ la abundante riqueza de especies en el hábitat pantanoso, su pobreza en
 el bosque adulto en zona alta, la abundancia marcada el bosque adulto en
 zona baja y su riqueza equilibrada . (Ver Gráficos lineales 1 y 2).
 
-Insertar Gráfs\_Regresión\_Lineal\_aed\_2.
-
-----Podría interpretar mejor el boxplot---- *Sería interesante dedicar
-un acápite para la descripción de la composición mineral del suelo,
-hacer un ançalisis de las variables de elementos tomando en cuenta 5 C
-con más y 5 C con menos presencia.
+***Insertar Gráfs\_Regresión\_Lineal\_aed\_2.
 
 El grado de asociación según la similaridad de Jaccard acorde a la
 abundancia de especies por cuadro con matriz transformada
 \emph{Hellinger} expone la existencia de clústers super semejantes
 limitados por los sitios C28-C33; C33-C40; C24-C2; C8-C10. Estos sitios
 comparten un 75\% o más de las especies de acuerdo con la matriz
-ordenada en función de la relación de proximidad. (Ver mapa de calor 1).
+ordenada en función de la relación de proximidad (ver mapa de calor
+superior \ref{fig:heat}). Por otra parte, la presencia de variables
+edáficas como minerales y otros elementos está asociada a la abundancia
+de especies en el clúster formado por los sitios C1-C9 de la matriz
+ordenada en función del id de lugar, pero además de esta relación no hay
+indicios de una dependencia entre estas variables que evidencie
+asociación alguna (ver mapa de calor inferior \ref{fig:heat}). De igual
+forma, no existe una relación de asociación entre las variables mixtas
+``hábitat, quebrada, heterogeneidad ambiental'' y la distribución de
+especies por cuadros. (Ver figura 1).
 
-\textbf{\emph{Insertar mapa de calor 1. aa\_2\_Modo\_Q}} El color rosado
-intenso representa ``mucha similaridad o distancia corta'', mientras que
-el color azul intenso significa que los sitios están ``muy alejados''.
+\begin{figure}
+\centering
+\includegraphics[width=1.00000\textwidth]{Análisis/Imágenes manuscrito/Heat_maps_Q.png}
+\caption{Mapas asociación de especies por abundancia en los sitios de
+muestreo (superior) y por asociación de variables ambientales y
+abundancia (inferior).\label{fig:heat}}
+\end{figure}
 
-La presencia de variables edáficas como minerales y otros elementos está
-asociada a la abundancia de especies en el clúster formado por los
-sitios C1-C9 de la matriz ordenada en función del id de lugar, pero
-además de esta relación no hay indicios de una dependencia entre estas
-variables que evidencie asociación alguna. Por otro lado, no existe una
-relación de asociación entre las variables mixtas ``hábitat, quebrada,
-heterogeneidad ambiental'' y la distribución de especies por cuadros.
-(Ver mapas de calor 1 y 2).
-
-\textbf{\emph{Insertar mapa de calor 3 y 4 . aa\_2\_modo\_Q}}
+\textbf{\emph{Insertar mapa de calor 1. aa\_2\_Modo\_Q}}
+\textbf{\emph{Insertar mapa de calor 3 y 4 . aa\_2\_modo\_Q}} El color
+rosado intenso representa ``mucha similaridad o distancia corta'',
+mientras que el color azul intenso significa que los sitios están ``muy
+alejados''.
 
 La asociación interespecífica en función de la abundancia, como se
 observa en el mapa de calor número 5, evidencia un grado de asociación
@@ -520,21 +507,87 @@ matriz binaria (presencia/ausencia), donde se forma un clúster entre
 \emph{Inga cocleensis} e \emph{Inga laurina} que describe bastante
 coexistencia entre las especies {[}75\%-100\%{]}, y un macroclúster
 entre \emph{Inga pezizifera} e \emph{Inga spectabilis} con cercanía
-considerable.
+considerable. En ese sentido, la matriz de correlación entre las
+variables ``abundancia, riqueza, y composición del suelo'' ,realizada
+mediante el índice \emph{rho} de sperman, corrobora lo observado en los
+mapas de calor anteriores acerca del escaso grado de asosiación entre
+dichas variables. Tampoco se observa relación entre las dos primeras y
+las variables relativas a la geomorfología del lugar.
 
 \textbf{\emph{Insertar mapa de calor 1 y 2 . aa\_3\_modo\_R}}
-
-En ese sentido, la matriz de correlación entre las variables
-``abundancia, riqueza, y composición del suelo'' ,realizada mediante el
-índice \emph{rho} de sperman, corrobora lo observado en los mapas de
-calor anteriores acerca del escaso grado de asosiación entre dichas
-variables. Tampoco se observa relación entre las dos primeras y las
-variables relativas a la geomorfología del lugar.
-
 \textbf{\emph{Insertar matriz correlación Sperman 1 y 2 .
 aa\_3\_modo\_R}}
 
+Acorde al ordenamiento por enlace simple, los cuadros 32, 50 y 43 se
+separan bastante de los demás, lo cual se corresponde con la abundancia
+y riqueza de especies en estos sitios comparada con los demás, siendo en
+C32 116 {[}tercera más alta{]} y 8 {[}tercil más pobre{]}
+respectivamente, por ejemplo. También se observan dos grupos definidos
+formados entre los sitios C22-C37 y C28-C7.
+
+\textbf{\emph{Insertar ordenamiento por enlace simple}}
+
+En el dendrograma de WARD se observa la presencia de de tres grupos
+definidos entre los sitios C3-C7, C46-C34 y C27-C23; formados por 11, 18
+y 21 sitios respectivamente. También pueden definirse cinco subgrupos
+menores más próximos entre sí: C3-C7 {[}sitios con abundacia y riqueza
+promedio{]}, C46-C22, C27-C48, C50-C23 {[}citios con las mayores
+abundancias y riquezas, o al menos una de estas en forma de
+outlier{]}.Por otra parte, en los diagramas de cajas de los tres (3)
+grupos WARD para las variables ambientales se observa distancia que se
+acrecenta según cambia de grupo, en orden ascendente, en las medianas
+respecto a las variables Boro, Hierro, Geomorfología en llanura,
+Potasio, Nitrógeno Minimo, pH y zinc.Esta tendencia es también descrita
+en menor medida por las variables Calcio, Cobre, Heterogeneidad
+ambiental y Magnesio. En constrate, este patrón se invierte en las
+variables Aluminio y Geomorfología en vaguada. Por otra parte, el
+segúndo grupo se decanta por la variable Fósforo, presentando números
+inferiores en Abundancia y Riqueza de especies, mientras que el primer y
+tercer grupo son bastante homogéneos en ese sentido.\\
+\textbf{\emph{Insertar boxplot agrupamiento WARD}}
+\textbf{\emph{Insertar mapas de grupos WARD y relación con variable Al}}
+
+En la matriz de correlación para determinar equidad se observan niveles
+de correlación bastante bajos para todas la variables ambientales,
+siendo las variables Boro, Fósforo, Nitrógeno y pH las que presentan
+niveles significativos respecto a los números de Hill y los índices de
+Shannon, más no tanto como para ser considerados determinantes de la
+diversidad de especies de manera amplia en la muestra. Por otra parte,
+la variable ``Riqueza global'' presenta niveles determinantes para los
+índices anteriores, promediando un 73\% de correlación de manera
+colectiva.
+
+\textbf{\emph{Insertar matriz 2, análisis diversidad alpha}}
+
+La riqueza de especies respecto a la diversidad de estas en la parcela
+se determinó en porcentajes aproximados a la riqueza real. Por otro
+lado, la diversidad beta describe una curva ascendente según aumenta el
+número de ordenamiento en Hill, llegando a superar el N0. Presentando un
+grado de dominancia mayor y una dependencia de la abundancia en la
+diversidad beta. Las especiees que más contribuen a la diversidad son
+\emph{Inga acumiata}, \emph{Inga marginata}, \emph{Inga Pezizifera} e
+\emph{Inga thibaudiana}; donde las dos primeras son de las especies más
+abundantes y por si solas representan el 35.7\% de los individuos en la
+comunidad de las fabaceas. Por otra parte, los sitios que más
+contribuyen a la diversidad beta son C32 y C50. (Ver tabla
+\ref{tab:est})
+
+Table 4: Estimadores de riqueza de especies. \label{tab:est}
+
+\begin{longtable}[]{@{}llllll@{}}
+\toprule
+Estimadores & Chao & Jackknife1 & Jackknife2 & Bootstrap &
+Real\tabularnewline
+\midrule
+\endhead
+& 18 (100\%) & 18 (100\%) & 17.06 (105.5\%) & 18.19 (98.95\%) &
+18\tabularnewline
+\bottomrule
+\end{longtable}
+
 \section{Discusión}\label{discusiuxf3n}
+
+La familia \emph{Fabaceae mimosoideae}
 
 \section{Agradecimientos}\label{agradecimientos}
 
@@ -593,6 +646,9 @@ recognition approach to classification and mapping of landforms.
 Montagnini, F., Jordan, C. F., \& others. (2005). \emph{Tropical forest
 ecology: The basis for conservation and management}. Springer Science \&
 Business Media.
+
+\hypertarget{ref-Moreno2001}{}
+Moreno, C. (2001). \emph{Métodos para medir la biodiversidad} (Vol. 1).
 
 \hypertarget{ref-saikia2020tropical}{}
 Saikia, P., Nag, A., Anurag, S., Chatterjee, S., \& Khan, M. L. (2020).

@@ -38,7 +38,7 @@ source("Cacatuo.R", local = knitr::knit_global())
 
 El análisis de biodiversidad forestal viabiliza la obtención de información sobre el comportamiento de las especies en su hábitat, los efectos de cambios geoestacionarios, y las probables consecuencias de actividades antrópicas en el ciclo vital de los bosques; cuya función en el caso de los tropicales puede ser productiva (madera, fibra, leña, productos no maderables); ambiental (regulación del clima, reserva de biodiversidad, conservación de suelos y agua, etc.); y social (subsistencia de poblamientos humanos locales y su cultura) [@montagnini2005tropical].
 
-La isla Barro Colorado (BCI), de coordenadas [9º 9' 0'' N, 79º 51' 0'' W], es una plataforma basáltica miocénica sobre la que descansa un bosque tropical primario compuesto por 305 especies arbóreas  [@condit1999dynamics]. Fue el emplazamiento de ocho censos forestales realizados por el Smithsonian Tropical Research Institute entre 1981 y 2015, donde la subfamilia *Fabaceae Mimosoideae* representó el 5.9% de las especies registradas en la parcela de 50 hectáreas delimitada en 1980 [Cita3,WebP]. 
+La isla Barro Colorado (BCI), de coordenadas [9º 9' 0'' N, 79º 51' 0'' W], es una plataforma basáltica miocénica sobre la que descansa un bosque tropical primario compuesto por 305 especies arbóreas  [@condit1999dynamics]. Fue el emplazamiento de ocho censos forestales realizados por el Smithsonian Tropical Research Institute entre 1981 y 2015, donde la subfamilia *Fabaceae Mimosoideae* representó el 5.9% de las especies registradas en la parcela de 50 hectáreas delimitada en 1980. 
 
 ![Isla Barro Colorado, Panamá [@inproceedings].](Map-of-Barro-Colorado-Island-BCI-Panama.png){width=50%}
 
@@ -111,7 +111,7 @@ Para obtner la estimación de riqueza de acuerdo a la diversidad de especies en 
 
 # Resultados
 
-La parcela madre en BCI posee 3847 individuos de la familia *Fabaceae Mimosoideae* agrupados en 18 especies distribuidas de forma aleatoria en 50 sitios de 1ha cada uno. La especie más abundante es *Inga Marginata* [767], seguida de cerca por *Inga Umbellifera* [765]; mientras que la más escasa es *Cojoba Rufescens* [2], seguida de *Inga Oerstediana* [4]. La abundancia especifica acorde a una organización ascendente por número de individuos presenta una mediana de 57 individuos [*Inga Punctata* e *Inga Laurina*], siendo la mitad más pobre de especies el equivalente a un 5.82% [224] y la mitad más presente el 94.18% [3623]. La riqueza de especies por cuadrante evidencia una distribución también desproporcional, el C26 presenta la riqueza más débil [5] y el C30 la más fuerte [13]. No obstante, aunque no existe relación directa entre la riqueza y la abundancia por cuadrante, en C26 coíncide y en algunos otros cuadros puede existir cierta aproximación.
+La parcela madre en BCI posee 3847 individuos de la familia *Fabaceae mimosoideae* agrupados en 18 especies distribuidas de forma aleatoria en 50 sitios de 1ha cada uno. La especie más abundante es *Inga marginata* [767], seguida de cerca por *Inga umbellifera* [765]; mientras que la más escasa es *Cojoba rufescens* [2], seguida de *Inga oerstediana* [4]. La abundancia especifica acorde a una organización ascendente por número de individuos presenta una mediana de 57 individuos [*Inga punctata* e *Inga laurina*], siendo la mitad más pobre de especies el equivalente a un 5.82% [224] y la mitad más presente el 94.18% [3623]. La riqueza de especies por cuadrante evidencia una distribución también desproporcional, el C26 presenta la riqueza más débil [5] y el C30 la más fuerte [13]. No obstante, aunque no existe relación directa entre la riqueza y la abundancia por cuadrante, en C26 coíncide y en algunos otros cuadros puede existir cierta aproximación.
 
 (ver tabla \ref{tab:abun_sp} y figura \ref{fig:abun_sp_q})
 
@@ -131,30 +131,24 @@ El terreno eminentemente describe una geomorfología en vertiente, siendo esta c
 ***Insertar Gráfs_Regresión_Lineal_aed_2.
 
 
-El grado de asociación según la similaridad de Jaccard acorde a la abundancia de especies por cuadro con matriz transformada *Hellinger* expone la existencia de clústers super semejantes limitados por los sitios C28-C33; C33-C40; C24-C2; C8-C10. Estos sitios comparten un 75% o más de las especies de acuerdo con la matriz ordenada en función de la relación de proximidad. La presencia de variables edáficas como minerales y otros elementos está asociada a la abundancia de especies en el clúster formado por los sitios C1-C9 de la matriz ordenada en función del id de lugar, pero además de esta relación no hay indicios de una dependencia entre estas variables que evidencie asociación alguna. Por otro lado, no existe una relación de asociación entre las variables mixtas "hábitat, quebrada, heterogeneidad ambiental" y la distribución de especies por cuadros. (Ver mapas de calor 3 y 4). (Ver mapa de calor 1).
+El grado de asociación según la similaridad de Jaccard acorde a la abundancia de especies por cuadro con matriz transformada *Hellinger* expone la existencia de clústers super semejantes limitados por los sitios C28-C33; C33-C40; C24-C2; C8-C10. Estos sitios comparten un 75% o más de las especies de acuerdo con la matriz ordenada en función de la relación de proximidad (ver mapa de calor superior \ref{fig:heat}). Por otra parte, la presencia de variables edáficas como minerales y otros elementos está asociada a la abundancia de especies en el clúster formado por los sitios C1-C9 de la matriz ordenada en función del id de lugar, pero además de esta relación no hay indicios de una dependencia entre estas variables que evidencie asociación alguna (ver mapa de calor inferior \ref{fig:heat}). De igual forma, no existe una relación de asociación entre las variables mixtas "hábitat, quebrada, heterogeneidad ambiental" y la distribución de especies por cuadros. (Ver figura 1).
+
+![Mapas asociación de especies por abundancia en los sitios de muestreo (superior) y por asociación de variables ambientales y abundancia (inferior).\label{fig:heat}](Análisis/Imágenes manuscrito/Heat_maps_Q.png){width=100%}
 
 ***Insertar mapa de calor 1. aa_2_Modo_Q***
+***Insertar mapa de calor 3 y 4 . aa_2_modo_Q***
 El color rosado intenso representa "mucha similaridad o distancia corta", mientras que el color azul intenso significa que los sitios están "muy alejados". 
 
-
-
-***Insertar mapa de calor 3 y 4 . aa_2_modo_Q***
-
-La asociación interespecífica en función de la abundancia, como se observa en el mapa de calor número 5, evidencia un grado de asociación muy amplio [75%-100%] en el clúster delimitado por *Inga lauriana* e *Inga margitana*, así como uno considerable en el macroclúster comprendido entre *Inga pezizifera* e *Inga spectabilis*. Es descrito un patrón similar por las especies en la matriz binaria (presencia/ausencia), donde se forma un clúster entre *Inga cocleensis* e *Inga laurina* que describe bastante coexistencia entre las especies [75%-100%], y un macroclúster entre *Inga pezizifera* e *Inga spectabilis* con cercanía considerable.
+La asociación interespecífica en función de la abundancia, como se observa en el mapa de calor número 5, evidencia un grado de asociación muy amplio [75%-100%] en el clúster delimitado por *Inga lauriana* e *Inga margitana*, así como uno considerable en el macroclúster comprendido entre *Inga pezizifera* e *Inga spectabilis*. Es descrito un patrón similar por las especies en la matriz binaria (presencia/ausencia), donde se forma un clúster entre *Inga cocleensis* e *Inga laurina* que describe bastante coexistencia entre las especies [75%-100%], y un macroclúster entre *Inga pezizifera* e *Inga spectabilis* con cercanía considerable. En ese sentido, la matriz de correlación entre las variables "abundancia, riqueza, y composición del suelo" ,realizada mediante el índice *rho* de sperman, corrobora lo observado en los mapas de calor anteriores acerca del escaso grado de asosiación entre dichas variables. Tampoco se observa relación entre las dos primeras y las variables relativas a la geomorfología del lugar.
 
 ***Insertar mapa de calor 1 y 2 . aa_3_modo_R***
-
-En ese sentido, la matriz de correlación entre las variables "abundancia, riqueza, y composición del suelo" ,realizada mediante el índice *rho* de sperman, corrobora lo observado en los mapas de calor anteriores acerca del escaso grado de asosiación entre dichas variables. Tampoco se observa relación entre las dos primeras y las variables relativas a la geomorfología del lugar.
-
 ***Insertar matriz correlación Sperman 1 y 2 . aa_3_modo_R***
 
 Acorde al ordenamiento por enlace simple, los cuadros 32, 50 y 43 se separan bastante de los demás, lo cual se corresponde con la abundancia y riqueza de especies en estos sitios comparada con los demás, siendo en C32 116 [tercera más alta] y 8 [tercil más pobre] respectivamente, por ejemplo. También se observan dos grupos definidos formados entre los sitios C22-C37 y C28-C7.
 
 ***Insertar ordenamiento por enlace simple***
 
-En el dendrograma de WARD se observa la presencia de de tres grupos definidos entre los sitios C3-C7, C46-C34 y C27-C23; formados por 11, 18 y 21 sitios respectivamente. También pueden definirse cinco subgrupos menores más próximos entre sí: C3-C7 [sitios con abundacia y riqueza promedio], C46-C22, C27-C48, C50-C23 [citios con las mayores abundancias y riquezas, o al menos una de estas en forma de outlier].
-
-En los diagramas de cajas de los tres (3) grupos WARD para las variables ambientales se observa distancia que se acrecenta según cambia de grupo, en orden ascendente, en las medianas respecto a las variables Boro, Hierro, Geomorfología en llanura,  Potasio, Nitrógeno Minimo, pH y zinc.Esta tendencia es también descrita en menor medida  por las variables Calcio, Cobre, Heterogeneidad ambiental y Magnesio. En constrate, este patrón se invierte en las variables Aluminio y Geomorfología en vaguada. Por otra parte, el segúndo grupo se decanta por la variables Fósforo, presentando números inferiores en Abundancia y Riqueza de especies, mientras que el primer y tercer grupo son bastante homogéneos en ese sentido.     
+En el dendrograma de WARD se observa la presencia de de tres grupos definidos entre los sitios C3-C7, C46-C34 y C27-C23; formados por 11, 18 y 21 sitios respectivamente. También pueden definirse cinco subgrupos menores más próximos entre sí: C3-C7 [sitios con abundacia y riqueza promedio], C46-C22, C27-C48, C50-C23 [citios con las mayores abundancias y riquezas, o al menos una de estas en forma de outlier].Por otra parte, en los diagramas de cajas de los tres (3) grupos WARD para las variables ambientales se observa distancia que se acrecenta según cambia de grupo, en orden ascendente, en las medianas respecto a las variables Boro, Hierro, Geomorfología en llanura,  Potasio, Nitrógeno Minimo, pH y zinc.Esta tendencia es también descrita en menor medida  por las variables Calcio, Cobre, Heterogeneidad ambiental y Magnesio. En constrate, este patrón se invierte en las variables Aluminio y Geomorfología en vaguada. Por otra parte, el segúndo grupo se decanta por la variable Fósforo, presentando números inferiores en Abundancia y Riqueza de especies, mientras que el primer y tercer grupo son bastante homogéneos en ese sentido.     
 ***Insertar boxplot agrupamiento WARD***
 ***Insertar mapas de grupos WARD y relación con variable Al***
 
@@ -174,7 +168,7 @@ Table 4: Estimadores de riqueza de especies. \label{tab:est}
 
 # Discusión
 
-La 
+La familia *Fabaceae mimosoideae*
 
 # Agradecimientos
 
