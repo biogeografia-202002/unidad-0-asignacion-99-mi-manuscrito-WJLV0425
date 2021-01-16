@@ -197,11 +197,11 @@ específicas de manera marcada.
 
 El análisis de biodiversidad viabiliza la obtención de información sobre
 el comportamiento de las especies en su hábitat, los efectos de cambios
-ambientales, y las probables consecuencias de actividades antrópicas en
-el ciclo vital de los bosques y, consecuentemente, en sus funciones. La
-importancia de los bosques, especialmente los tropicales, radica
-precisamente en sus diversas funciones productivas (e.g.~madera, fibra),
-ambientales (e.g.~regulación del clima) y sociales (subsistencia humana,
+ambientales, las probables consecuencias de actividades antrópicas en el
+ciclo vital de los bosques y en sus funciones. La importancia de los
+bosques, especialmente los tropicales, radica precisamente en sus
+diversas funciones productivas (e.g.~madera, fibra), ambientales
+(e.g.~regulación del clima) y sociales (e.g.~subsistencia humana,
 patrimonio cultural) (Montagnini, Jordan, \& others, 2005).
 
 Las fabáceas concentran su mayor diversidad en la franja tropical y
@@ -230,7 +230,7 @@ es una plataforma basáltica miocénica sobre la que descansa un bosque
 tropical primario compuesto por 305 especies arbóreas (Condit et al.,
 1999). Es el emplazamiento de ocho censos forestales realizados por el
 Smithsonian Tropical Research Institute entre 1981 y 2015, donde la
-subfamilia \emph{Fabaceae Mimosoideae} representó el 5.9\% de las
+subfamilia \emph{Fabaceae-mimosoideae} representó el 5.9\% de las
 especies registradas en la parcela de 50 hectáreas delimitada en 1980.
 
 \begin{figure}
@@ -259,18 +259,18 @@ importancia económica, y social; en el presente estudio se responde a
 los niveles de asociación presentados por esta familia, la organización
 de los cuadros acorde a su composición de especies, y la probable
 influencia de varibales ambientales en la descripción de patrones para
-estos propósitos en BCI. Además, otro objetivo es realizar una
-estimación de la riqueza de la familia, asumiendo un 85\% de riqueza o
-más como una `buena representación'. La determinación de estos patrones
-de asociación, agrupamiento y diversidad servirán para comprender que
+estos aspectos en BCI. Además, otro objetivo es realizar una estimación
+de la riqueza de la familia, asumiendo un 85\% de riqueza o más como una
+`buena representación'. La determinación de estos patrones de
+asociación, agrupamiento y diversidad servirán para comprender qué
 caracterisricas ambientales supeditan su desarrollo. En ese sentido, la
 ecología numérica es el campo de estudio que brinda las técnicas,
 índices, y herramientas necesarias para obtener conclusiones a partir de
-data forestal, animal, y biotopo. R es un software de código abierto y
-ambiente de programación que brinda una amplia variedad de facilidades
-para el manejo, creación, y visualización gráfica de ciencia de datos,
-resultando ideal para este campo de estudio (Venables, Smith, Team, \&
-others, 2009).
+data forestal, animal, y biotopo; mientras que R es un software de
+código abierto y ambiente de programación que brinda una amplia variedad
+de facilidades para el manejo, creación, y visualización gráfica de
+ciencia de datos, resultando ideal para este campo de estudio (Venables,
+Smith, Team, \& others, 2009).
 
 Los métodos de análisis en ecología numérica han incrementado
 exponencialmente a partir de la década 1950, desarrollándose índices,
@@ -287,48 +287,33 @@ Table 1: Métodos de análisis en ecología numérica empleados (Moreno,
 \begin{figure}
 \centering
 \includegraphics[width=1.00000\textwidth]{Analisis/Diversidad/Tabla_Metodos_Analisis.png}
-\caption{\textbackslash{}label\{tab:met}
+\caption{}
 \end{figure}
 
 \ldots
 
 \section{Metodología}\label{metodologuxeda}
 
-Obtenida la data censal de Barro Colorado, se empleó R para realizar
-análisis estadísticos, gráficos, matrices, y mapas a la matriz de la
-familia \emph{Fabaceae mimosoideae} partiendo del repositorio
-\textbf{Scripts de análisis BCI} (Batlle, 2020).
+La data censal de la parcela de 50Ha en BCI se obtuvo siguiendo un
+meticuloso proceso de clasificación de especies, tomando en cuenta solo
+especímenes con tallos de diametro mayor a 1 cm a la altura del pecho
+(\emph{Data}, n.d.). Se empleó R para realizar análisis estadísticos,
+gráficos, matrices, y mapas a la matriz de la familia
+\emph{Fabaceae-mimosoideae} partiendo del repositorio \textbf{Scripts de
+análisis BCI} (Batlle, 2020).
 
 La creación de los utiles necesarios para los análisis fue posible
 mediante el empleo de los paquetes \emph{vegan}, \emph{tydiverse}, y
-\emph{sf} para extraer la familia \emph{Fabaceae Mimosoideae} de la data
+\emph{sf} para extraer la familia \emph{Fabaceae-mimosoideae} de la data
 censal, obtener las estadísticas, gráficos lineales y diagramas de
 cajas. A la vez que, mediante \emph{mapview} se crearon, proyectaron y
 almacenaron los mapas; con \emph{RColorBrewer} se para obtuvo una gama
 de colores más amplia en los gráficos y mapas; y con \emph{broom} se
 visualizaron las matrices de distancia. Otros paquetes empleados fueron
-\emph{magrittr}, \emph{plyr}, \emph{vegetarian} ({\textbf{???}},
-{\textbf{???}}; Appelhans, Detsch, Reudenbach, \& Woellauer, 2019;
-Charney \& Record, 2012; Neuwirth, 2014; Oksanen et al., 2019; Pebesma,
-2018; Robinson \& Hayes, 2019; Wickham, 2011).
-
-La caracterización geomorfológica se elaboró a partir del algoritmo
-r.geomorphons siguiendo el modelo de Jasiewicz \& Stepinski (2013). (Ver
-figuras \ref{Geomorf3} y \ref{Geomorf2})
-
-\begin{figure}
-\centering
-\includegraphics[width=0.75000\textwidth]{Geomorf3.png}
-\caption{Modelo desarrollado por Jasiewicz \& Stepinski (2013) para la
-caracterización del relieve.\label{Geomorf3}}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.75000\textwidth]{Geomor2.png}
-\caption{Ejemplos de las variantes de relive más comunes obtenidas a
-través del algoritmo (ibidem).\label{Geomorf2}}
-\end{figure}
+\emph{magrittr}, \emph{plyr}, \emph{vegetarian} ({\textbf{???}};
+Appelhans, Detsch, Reudenbach, \& Woellauer, 2019; Charney \& Record,
+2012; Neuwirth, 2014; Oksanen et al., 2019; Pebesma, 2018; Robinson \&
+Hayes, 2019; Wickham, 2011, 2017).
 
 Diversos estudios fueron tomados en cuenta para la clasificación de
 hábitats, se emplearon 5 de las categorías definidas por Harms, Condit,
@@ -371,11 +356,14 @@ producidas por outliers en los datos, convirtiendo a binaria
 (presencia/ausencia) la matriz de comunidad transpuesta para calcular
 distancias entre especies con la similaridad de Jaccard y el índice
 \emph{rho} de Sperman. Por otro parte, el agrupamiento jerárquico fue
-analizado mediante tres técnicas o criterios de enlace, donde fueron
-seleccionados los criterios enlace simple y enlace promedio de varianza
-mínima tomando en cuenta métodos de regresión lineal {[}WARD{]}, siendo
-la muestra dividida en tres grupos en este último. (Ver tabla
-\ref{tab:enlace})
+analizado mediante tres técnicas o criterios de enlace (siple, UPGMA,
+WARD), donde fueron seleccionados los criterios enlace simple y enlace
+promedio de varianza mínima tomando en cuenta métodos de regresión
+lineal {[}WARD{]}, siendo la muestra dividida en tres grupos en este
+último. Se descartó el método UPGMA porque los cuadros de 1Ha no
+formaban grupos consistentes para análisis, siendo estos ``49-1'' al ser
+dividida la muestra en dos y ``48-1-1'' al ser dividida en tres. (Ver
+tabla \ref{tab:enlace})
 
 Table 3: Clasificación de los criterios de enlace (Harms et al.,
 2001).\label{tab:enlace}
@@ -383,46 +371,37 @@ Table 3: Clasificación de los criterios de enlace (Harms et al.,
 \includegraphics[width=1.00000\textwidth]{Analisis/Diversidad/Tabla_Criterios_Enlace.png}
 \textbar{}
 
-Se realizó una correlación entre los tres grupos determinados para WARD
-y las variables ambientales para definir posibles asociaciones entre
-estos o la existencia de un grupo que se decante por al menos una
-variable en específico, fueron empleadas las pruebas ANOVA para evaluar
-homogeneidad de medias y Kruskal-Wallis para evaluar homogeneidad de
-medianas. De igual forma, fue generada la diversidad alpha aplicando la
-función \emph{alpha\_div} a la matriz de comunidad, transformándola en
-una matriz de índices, entropías, equidades y ratios. En específico se
-crearon columnas con los índices N0 (Renyi), entropía H (diversidad de
-Shannon), Hb2 (entropía de Shannon en base =2), los números de
-diversidad de Hill (N1, Nb2, N2), J (equidad de Pielou), y las dos
-ratios de Hill (E10 y E20).
+Se evaluó si las varibales ambientales presentan efectos entre los
+clústers de sitios agrupados según la composición de especies por el
+método WARD, así como se generó la diversidad alpha aplicando la función
+\emph{alpha\_div} a la matriz de comunidad, obteniendo los índices, las
+entropías, equidades y ratios. En específico se crearon columnas con los
+índices N0 (Renyi), entropía H (diversidad de Shannon), Hb2 (entropía de
+Shannon en base =2), los números de diversidad de Hill (N1, Nb2, N2), J
+(equidad de Pielou), y las dos ratios de Hill (E10 y E20).
 
 Para obtener la estimación de riqueza de acuerdo a la diversidad de
 especies en la parcela se emplearon los estimadores no paramétricos o de
 ``distribución libre'', entre estos están Chao1, Bootstrap, y los
 Jackknife1 de primer y segundo orden.
 
-\ldots
-
 \section{Resultados}\label{resultados}
 
-La parcela madre en BCI posee 3847 individuos de la familia
+La parcela de 50 héctareas de BCI posee 3847 individuos de la familia
 \emph{Fabaceae mimosoideae} agrupados en 18 especies distribuidas de
 forma aleatoria en 50 sitios de 1ha cada uno. La especie más abundante
-es \emph{Inga marginata} {[}767{]}, seguida de cerca por \emph{Inga
-umbellifera} {[}765{]}; mientras que la más escasa es \emph{Cojoba
-rufescens} {[}2{]}, seguida de \emph{Inga oerstediana} {[}4{]}. La
-abundancia especifica acorde a una organización ascendente por número de
-individuos presenta una mediana de 57 individuos {[}\emph{Inga punctata}
-e \emph{Inga laurina}{]}, siendo la mitad más pobre de especies el
-equivalente a un 5.82\% {[}224{]} y la mitad más presente el 94.18\%
-{[}3623{]}. La riqueza de especies por cuadrante evidencia una
-distribución también desproporcional, el C26 presenta la riqueza más
-débil {[}5{]} y el C30 la más fuerte {[}13{]}. No obstante, aunque no
-existe relación directa entre la riqueza y la abundancia por cuadrante,
-en C26 coincide y en algunos otros cuadros puede existir cierta
-aproximación.
-
-(ver tabla \ref{tab:abun_sp} y figura \ref{fig:abun_sp_q})
+es \emph{Inga marginata} (767 individuos), seguida de cerca por
+\emph{Inga umbellifera} (765 individuos); mientras que la más escasa es
+\emph{Cojoba rufescens} (2 individuos), seguida de \emph{Inga
+oerstediana} (4 individuos). La abundancia de especies presenta una
+mediana de 57 individuos {[}\emph{Inga punctata} e \emph{Inga
+laurina}{]}, representando la mitad de especies menos abundante el
+equivalente a un 5.82\% de la abundancia total (224 individuos) y la
+mitad más presente el 94.18\% (3623 individuos). La riqueza de especies
+por cuadro de 1 Ha en BCI, en lo adelante `Cxx' para cuadros
+específicos, evidencia una distribución también desigual, el C26
+presenta la riqueza más débil (5 especies) y el C30 la más fuerte (13
+especies). (ver tabla \ref{tab:abun_sp} y figura \ref{fig:abun_sp_q})
 
 \begin{longtable}[]{@{}lr@{}}
 \caption{\label{tab:abun_sp}Abundancia por especie de la familia
@@ -462,23 +441,22 @@ Cojoba rufescens & 2\tabularnewline
 \caption{\label{fig:abun_sp_q}Abundancia por especie por quadrat}
 \end{figure}
 
-El terreno eminentemente describe una geomorfología en vertiente, siendo
-esta característica la más destacada en el 88\% de los C 1Ha; en tanto
-que el 12\% restante describe una geomorfología donde predomina el
-relieve llano. La parcela madre está compuesta en un 52\% por bosque
-adulto en meseta baja distribuido ampliamente, un 24\% por bosque adulto
-en pendiente con presencia marcada en las parcelas {[}C41-C45{]}, un
-16\% por bosque adulto en meseta alta concentrado en las parcelas
-{[}C32-C34; C37-C40{]}, mientras que el 8\% restante es hábitat
-pantanoso y bosque joven en forma equitativa. No parece existir una
-relación directa entre la morfología del espacio y un determinado
-hábitat, exceptuando el bosque joven que se encuentra tanto en llanura
-como en vertiente de forma considerable. En general, se percibe un leve
-aumento de la riqueza específica a medida que aumenta la abundancia de
-individuos; destacando la abundante riqueza de especies en el hábitat
-pantanoso, su pobreza en el bosque adulto en zona alta, la abundancia
-marcada el bosque adulto en zona baja y su riqueza equilibrada. (Ver
-figura \ref{fig:leal}).
+La forma del terreno predominante es la vertiente, siendo esta
+característica la más destacada en el 88\% de los cuadros; en tanto que
+el 12\% restante describe una geomorfología donde predomina el relieve
+llano. La parcela de 50 Ha está compuesta en un 52\% por bosque adulto
+en meseta baja distribuido ampliamente, un 24\% por bosque adulto en
+pendiente con presencia marcada en las parcelas {[}C41-C45{]}, un 16\%
+por bosque adulto en meseta alta concentrado en las parcelas {[}C32-C34;
+C37-C40{]}, mientras que el 8\% restante es hábitat pantanoso y bosque
+joven en forma equitativa. No parece existir una relación directa entre
+la morfología del espacio y un determinado hábitat, exceptuando el
+bosque joven que se encuentra tanto en llanura como en vertiente de
+forma considerable. En general, se percibe un leve aumento de la riqueza
+específica a medida que aumenta la abundancia de individuos; destacando
+la abundante riqueza de especies en el hábitat pantanoso, su pobreza en
+el bosque adulto en zona alta, la abundancia marcada el bosque adulto en
+zona baja y su riqueza equilibrada. (Ver figura \ref{fig:leal}).
 
 \begin{figure}
 \centering
@@ -716,6 +694,10 @@ and barro colorado: Comparing two 50--ha plots. \emph{Philosophical
 Transactions of the Royal Society of London. Series B: Biological
 Sciences}, \emph{354}(1391), 1739--1748.
 
+\hypertarget{ref-BCIdata}{}
+\emph{Data: Forest census plot on barro colorado island}. (n.d.).
+\url{http://ctfs.si.edu/webatlas/datasets/bci/}.
+
 \hypertarget{ref-harms2001habitat}{}
 Harms, K. E., Condit, R., Hubbell, S. P., \& Foster, R. B. (2001).
 Habitat associations of trees and shrubs in a 50-ha neotropical forest
@@ -725,11 +707,6 @@ plot. \emph{Journal of Ecology}, \emph{89}(6), 947--959.
 Hasanuzzaman, M., Araújo, S., \& Gill, S. S. (2020). \emph{The plant
 family fabaceae: Biology and physiological responses to environmental
 stresses}. Springer Nature.
-
-\hypertarget{ref-jasiewicz2013geomorphons}{}
-Jasiewicz, J., \& Stepinski, T. F. (2013). Geomorphons---a pattern
-recognition approach to classification and mapping of landforms.
-\emph{Geomorphology}, \emph{182}, 147--156.
 
 \hypertarget{ref-montagnini2005tropical}{}
 Montagnini, F., Jordan, C. F., \& others. (2005). \emph{Tropical forest
@@ -743,7 +720,7 @@ Moreno, C. (2001). \emph{Métodos para medir la biodiversidad} (Vol. 1).
 Neuwirth, E. (2014). \emph{RColorBrewer: ColorBrewer palettes}.
 Retrieved from \url{https://CRAN.R-project.org/package=RColorBrewer}
 
-\hypertarget{ref-vegan}{}
+\hypertarget{ref-vegan1}{}
 Oksanen, J., Blanchet, F. G., Friendly, M., Kindt, R., Legendre, P.,
 McGlinn, D., \ldots{} Wagner, H. (2019). \emph{Vegan: Community ecology
 package}. Retrieved from \url{https://CRAN.R-project.org/package=vegan}
@@ -771,6 +748,11 @@ Venables, W. N., Smith, D. M., Team, R. D. C., \& others. (2009).
 Wickham, H. (2011). The split-apply-combine strategy for data analysis.
 \emph{Journal of Statistical Software}, \emph{40}(1), 1--29. Retrieved
 from \url{http://www.jstatsoft.org/v40/i01/}
+
+\hypertarget{ref-tydiverse}{}
+Wickham, H. (2017). \emph{Tidyverse: Easily install and load the
+'tidyverse'}. Retrieved from
+\url{https://CRAN.R-project.org/package=tidyverse}
 
 
 
