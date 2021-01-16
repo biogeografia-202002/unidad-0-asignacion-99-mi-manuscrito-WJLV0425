@@ -8,14 +8,14 @@ output:
     template: svm-latex-ms.tex
     number_sections: true
 title: | 
-        | Patrones de Ecología Numérica Descritos por la Familia de Plantas Fabaceae Mimosoideae en la Isla Barro Colorado, Cuenca del Mar Caribe.
-        | *Patterns of Numerical Ecology Described by Plants Family Fabaceae Mimosoideae in Barro Colorado Island, Caribbean Sea Basin*.
+        | Patrones de Ecología Numérica de Fabaceae-Mimosoideae en la Isla Barro Colorado, Panamá.
+        | *Patterns of Numerical Ecology of Fabaceae-Mimosoideae in Barro Colorado Island, Panama*.
         | 
 author:
 - name: "Welifer Junior Lebron Vicente"
   affiliation: "Estudiante de Ciencias Geográficas, Universidad Autónoma de Santo Domingo (UASD)"
-abstract: "Las fabáceas son plantas de amplia distribución terrestre, sus características y propiedades las hacen importantes en diversos campos de la ciencia médica, la industria alimenticia y textil. Los métodos de análisis biogeográficos permiten cuantificar el estado de esta familia, brindando información valiosa para comprender las formas de asociación, agrupamiento, proliferación y decaimiento de acuerdo a variables ambientales. En la isla Barro Colorado el clado filogenético mimosoide presente no exhibe comportamientos que favorezcan variables edáficas y geomorfológicas específicas de manera marcada."
-keywords: "Ecología Numérica, BCI, Análisis Forestal, Lenguaje R"
+abstract: "Las fabáceas son plantas de amplia distribución terrestre y sus características las hacen importantes en diversos campos de la ciencia médica, la industria alimenticia y textil. La isla Barro Colorado posee un registro detallado de las especies de fabáceas en 50Ha, lo suficiente para comprender las caracteríticas ecosistémicas que condicionan el desarrollo de esta familia en bosques tropicales. Se emplearon métodos de análisis biogeográficos mediante lenguaje R para cuantificar su estado, brindando información valiosa para definir las formas de asociación, agrupamiento y diversidad de acuerdo a variables ambientales; evidenciando que el clado filogenético mimosoide presente no exhibe patrones asociación entre variables edáficas y geomorfológicas específicas de manera marcada."
+keywords: "Ecología Numérica, BCI, Fabaceae-Mimosoideae, Lenguaje R."
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 geometry: margin=1in
 fontfamily: mathpazo
@@ -36,9 +36,12 @@ source("Cacatuo.R", local = knitr::knit_global())
 
 # Introducción
 
-El análisis de biodiversidad forestal viabiliza la obtención de información sobre el comportamiento de las especies en su hábitat, los efectos de cambios geoestacionarios, y las probables consecuencias de actividades antrópicas en el ciclo vital de los bosques; cuya función en el caso de los tropicales puede ser productiva (madera, fibra, leña, productos no maderables); ambiental (regulación del clima, reserva de biodiversidad, conservación de suelos y agua, etc.); y social (subsistencia de poblamientos humanos locales y su cultura) [@montagnini2005tropical].
+El análisis de biodiversidad viabiliza la obtención de información sobre el comportamiento de las especies en su hábitat, los efectos de cambios ambientales, y las probables consecuencias de actividades antrópicas en el ciclo vital de los bosques y, consecuentemente, en sus funciones.  La importancia de los bosques, especialmente los tropicales, radica precisamente en sus diversas funciones productivas (e.g. madera, fibra), ambientales (e.g. regulación del clima) y sociales (subsistencia humana, patrimonio cultural) [@montagnini2005tropical].
 
-La isla Barro Colorado (BCI), de coordenadas [9º 9' 0'' N, 79º 51' 0'' W], es una plataforma basáltica miocénica sobre la que descansa un bosque tropical primario compuesto por 305 especies arbóreas [@condit1999dynamics]. Fue el emplazamiento de ocho censos forestales realizados por el Smithsonian Tropical Research Institute entre 1981 y 2015, donde la subfamilia *Fabaceae Mimosoideae* representó el 5.9% de las especies registradas en la parcela de 50 hectáreas delimitada en 1980. 
+Las fabáceas concentran su mayor diversidad en la franja tropical y subtropical, aunque se encuentran ampliamente distribuidas por la práctica totalidad de climas terrestres. Están presentes en zonas árticas, litoral costero, ambientes alpinos, bosque lluvioso, bosque estacional, sabanas, bosque seco, desiertos áridos, pantanos y manglares. Poseen características especializadas que las hacen vitales para el equilibrio ecológico y para la supervivencia del ser humano. Asimismo, el 88% de las especies de fabáceas forman nódulos con bacterias (rhizobia) para fijar el N\textsubscript{2} en la atmósfera mediante asociación simbiótica, fisiología rica en proteínas, etc.; mientras que sus semillas son empleadas para tratar células cancerígenas, sus componentes químicos las hacen esenciales para diversos tipos de industrias, y el grano de las leguminosas representa el 33% del nitrógeno necesario en la dieta del ser humano [@saikia2020tropical]. Especificando, la subfamilia *Mimosoideae* dentro del clado filogenético mimosoide es sumamente variable, estando compuesta principalmente por árboles y arbustos de flores simétricas cigomorfas con pétalos valvados, a la vez que sus especímenes tienen un gran número de estambres prominentes [@hasanuzzaman2020plant].  
+
+
+La isla Barro Colorado (9º 9' 0'' N, 79º 51' 0'' W), en lo adelante 'BCI', es una plataforma basáltica miocénica sobre la que descansa un bosque tropical primario compuesto por 305 especies arbóreas [@condit1999dynamics]. Es el emplazamiento de ocho censos forestales realizados por el Smithsonian Tropical Research Institute entre 1981 y 2015, donde la subfamilia *Fabaceae Mimosoideae* representó el 5.9% de las especies registradas en la parcela de 50 hectáreas delimitada en 1980. 
 
 ![Isla Barro Colorado, Panamá [@inproceedings].](Map-of-Barro-Colorado-Island-BCI-Panama.png){width=50%}
 
@@ -47,19 +50,14 @@ El registro forestal de BCI forma parte de una serie de parcelas permanentes del
 
 ![Área del censo forestal, Barro Colorado Island (1981-2015).](mapa_cuadros.png){width=50%}
 
-Las fabáceas concentran su diversidad en la franja tropical y subtropical, aunque se encuentran ampliamente distribuidas por la práctica totalidad de climas terrestres. Están presentes en zonas árticas, litoral costero, ambientes alpinos, bosque lluvioso, bosque estacional, sabanas, bosque seco, desiertos áridos, pantanos y manglares. Poseen características especializadas que las hacen vitales para el equilibrio ecológico y para la supervivencia del ser humano. Asimismo, el 88% de las especies de fabáceas pueden formar nódulos con bacterias (rhizobia) para fijar el N2 en la atmósfera mediante asociación simbiótica, fisiología rica en proteínas, etc.; mientras que sus semillas son empleadas para tratar células cancerígenas, sus componentes químicos las hacen esenciales para diversos tipos de industrias, y el grano de las leguminosas representa el 33% del nitrógeno necesario en la dieta del ser humano [@saikia2020tropical]. Especificando, la subfamilia *Mimosoideae* dentro del clado filogenético mimosoide es sumamente variable, estando compuesta principalmente por árboles y arbustos de flores simétricas cigomorfas con pétalos valvados, a la vez que sus especímenes tienen un gran número de estambres prominentes [@hasanuzzaman2020plant]. En BCI se encuentran 18 de estas especies.  
 
-
-![Grabado de fabaceas (Universiad de Toronto). \label{fig:grab}](Grabado-Mimosoideae.png){width=50%}
-
-
-Atendiendo a la flexibilidad en la distribución de las fabáceas, su importancia económica, y social; se busca entender qué factores ambientales intervienen en la proliferación, agrupamiento o decaimiento de sus poblaciones en bosques tropicales que comparten características con los hallados en República Dominicana, en esta ocasión tomando la data cincuentenaria recolectada y provista por The Center for Tropical Forest Science en BCI. En ese sentido, la ecología numérica es el campo de estudio que brinda las técnicas, índices, y herramientas necesarias para obtener conclusiones a partir de data forestal, animal, y biotopo. R es un software de código abierto y ambiente de programación que brinda una amplia variedad de facilidades para el manejo, creación, y visualización gráfica de ciencia de datos, resultando ideal para este campo de estudio [@venables2009introduction].
+Atendiendo a la flexibilidad en la distribución de las fabáceas, su importancia económica, y social; en el presente estudio se responde a los niveles de asociación presentados por esta familia, la organización de los cuadros acorde a su composición de especies, y la probable influencia de varibales ambientales en la descripción de patrones para estos propósitos en BCI. Además, otro objetivo es realizar una estimación de la riqueza de la familia, asumiendo un 85% de riqueza o más como una 'buena representación'. La determinación de estos patrones de asociación, agrupamiento y diversidad servirán para comprender que caracterisricas ambientales supeditan su desarrollo. En ese sentido, la ecología numérica es el campo de estudio que brinda las técnicas, índices, y herramientas necesarias para obtener conclusiones a partir de data forestal, animal, y biotopo. R es un software de código abierto y ambiente de programación que brinda una amplia variedad de facilidades para el manejo, creación, y visualización gráfica de ciencia de datos, resultando ideal para este campo de estudio [@venables2009introduction].
 
 Los métodos de análisis en ecología numérica han incrementado exponencialmente a partir de la década 1950, desarrollándose índices, estimadores y algoritmos que permiten realizar transformaciones cualitativas y cuantitativas para inferir y obtener precisión con menores probabilidades de sesgo o en ausencia del mismo. La obtención de información relativa al grado de asociación, ordenamiento, diversidad, agrupamiento, entre otros; es debida a estas técnicas. (ver tabla \ref {tab:met})
 
 Table 1: Métodos de análisis en ecología numérica empleados [@book].\label{tab:met}
 
-![](Analisis/Diversidad/Tabla_Metodos_Analisis.png){width=100%}
+![ \label{tab:met](Analisis/Diversidad/Tabla_Metodos_Analisis.png){width=100%}
 
 
 
@@ -67,11 +65,9 @@ Table 1: Métodos de análisis en ecología numérica empleados [@book].\label{t
 
 # Metodología
 
-Obtenida la data censal de Barro Colorado, se empleó R para realizar análisis estadísticos, gráficos, matrices, y mapas a la matriz de la familia *Fabaceae mimosoideae* partiendo del repositorio **Scripts de análisis BCI** [@jose_ramon_martinez_batlle_2020_4402362]. 
+La data censal de la parcela de 50Ha en BCI se obtuvo siguiendo un meticuloso proceso de clasificación de especies, tomando en cuenta solo especímenes con tallos de diametro mayor a 1 cm a la altura del pecho []. se empleó R para realizar análisis estadísticos, gráficos, matrices, y mapas a la matriz de la familia *Fabaceae mimosoideae* partiendo del repositorio **Scripts de análisis BCI** [@jose_ramon_martinez_batlle_2020_4402362]. 
 
-La creación de los utiles necesarios para los análisis fue posible mediante el empleo de los paquetes *vegan*, *tydiverse*, y *sf* para extraer la familia *Fabaceae Mimosoideae* de la data censal, obtener las estadísticas, gráficos lineales y diagramas de cajas. A la vez que, mediante  *mapview* se crearon, proyectaron y almacenaron los mapas; con *RColorBrewer* se para obtuvo una gama de colores más amplia en los gráficos y mapas; y con *broom* se visualizaron las matrices de distancia. Otros paquetes empleados fueron *magrittr*, *plyr*, *vegetarian*.
-
-***Podría crear una tabla para explicar brevemente el uso dado a cada paquete***
+La creación de los utiles necesarios para los análisis fue posible mediante el empleo de los paquetes *vegan*, *tydiverse*, y *sf* para extraer la familia *Fabaceae Mimosoideae* de la data censal, obtener las estadísticas, gráficos lineales y diagramas de cajas. A la vez que, mediante  *mapview* se crearon, proyectaron y almacenaron los mapas; con *RColorBrewer* se para obtuvo una gama de colores más amplia en los gráficos y mapas; y con *broom* se visualizaron las matrices de distancia. Otros paquetes empleados fueron *magrittr*, *plyr*, *vegetarian* [ @vegan1; @tydiverse; @sf; @mapview; @RcolorBrewer; @broom; @magrittr; @plyr; @vegetarian].
 
 La caracterización geomorfológica se elaboró a partir del algoritmo r.geomorphons siguiendo el modelo de @jasiewicz2013geomorphons. (Ver figuras \ref{Geomorf3} y \ref{Geomorf2}) 
 

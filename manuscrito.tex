@@ -50,10 +50,10 @@
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 
-\title{Patrones de Ecología Numérica Descritos por la Familia de Plantas
-Fabaceae Mimosoideae en la Isla Barro Colorado, Cuenca del Mar Caribe.\\
-\emph{Patterns of Numerical Ecology Described by Plants Family Fabaceae
-Mimosoideae in Barro Colorado Island, Caribbean Sea Basin}.\\  }
+\title{Patrones de Ecología Numérica de Fabaceae-Mimosoideae en la Isla Barro
+Colorado, Panamá.\\
+\emph{Patterns of Numerical Ecology of Fabaceae-Mimosoideae in Barro
+Colorado Island, Panama}.\\  }
 
 
 
@@ -106,11 +106,11 @@ Domingo (UASD)}  }
             bookmarks=true,
             pdfauthor={Welifer Junior Lebron Vicente (Estudiante de Ciencias Geográficas, Universidad Autónoma de Santo
 Domingo (UASD))},
-             pdfkeywords = {Ecología Numérica, BCI, Análisis Forestal, Lenguaje R},  
-            pdftitle={Patrones de Ecología Numérica Descritos por la Familia de Plantas
-Fabaceae Mimosoideae en la Isla Barro Colorado, Cuenca del Mar Caribe.\\
-\emph{Patterns of Numerical Ecology Described by Plants Family Fabaceae
-Mimosoideae in Barro Colorado Island, Caribbean Sea Basin}.\\},
+             pdfkeywords = {Ecología Numérica, BCI, Fabaceae-Mimosoideae, Lenguaje R.},  
+            pdftitle={Patrones de Ecología Numérica de Fabaceae-Mimosoideae en la Isla Barro
+Colorado, Panamá.\\
+\emph{Patterns of Numerical Ecology of Fabaceae-Mimosoideae in Barro
+Colorado Island, Panama}.\\},
             colorlinks=true,
             citecolor=blue,
             urlcolor=blue,
@@ -167,18 +167,21 @@ Domingo (UASD)}
 
     \vskip 8.5pt % \small 
 
-\noindent Las fabáceas son plantas de amplia distribución terrestre, sus
-características y propiedades las hacen importantes en diversos campos
-de la ciencia médica, la industria alimenticia y textil. Los métodos de
-análisis biogeográficos permiten cuantificar el estado de esta familia,
-brindando información valiosa para comprender las formas de asociación,
-agrupamiento, proliferación y decaimiento de acuerdo a variables
-ambientales. En la isla Barro Colorado el clado filogenético mimosoide
-presente no exhibe comportamientos que favorezcan variables edáficas y
-geomorfológicas específicas de manera marcada.
+\noindent Las fabáceas son plantas de amplia distribución terrestre y sus
+características las hacen importantes en diversos campos de la ciencia
+médica, la industria alimenticia y textil. La isla Barro Colorado posee
+un registro detallado de las especies de fabáceas en 50Ha, lo suficiente
+para comprender las caracteríticas ecosistémicas que condicionan el
+desarrollo de esta familia en bosques tropicales. Se emplearon métodos
+de análisis biogeográficos mediante lenguaje R para cuantificar su
+estado, brindando información valiosa para definir las formas de
+asociación, agrupamiento y diversidad de acuerdo a variables
+ambientales; evidenciando que el clado filogenético mimosoide presente
+no exhibe patrones asociación entre variables edáficas y geomorfológicas
+específicas de manera marcada.
 
 
-\vskip 8.5pt \noindent \emph{Keywords}: Ecología Numérica, BCI, Análisis Forestal, Lenguaje R \par
+\vskip 8.5pt \noindent \emph{Keywords}: Ecología Numérica, BCI, Fabaceae-Mimosoideae, Lenguaje R. \par
 
     \hbox{\vrule height .2pt width 39.14pc}
 
@@ -192,22 +195,42 @@ geomorfológicas específicas de manera marcada.
 
 \noindent  \section{Introducción}\label{introducciuxf3n}
 
-El análisis de biodiversidad forestal viabiliza la obtención de
-información sobre el comportamiento de las especies en su hábitat, los
-efectos de cambios geoestacionarios, y las probables consecuencias de
-actividades antrópicas en el ciclo vital de los bosques; cuya función en
-el caso de los tropicales puede ser productiva (madera, fibra, leña,
-productos no maderables); ambiental (regulación del clima, reserva de
-biodiversidad, conservación de suelos y agua, etc.); y social
-(subsistencia de poblamientos humanos locales y su cultura) (Montagnini,
-Jordan, \& others, 2005).
+El análisis de biodiversidad viabiliza la obtención de información sobre
+el comportamiento de las especies en su hábitat, los efectos de cambios
+ambientales, y las probables consecuencias de actividades antrópicas en
+el ciclo vital de los bosques y, consecuentemente, en sus funciones. La
+importancia de los bosques, especialmente los tropicales, radica
+precisamente en sus diversas funciones productivas (e.g.~madera, fibra),
+ambientales (e.g.~regulación del clima) y sociales (subsistencia humana,
+patrimonio cultural) (Montagnini, Jordan, \& others, 2005).
 
-La isla Barro Colorado (BCI), de coordenadas {[}9º 9' 0'`N, 79º 51' 0''
-W{]}, es una plataforma basáltica miocénica sobre la que descansa un
-bosque tropical primario compuesto por 305 especies arbóreas (Condit et
-al., 1999). Fue el emplazamiento de ocho censos forestales realizados
-por el Smithsonian Tropical Research Institute entre 1981 y 2015, donde
-la subfamilia \emph{Fabaceae Mimosoideae} representó el 5.9\% de las
+Las fabáceas concentran su mayor diversidad en la franja tropical y
+subtropical, aunque se encuentran ampliamente distribuidas por la
+práctica totalidad de climas terrestres. Están presentes en zonas
+árticas, litoral costero, ambientes alpinos, bosque lluvioso, bosque
+estacional, sabanas, bosque seco, desiertos áridos, pantanos y
+manglares. Poseen características especializadas que las hacen vitales
+para el equilibrio ecológico y para la supervivencia del ser humano.
+Asimismo, el 88\% de las especies de fabáceas forman nódulos con
+bacterias (rhizobia) para fijar el N\textsubscript{2} en la atmósfera
+mediante asociación simbiótica, fisiología rica en proteínas, etc.;
+mientras que sus semillas son empleadas para tratar células
+cancerígenas, sus componentes químicos las hacen esenciales para
+diversos tipos de industrias, y el grano de las leguminosas representa
+el 33\% del nitrógeno necesario en la dieta del ser humano (Saikia, Nag,
+Anurag, Chatterjee, \& Khan, 2020). Especificando, la subfamilia
+\emph{Mimosoideae} dentro del clado filogenético mimosoide es sumamente
+variable, estando compuesta principalmente por árboles y arbustos de
+flores simétricas cigomorfas con pétalos valvados, a la vez que sus
+especímenes tienen un gran número de estambres prominentes
+(Hasanuzzaman, Araújo, \& Gill, 2020).
+
+La isla Barro Colorado (9º 9' 0'`N, 79º 51' 0'`W), en lo adelante 'BCI',
+es una plataforma basáltica miocénica sobre la que descansa un bosque
+tropical primario compuesto por 305 especies arbóreas (Condit et al.,
+1999). Es el emplazamiento de ocho censos forestales realizados por el
+Smithsonian Tropical Research Institute entre 1981 y 2015, donde la
+subfamilia \emph{Fabaceae Mimosoideae} representó el 5.9\% de las
 especies registradas en la parcela de 50 hectáreas delimitada en 1980.
 
 \begin{figure}
@@ -231,47 +254,23 @@ en el equilibrio natural (Condit, 1998).
 \caption{Área del censo forestal, Barro Colorado Island (1981-2015).}
 \end{figure}
 
-Las fabáceas concentran su diversidad en la franja tropical y
-subtropical, aunque se encuentran ampliamente distribuidas por la
-práctica totalidad de climas terrestres. Están presentes en zonas
-árticas, litoral costero, ambientes alpinos, bosque lluvioso, bosque
-estacional, sabanas, bosque seco, desiertos áridos, pantanos y
-manglares. Poseen características especializadas que las hacen vitales
-para el equilibrio ecológico y para la supervivencia del ser humano.
-Asimismo, el 88\% de las especies de fabáceas pueden formar nódulos con
-bacterias (rhizobia) para fijar el N2 en la atmósfera mediante
-asociación simbiótica, fisiología rica en proteínas, etc.; mientras que
-sus semillas son empleadas para tratar células cancerígenas, sus
-componentes químicos las hacen esenciales para diversos tipos de
-industrias, y el grano de las leguminosas representa el 33\% del
-nitrógeno necesario en la dieta del ser humano (Saikia, Nag, Anurag,
-Chatterjee, \& Khan, 2020). Especificando, la subfamilia
-\emph{Mimosoideae} dentro del clado filogenético mimosoide es sumamente
-variable, estando compuesta principalmente por árboles y arbustos de
-flores simétricas cigomorfas con pétalos valvados, a la vez que sus
-especímenes tienen un gran número de estambres prominentes
-(Hasanuzzaman, Araújo, \& Gill, 2020). En BCI se encuentran 18 de estas
-especies.
-
-\begin{figure}
-\centering
-\includegraphics[width=0.50000\textwidth]{Grabado-Mimosoideae.png}
-\caption{Grabado de fabaceas (Universiad de Toronto). \label{fig:grab}}
-\end{figure}
-
 Atendiendo a la flexibilidad en la distribución de las fabáceas, su
-importancia económica, y social; se busca entender qué factores
-ambientales intervienen en la proliferación, agrupamiento o decaimiento
-de sus poblaciones en bosques tropicales que comparten características
-con los hallados en República Dominicana, en esta ocasión tomando la
-data cincuentenaria recolectada y provista por The Center for Tropical
-Forest Science en BCI. En ese sentido, la ecología numérica es el campo
-de estudio que brinda las técnicas, índices, y herramientas necesarias
-para obtener conclusiones a partir de data forestal, animal, y biotopo.
-R es un software de código abierto y ambiente de programación que brinda
-una amplia variedad de facilidades para el manejo, creación, y
-visualización gráfica de ciencia de datos, resultando ideal para este
-campo de estudio (Venables, Smith, Team, \& others, 2009).
+importancia económica, y social; en el presente estudio se responde a
+los niveles de asociación presentados por esta familia, la organización
+de los cuadros acorde a su composición de especies, y la probable
+influencia de varibales ambientales en la descripción de patrones para
+estos propósitos en BCI. Además, otro objetivo es realizar una
+estimación de la riqueza de la familia, asumiendo un 85\% de riqueza o
+más como una `buena representación'. La determinación de estos patrones
+de asociación, agrupamiento y diversidad servirán para comprender que
+caracterisricas ambientales supeditan su desarrollo. En ese sentido, la
+ecología numérica es el campo de estudio que brinda las técnicas,
+índices, y herramientas necesarias para obtener conclusiones a partir de
+data forestal, animal, y biotopo. R es un software de código abierto y
+ambiente de programación que brinda una amplia variedad de facilidades
+para el manejo, creación, y visualización gráfica de ciencia de datos,
+resultando ideal para este campo de estudio (Venables, Smith, Team, \&
+others, 2009).
 
 Los métodos de análisis en ecología numérica han incrementado
 exponencialmente a partir de la década 1950, desarrollándose índices,
@@ -288,7 +287,7 @@ Table 1: Métodos de análisis en ecología numérica empleados (Moreno,
 \begin{figure}
 \centering
 \includegraphics[width=1.00000\textwidth]{Analisis/Diversidad/Tabla_Metodos_Analisis.png}
-\caption{}
+\caption{\textbackslash{}label\{tab:met}
 \end{figure}
 
 \ldots
@@ -308,10 +307,10 @@ cajas. A la vez que, mediante \emph{mapview} se crearon, proyectaron y
 almacenaron los mapas; con \emph{RColorBrewer} se para obtuvo una gama
 de colores más amplia en los gráficos y mapas; y con \emph{broom} se
 visualizaron las matrices de distancia. Otros paquetes empleados fueron
-\emph{magrittr}, \emph{plyr}, \emph{vegetarian}.
-
-\textbf{\emph{Podría crear una tabla para explicar brevemente el uso
-dado a cada paquete}}
+\emph{magrittr}, \emph{plyr}, \emph{vegetarian} ({\textbf{???}},
+{\textbf{???}}; Appelhans, Detsch, Reudenbach, \& Woellauer, 2019;
+Charney \& Record, 2012; Neuwirth, 2014; Oksanen et al., 2019; Pebesma,
+2018; Robinson \& Hayes, 2019; Wickham, 2011).
 
 La caracterización geomorfológica se elaboró a partir del algoritmo
 r.geomorphons siguiendo el modelo de Jasiewicz \& Stepinski (2013). (Ver
@@ -684,6 +683,11 @@ reproducible}{Script reproducible}}\label{script-reproducible}
 \ldots
 
 \hypertarget{refs}{}
+\hypertarget{ref-mapview}{}
+Appelhans, T., Detsch, F., Reudenbach, C., \& Woellauer, S. (2019).
+\emph{Mapview: Interactive viewing of spatial data in r}. Retrieved from
+\url{https://CRAN.R-project.org/package=mapview}
+
 \hypertarget{ref-inproceedings}{}
 Baldeck, C., Asner, G., Martin, R., Anderson, C., Knapp, D., Kellner,
 J., \& Wright, S. J. (2014). Operational tree species mapping in a
@@ -694,6 +698,11 @@ one}, \emph{10}. \url{https://doi.org/10.1371/journal.pone.0118403}
 Batlle, J. R. M. (2020). biogeografia-master/scripts-de-analisis-BCI:
 Long coding sessions (Version v0.0.0.9000).
 \url{https://doi.org/10.5281/zenodo.4402362}
+
+\hypertarget{ref-vegetarian}{}
+Charney, N., \& Record, S. (2012). \emph{Vegetarian: Jost diversity
+measures for community data}. Retrieved from
+\url{https://CRAN.R-project.org/package=vegetarian}
 
 \hypertarget{ref-condit1998tropical}{}
 Condit, R. (1998). \emph{Tropical forest census plots: Methods and
@@ -730,6 +739,25 @@ Business Media.
 \hypertarget{ref-book}{}
 Moreno, C. (2001). \emph{Métodos para medir la biodiversidad} (Vol. 1).
 
+\hypertarget{ref-RcolorBrewer}{}
+Neuwirth, E. (2014). \emph{RColorBrewer: ColorBrewer palettes}.
+Retrieved from \url{https://CRAN.R-project.org/package=RColorBrewer}
+
+\hypertarget{ref-vegan}{}
+Oksanen, J., Blanchet, F. G., Friendly, M., Kindt, R., Legendre, P.,
+McGlinn, D., \ldots{} Wagner, H. (2019). \emph{Vegan: Community ecology
+package}. Retrieved from \url{https://CRAN.R-project.org/package=vegan}
+
+\hypertarget{ref-sf}{}
+Pebesma, E. (2018). Simple Features for R: Standardized Support for
+Spatial Vector Data. \emph{The R Journal}, \emph{10}(1), 439--446.
+\url{https://doi.org/10.32614/RJ-2018-009}
+
+\hypertarget{ref-broom}{}
+Robinson, D., \& Hayes, A. (2019). \emph{Broom: Convert statistical
+analysis objects into tidy tibbles}. Retrieved from
+\url{https://CRAN.R-project.org/package=broom}
+
 \hypertarget{ref-saikia2020tropical}{}
 Saikia, P., Nag, A., Anurag, S., Chatterjee, S., \& Khan, M. L. (2020).
 Tropical legumes: Status, distribution, biology and importance. In
@@ -738,6 +766,11 @@ Tropical legumes: Status, distribution, biology and importance. In
 \hypertarget{ref-venables2009introduction}{}
 Venables, W. N., Smith, D. M., Team, R. D. C., \& others. (2009).
 \emph{An introduction to r}. Citeseer.
+
+\hypertarget{ref-plyr}{}
+Wickham, H. (2011). The split-apply-combine strategy for data analysis.
+\emph{Journal of Statistical Software}, \emph{40}(1), 1--29. Retrieved
+from \url{http://www.jstatsoft.org/v40/i01/}
 
 
 

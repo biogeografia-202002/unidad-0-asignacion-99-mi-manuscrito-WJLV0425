@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  9 JAN 2021 16:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  15 JAN 2021 19:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -712,191 +712,181 @@ File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <11> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 150.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 193.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 205.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 196.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 215.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 205
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 215
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 205
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 215
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 205
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 215
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 205
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 215
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-<Map-of-Barro-Colorado-Island-BCI-Panama.png, id=32, 204.765pt x 145.9854pt>
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<Map-of-Barro-Colorado-Island-BCI-Panama.png, id=41, 204.765pt x 145.9854pt>
 File: Map-of-Barro-Colorado-Island-BCI-Panama.png Graphic file (type png)
 <use Map-of-Barro-Colorado-Island-BCI-Panama.png>
 Package pdftex.def Info: Map-of-Barro-Colorado-Island-BCI-Panama.png  used on i
-nput line 215.
+nput line 238.
 (pdftex.def)             Requested size: 204.76448pt x 145.98503pt.
-<mapa_cuadros.png, id=34, 995.72pt x 762.85pt>
+<mapa_cuadros.png, id=43, 995.72pt x 762.85pt>
 File: mapa_cuadros.png Graphic file (type png)
 <use mapa_cuadros.png>
-Package pdftex.def Info: mapa_cuadros.png  used on input line 230.
+Package pdftex.def Info: mapa_cuadros.png  used on input line 253.
 (pdftex.def)             Requested size: 234.87544pt x 179.9449pt.
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./Map-of-Barro-Colorad
-o-Island-BCI-Panama.png> <./mapa_cuadros.png>]
-<Grabado-Mimosoideae.png, id=52, 888.31876pt x 767.86874pt>
-File: Grabado-Mimosoideae.png Graphic file (type png)
-<use Grabado-Mimosoideae.png>
-Package pdftex.def Info: Grabado-Mimosoideae.png  used on input line 258.
-(pdftex.def)             Requested size: 234.87471pt x 203.0273pt.
-<Analisis/Diversidad/Tabla_Metodos_Analisis.png, id=54, 1117.17375pt x 603.7556
+[2 <./Map-of-Barro-Colorado-Island-BCI-Panama.png> <./mapa_cuadros.png>]
+<Analisis/Diversidad/Tabla_Metodos_Analisis.png, id=53, 1117.17375pt x 603.7556
 3pt>
 File: Analisis/Diversidad/Tabla_Metodos_Analisis.png Graphic file (type png)
 <use Analisis/Diversidad/Tabla_Metodos_Analisis.png>
 Package pdftex.def Info: Analisis/Diversidad/Tabla_Metodos_Analisis.png  used o
-n input line 290.
+n input line 289.
 (pdftex.def)             Requested size: 469.75528pt x 253.87044pt.
-[3 <./Grabado-Mimosoideae.png>]
-LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 314.
-<Geomorf3.png, id=62, 892.83563pt x 197.23688pt>
+[3 <./Analisis/Diversidad/Tabla_Metodos_Analisis.png>]
+<Geomorf3.png, id=61, 892.83563pt x 197.23688pt>
 File: Geomorf3.png Graphic file (type png)
 <use Geomorf3.png>
-Package pdftex.def Info: Geomorf3.png  used on input line 322.
+Package pdftex.def Info: Geomorf3.png  used on input line 321.
 (pdftex.def)             Requested size: 352.3188pt x 77.83095pt.
-<Geomor2.png, id=63, 834.11626pt x 264.99pt>
+<Geomor2.png, id=62, 834.11626pt x 264.99pt>
 File: Geomor2.png Graphic file (type png)
 <use Geomor2.png>
-Package pdftex.def Info: Geomor2.png  used on input line 329.
+Package pdftex.def Info: Geomor2.png  used on input line 328.
 (pdftex.def)             Requested size: 352.32468pt x 111.92986pt.
-[4 <./Analisis/Diversidad/Tabla_Metodos_Analisis.png> <./Geomorf3.png>]
-<Analisis/Diversidad/Tabla_Criterios_Enlace.png, id=75, 1132.23pt x 379.4175pt>
+[4 <./Geomorf3.png> <./Geomor2.png>]
+<Analisis/Diversidad/Tabla_Criterios_Enlace.png, id=74, 1132.23pt x 379.4175pt>
 
 File: Analisis/Diversidad/Tabla_Criterios_Enlace.png Graphic file (type png)
 <use Analisis/Diversidad/Tabla_Criterios_Enlace.png>
 Package pdftex.def Info: Analisis/Diversidad/Tabla_Criterios_Enlace.png  used o
-n input line 384.
+n input line 383.
 (pdftex.def)             Requested size: 469.74576pt x 157.4148pt.
 
-Overfull \hbox (16.99074pt too wide) in paragraph at lines 384--386
+Overfull \hbox (16.99074pt too wide) in paragraph at lines 383--385
 [][]
  []
 
-
-Overfull \vbox (159.69626pt too high) has occurred while \output is active []
-
-[5 <./Geomor2.png> <./Analisis/Diversidad/Tabla_Criterios_Enlace.png>]
-<manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf, id=84, 857.2025pt x 294.0
+[5 <./Analisis/Diversidad/Tabla_Criterios_Enlace.png>]
+<manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf, id=83, 857.2025pt x 294.0
 9875pt>
 File: manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pd
 f)
 <use manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>
 Package pdftex.def Info: manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf  u
-sed on input line 462.
+sed on input line 461.
 (pdftex.def)             Requested size: 469.74937pt x 161.16693pt.
-[6]
-<Analisis/Diversidad/Graf_regre_lineal_aed_2.png, id=92, 650.43pt x 808.52063pt
+[6 <./manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>]
+<Analisis/Diversidad/Graf_regre_lineal_aed_2.png, id=96, 650.43pt x 808.52063pt
 >
 File: Analisis/Diversidad/Graf_regre_lineal_aed_2.png Graphic file (type png)
 <use Analisis/Diversidad/Graf_regre_lineal_aed_2.png>
 Package pdftex.def Info: Analisis/Diversidad/Graf_regre_lineal_aed_2.png  used 
-on input line 486.
+on input line 485.
 (pdftex.def)             Requested size: 469.76817pt x 583.94795pt.
-<Analisis/Imagenes manuscrito/Heat_maps_Q.png, id=95, 2007.5pt x 2007.5pt>
+<Analisis/Imagenes manuscrito/Heat_maps_Q.png, id=99, 2007.5pt x 2007.5pt>
 File: Analisis/Imagenes manuscrito/Heat_maps_Q.png Graphic file (type png)
 <use Analisis/Imagenes manuscrito/Heat_maps_Q.png>
 Package pdftex.def Info: Analisis/Imagenes manuscrito/Heat_maps_Q.png  used on 
-input line 509.
+input line 508.
 (pdftex.def)             Requested size: 469.74086pt x 469.74086pt.
-<Analisis/Imagenes manuscrito/Heat_Map_R.png, id=98, 1181.91562pt x 1127.71312p
-t>
+<Analisis/Imagenes manuscrito/Heat_Map_R.png, id=102, 1181.91562pt x 1127.71312
+pt>
 File: Analisis/Imagenes manuscrito/Heat_Map_R.png Graphic file (type png)
 <use Analisis/Imagenes manuscrito/Heat_Map_R.png>
 Package pdftex.def Info: Analisis/Imagenes manuscrito/Heat_Map_R.png  used on i
-nput line 536.
+nput line 535.
 (pdftex.def)             Requested size: 469.74611pt x 448.20361pt.
-<Analisis/Imagenes manuscrito/Seperman_R.png, id=99, 2007.75093pt x 587.19376pt
->
+<Analisis/Imagenes manuscrito/Seperman_R.png, id=103, 2007.75093pt x 587.19376p
+t>
 File: Analisis/Imagenes manuscrito/Seperman_R.png Graphic file (type png)
 <use Analisis/Imagenes manuscrito/Seperman_R.png>
 Package pdftex.def Info: Analisis/Imagenes manuscrito/Seperman_R.png  used on i
-nput line 544.
+nput line 543.
 (pdftex.def)             Requested size: 469.73831pt x 137.38127pt.
-<DenSimple.png, id=100, 903.375pt x 610.53094pt>
+<DenSimple.png, id=104, 903.375pt x 610.53094pt>
 File: DenSimple.png Graphic file (type png)
 <use DenSimple.png>
-Package pdftex.def Info: DenSimple.png  used on input line 559.
+Package pdftex.def Info: DenSimple.png  used on input line 558.
 (pdftex.def)             Requested size: 469.7577pt x 317.47792pt.
-[7 <./manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>] [8 <./Analisis/Dive
-rsidad/Graf_regre_lineal_aed_2.png>] [9 <./Analisis/Imagenes manuscrito/Heat_ma
-ps_Q.png>] [10 <./Analisis/Imagenes manuscrito/Heat_Map_R.png>]
-<Inter_Ward_5Clusters_Dendrogram.png, id=133, 1656.1875pt x 677.53125pt>
+<Inter_Ward_5Clusters_Dendrogram.png, id=106, 1656.1875pt x 677.53125pt>
 File: Inter_Ward_5Clusters_Dendrogram.png Graphic file (type png)
 <use Inter_Ward_5Clusters_Dendrogram.png>
 Package pdftex.def Info: Inter_Ward_5Clusters_Dendrogram.png  used on input lin
-e 584.
+e 583.
 (pdftex.def)             Requested size: 469.74393pt x 192.16795pt.
-<WARD_Plots_Variables_Ambientales_Clusters.png, id=134, 1174.3875pt x 526.96875
+<WARD_Plots_Variables_Ambientales_Clusters.png, id=107, 1174.3875pt x 526.96875
 pt>
 File: WARD_Plots_Variables_Ambientales_Clusters.png Graphic file (type png)
 <use WARD_Plots_Variables_Ambientales_Clusters.png>
 Package pdftex.def Info: WARD_Plots_Variables_Ambientales_Clusters.png  used on
- input line 591.
+ input line 590.
 (pdftex.def)             Requested size: 469.74669pt x 210.78375pt.
-<Analisis/Diversidad/Indices_Env_Diversidad_Alpha_2.png, id=135, 1656.1875pt x 
+<Analisis/Diversidad/Indices_Env_Diversidad_Alpha_2.png, id=108, 1656.1875pt x 
 828.09375pt>
 File: Analisis/Diversidad/Indices_Env_Diversidad_Alpha_2.png Graphic file (type
  png)
 <use Analisis/Diversidad/Indices_Env_Diversidad_Alpha_2.png>
 Package pdftex.def Info: Analisis/Diversidad/Indices_Env_Diversidad_Alpha_2.png
-  used on input line 606.
+  used on input line 605.
 (pdftex.def)             Requested size: 469.74393pt x 234.87196pt.
+[7] [8 <./Analisis/Diversidad/Graf_regre_lineal_aed_2.png>] [9 <./Analisis/Imag
+enes manuscrito/Heat_maps_Q.png>] [10 <./Analisis/Imagenes manuscrito/Heat_Map_
+R.png>] [11 <./Analisis/Imagenes manuscrito/Seperman_R.png> <./DenSimple.png>] 
+[12 <./Inter_Ward_5Clusters_Dendrogram.png (PNG copy)> <./WARD_Plots_Variables_
+Ambientales_Clusters.png (PNG copy)>]
+LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 681.
 
-Overfull \vbox (188.71169pt too high) has occurred while \output is active []
+Overfull \vbox (260.14989pt too high) has occurred while \output is active []
 
-[11 <./Analisis/Imagenes manuscrito/Seperman_R.png>] [12 <./DenSimple.png> <./I
-nter_Ward_5Clusters_Dendrogram.png (PNG copy)>] [13 <./WARD_Plots_Variables_Amb
-ientales_Clusters.png (PNG copy)> <./Analisis/Diversidad/Indices_Env_Diversidad
-_Alpha_2.png (PNG copy)>] [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 747.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 747.
+[13 <./Analisis/Diversidad/Indices_Env_Diversidad_Alpha_2.png (PNG copy)>] [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 780.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 780.
 (./manuscrito.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 747.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 747.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 780.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 780.
 Package rerunfilecheck Info: File `manuscrito.out' has not changed.
 (rerunfilecheck)             Checksum: 0BAA4E444F0FBE78A5A27B5447149DB2;812.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 747.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 780.
  ) 
 Here is how much of TeX's memory you used:
- 10343 strings out of 492982
- 146033 string characters out of 6134896
- 223597 words of memory out of 5000000
- 13729 multiletter control sequences out of 15000+600000
+ 10344 strings out of 492982
+ 145972 string characters out of 6134896
+ 223993 words of memory out of 5000000
+ 13724 multiletter control sequences out of 15000+600000
  27368 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,31p,380b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,6n,31p,380b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
 no/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on manuscrito.pdf (14 pages, 3636679 bytes).
+Output written on manuscrito.pdf (14 pages, 3558483 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 52 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 224 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 132 words of extra memory for PDF output out of 10000 (max. 10000000)
 
