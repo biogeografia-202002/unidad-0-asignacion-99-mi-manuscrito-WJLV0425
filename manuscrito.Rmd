@@ -126,7 +126,7 @@ La asociación interespecífica en función de la abundancia, como se observa en
 ![Matrices de Sperman, asociación de especies en función de las variables edáficas (superior) y asociación de especies en función de las variables geomorfológicas (inferior) .\label{fig:sper}](Analisis/Imagenes manuscrito/Seperman_R.png){width=100%}
 
 
-Acorde al ordenamiento por enlace simple, los cuadros 32, 50 y 43 se separan bastante de los demás, lo cual se corresponde con la abundancia y riqueza de especies en estos sitios comparada con los demás, siendo en C32 116 [tercera más alta] y 8 [tercil más pobre] respectivamente, por ejemplo. También se observan dos grupos definidos formados entre los sitios C22-C37 y C28-C7. (Ver \label{fig:denS})
+Acorde al ordenamiento por enlace simple, los cuadros 32, 50 y 43 se separan bastante de los demás, lo cual se corresponde con la abundancia y riqueza de especies en estos sitios comparada con los demás, siendo en C32 116 (tercera más alta) y 8 (tercil más pobre) respectivamente, por ejemplo. También se observan dos grupos definidos formados entre los sitios C22-C37 y C28-C7. (Ver \label{fig:denS})
 
 ![Dendrograma a partir del criterio enlace simple.\label{fig:denS}](DenSimple.png){width=100%}
 
