@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  16 JAN 2021 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  16 JAN 2021 22:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -740,141 +740,138 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<Map-of-Barro-Colorado-Island-BCI-Panama.png, id=41, 204.765pt x 145.9854pt>
+<Map-of-Barro-Colorado-Island-BCI-Panama.png, id=45, 204.765pt x 145.9854pt>
 File: Map-of-Barro-Colorado-Island-BCI-Panama.png Graphic file (type png)
 <use Map-of-Barro-Colorado-Island-BCI-Panama.png>
 Package pdftex.def Info: Map-of-Barro-Colorado-Island-BCI-Panama.png  used on i
 nput line 238.
 (pdftex.def)             Requested size: 204.76448pt x 145.98503pt.
-<mapa_cuadros.png, id=43, 995.72pt x 762.85pt>
+<mapa_cuadros.png, id=47, 995.72pt x 762.85pt>
 File: mapa_cuadros.png Graphic file (type png)
 <use mapa_cuadros.png>
 Package pdftex.def Info: mapa_cuadros.png  used on input line 253.
 (pdftex.def)             Requested size: 234.87544pt x 179.9449pt.
 [2 <./Map-of-Barro-Colorado-Island-BCI-Panama.png> <./mapa_cuadros.png>]
-<Analisis/Diversidad/Tabla_Metodos_Analisis.png, id=53, 1117.17375pt x 603.7556
+<Analisis/Diversidad/Tabla_Metodos_Analisis.png, id=57, 1117.17375pt x 603.7556
 3pt>
 File: Analisis/Diversidad/Tabla_Metodos_Analisis.png Graphic file (type png)
 <use Analisis/Diversidad/Tabla_Metodos_Analisis.png>
 Package pdftex.def Info: Analisis/Diversidad/Tabla_Metodos_Analisis.png  used o
-n input line 289.
+n input line 287.
 (pdftex.def)             Requested size: 469.75528pt x 253.87044pt.
+
+Overfull \hbox (17.00026pt too wide) in paragraph at lines 287--289
+[][]
+ []
+
 [3 <./Analisis/Diversidad/Tabla_Metodos_Analisis.png>]
-<Analisis/Diversidad/Tabla_Criterios_Enlace.png, id=61, 1132.23pt x 379.4175pt>
+<Analisis/Diversidad/Tabla_Criterios_Enlace.png, id=64, 1132.23pt x 379.4175pt>
 
 File: Analisis/Diversidad/Tabla_Criterios_Enlace.png Graphic file (type png)
 <use Analisis/Diversidad/Tabla_Criterios_Enlace.png>
 Package pdftex.def Info: Analisis/Diversidad/Tabla_Criterios_Enlace.png  used o
-n input line 371.
+n input line 366.
 (pdftex.def)             Requested size: 469.74576pt x 157.4148pt.
 
-Overfull \hbox (16.99074pt too wide) in paragraph at lines 371--373
+Overfull \hbox (16.99074pt too wide) in paragraph at lines 366--368
 [][]
  []
 
 [4 <./Analisis/Diversidad/Tabla_Criterios_Enlace.png>]
-<manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf, id=69, 857.2025pt x 292.0
+<manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf, id=72, 857.2025pt x 292.0
 9125pt>
 File: manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pd
 f)
 <use manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>
 Package pdftex.def Info: manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf  u
-sed on input line 440.
+sed on input line 435.
 (pdftex.def)             Requested size: 469.74937pt x 160.0668pt.
 [5]
-<Analisis/Diversidad/Graf_regre_lineal_aed_2.png, id=77, 650.43pt x 808.52063pt
->
-File: Analisis/Diversidad/Graf_regre_lineal_aed_2.png Graphic file (type png)
-<use Analisis/Diversidad/Graf_regre_lineal_aed_2.png>
-Package pdftex.def Info: Analisis/Diversidad/Graf_regre_lineal_aed_2.png  used 
-on input line 463.
-(pdftex.def)             Requested size: 469.76817pt x 583.94795pt.
-<Analisis/Imagenes manuscrito/Heat_maps_Q.png, id=80, 2007.5pt x 2007.5pt>
+<Analisis/Imagenes manuscrito/Heat_maps_Q.png, id=82, 2007.5pt x 2007.5pt>
 File: Analisis/Imagenes manuscrito/Heat_maps_Q.png Graphic file (type png)
 <use Analisis/Imagenes manuscrito/Heat_maps_Q.png>
 Package pdftex.def Info: Analisis/Imagenes manuscrito/Heat_maps_Q.png  used on 
-input line 486.
+input line 468.
 (pdftex.def)             Requested size: 469.74086pt x 469.74086pt.
-<Analisis/Imagenes manuscrito/Heat_Map_R.png, id=83, 1181.91562pt x 1127.71312p
+<Analisis/Imagenes manuscrito/Heat_Map_R.png, id=85, 1181.91562pt x 1127.71312p
 t>
 File: Analisis/Imagenes manuscrito/Heat_Map_R.png Graphic file (type png)
 <use Analisis/Imagenes manuscrito/Heat_Map_R.png>
 Package pdftex.def Info: Analisis/Imagenes manuscrito/Heat_Map_R.png  used on i
-nput line 513.
+nput line 495.
 (pdftex.def)             Requested size: 469.74611pt x 448.20361pt.
-<Analisis/Imagenes manuscrito/Seperman_R.png, id=84, 2007.75093pt x 587.19376pt
+<Analisis/Imagenes manuscrito/Seperman_R.png, id=86, 2007.75093pt x 587.19376pt
 >
 File: Analisis/Imagenes manuscrito/Seperman_R.png Graphic file (type png)
 <use Analisis/Imagenes manuscrito/Seperman_R.png>
 Package pdftex.def Info: Analisis/Imagenes manuscrito/Seperman_R.png  used on i
-nput line 521.
+nput line 503.
 (pdftex.def)             Requested size: 469.73831pt x 137.38127pt.
-[6 <./manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>] [7 <./Analisis/Dive
-rsidad/Graf_regre_lineal_aed_2.png>] [8 <./Analisis/Imagenes manuscrito/Heat_ma
-ps_Q.png>] [9 <./Analisis/Imagenes manuscrito/Heat_Map_R.png>]
-<DenSimple.png, id=116, 903.375pt x 610.53094pt>
+<DenSimple.png, id=87, 903.375pt x 610.53094pt>
 File: DenSimple.png Graphic file (type png)
 <use DenSimple.png>
-Package pdftex.def Info: DenSimple.png  used on input line 536.
+Package pdftex.def Info: DenSimple.png  used on input line 518.
 (pdftex.def)             Requested size: 469.7577pt x 317.47792pt.
-<Inter_Ward_5Clusters_Dendrogram.png, id=118, 1656.1875pt x 677.53125pt>
+[6 <./manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>] [7 <./Analisis/Imag
+enes manuscrito/Heat_maps_Q.png>] [8 <./Analisis/Imagenes manuscrito/Heat_Map_R
+.png>] [9 <./Analisis/Imagenes manuscrito/Seperman_R.png> <./DenSimple.png>]
+<Inter_Ward_5Clusters_Dendrogram.png, id=121, 1656.1875pt x 677.53125pt>
 File: Inter_Ward_5Clusters_Dendrogram.png Graphic file (type png)
 <use Inter_Ward_5Clusters_Dendrogram.png>
 Package pdftex.def Info: Inter_Ward_5Clusters_Dendrogram.png  used on input lin
-e 561.
+e 543.
 (pdftex.def)             Requested size: 469.74393pt x 192.16795pt.
-<WARD_Plots_Variables_Ambientales_Clusters.png, id=119, 1174.3875pt x 526.96875
+<WARD_Plots_Variables_Ambientales_Clusters.png, id=122, 1174.3875pt x 526.96875
 pt>
 File: WARD_Plots_Variables_Ambientales_Clusters.png Graphic file (type png)
 <use WARD_Plots_Variables_Ambientales_Clusters.png>
 Package pdftex.def Info: WARD_Plots_Variables_Ambientales_Clusters.png  used on
- input line 568.
+ input line 550.
 (pdftex.def)             Requested size: 469.74669pt x 210.78375pt.
-<Analisis/Diversidad/Indices_Env_Diversidad_Alpha_2.png, id=120, 1656.1875pt x 
+[10 <./Inter_Ward_5Clusters_Dendrogram.png (PNG copy)> <./WARD_Plots_Variables_
+Ambientales_Clusters.png (PNG copy)>]
+<Analisis/Diversidad/Indices_Env_Diversidad_Alpha_2.png, id=129, 1656.1875pt x 
 828.09375pt>
 File: Analisis/Diversidad/Indices_Env_Diversidad_Alpha_2.png Graphic file (type
  png)
 <use Analisis/Diversidad/Indices_Env_Diversidad_Alpha_2.png>
 Package pdftex.def Info: Analisis/Diversidad/Indices_Env_Diversidad_Alpha_2.png
-  used on input line 583.
+  used on input line 565.
 (pdftex.def)             Requested size: 469.74393pt x 234.87196pt.
-[10 <./Analisis/Imagenes manuscrito/Seperman_R.png>] [11 <./DenSimple.png> <./I
-nter_Ward_5Clusters_Dendrogram.png (PNG copy)>] [12 <./WARD_Plots_Variables_Amb
-ientales_Clusters.png (PNG copy)> <./Analisis/Diversidad/Indices_Env_Diversidad
-_Alpha_2.png (PNG copy)>]
+[11 <./Analisis/Diversidad/Indices_Env_Diversidad_Alpha_2.png (PNG copy)>]
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 659.
-[13] [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 762.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 762.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 641.
+[12] [13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 746.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 746.
 (./manuscrito.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 762.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 762.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 746.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 746.
 Package rerunfilecheck Info: File `manuscrito.out' has not changed.
-(rerunfilecheck)             Checksum: 0BAA4E444F0FBE78A5A27B5447149DB2;812.
+(rerunfilecheck)             Checksum: DE932E2D9026CF7A2C846A7BA86EF688;918.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 762.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 746.
  ) 
 Here is how much of TeX's memory you used:
- 10333 strings out of 492982
- 145793 string characters out of 6134896
- 221765 words of memory out of 5000000
- 13714 multiletter control sequences out of 15000+600000
+ 10328 strings out of 492982
+ 145584 string characters out of 6134896
+ 220691 words of memory out of 5000000
+ 13711 multiletter control sequences out of 15000+600000
  27368 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,31p,380b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,6n,31p,380b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
 no/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on manuscrito.pdf (14 pages, 2873141 bytes).
+Output written on manuscrito.pdf (13 pages, 2736831 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
- 176 compressed objects within 2 object streams
- 57 named destinations out of 1000 (max. 500000)
- 122 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 219 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

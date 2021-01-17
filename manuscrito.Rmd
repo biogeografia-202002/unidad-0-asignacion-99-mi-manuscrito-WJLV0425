@@ -58,10 +58,8 @@ Los métodos de análisis en ecología numérica han incrementado exponencialmen
 Table 1: Métodos de análisis en ecología numérica empleados [@book].\label{tab:met}
 
 ![](Analisis/Diversidad/Tabla_Metodos_Analisis.png){width=100%}
+|
 
-
-
-\ldots
 
 # Metodología
 
@@ -69,9 +67,9 @@ La data censal de la parcela de 50Ha en BCI se obtuvo siguiendo un meticuloso pr
 
 La creación de los utiles necesarios para los análisis fue posible mediante el empleo de los paquetes *vegan*, *tydiverse*, y *sf* para extraer la familia *Fabaceae-mimosoideae* de la data censal, obtener las estadísticas, gráficos lineales y diagramas de cajas. A la vez que, mediante  *mapview* se crearon, proyectaron y almacenaron los mapas; con *RColorBrewer* se para obtuvo una gama de colores más amplia en los gráficos y mapas; y con *broom* se visualizaron las matrices de distancia. Otros paquetes empleados fueron *magrittr*, *plyr*, *vegetarian* [ @vegan1; @tydiverse; @sf; @mapview; @RcolorBrewer; @broom; @magrittr; @plyr; @vegetarian].
 
-Diversos estudios fueron tomados en cuenta para la clasificación de hábitats, se emplearon 5 de las categorías definidas por @harms2001habitat partiendo del resumen y análisis de la data compilada en 16 años, donde fueron tomados en cuenta árboles iguales o mayores de 1 cm de diámetro a la altura del pecho. (Ver tabla \ref{tab:hábitat})
+Diversos estudios fueron tomados en cuenta para la clasificación de hábitats, se emplearon 5 de las categorías definidas por @harms2001habitat partiendo del resumen y análisis de la data compilada en 16 años, donde fueron tomados en cuenta árboles iguales o mayores de 1 cm de diámetro a la altura del pecho. (Ver tabla \ref{tab:habitat})
 
-Table 2: Clasificación de hábitats, parcela permanente BCI [@harms2001habitat].\label{tab:hábitat}
+Table 3: Clasificación de hábitats, parcela permanente BCI [@harms2001habitat].\label{tab:habitat}
 
 | Hábitat                        | Pendiente (grados) | Elevación (metros) |
 |--------------------------------|:------------------:|:------------------:|
